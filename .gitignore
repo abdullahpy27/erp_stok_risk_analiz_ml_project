@@ -1,0 +1,34 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local configuration and logs
+.env
+*.log
+
+# MATLAB temporary files
+*.asv
+*.m~
+slprj/
+*.slxc
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Frontend dependencies, if added later
+node_modules/
+
+# Temporary backups
+*.tmp
+*.bak
