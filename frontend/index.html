@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERP Stok Risk Yapay Zeka Paneli</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: "#0f172a",
+            surface: "#f5f7fb",
+            border: "#e2e8f0",
+            muted: "#64748b"
+          },
+          boxShadow: {
+            card: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-slate-800">
+  <div class="min-h-screen lg:flex">
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 w-72 -translate-x-full bg-navy text-white transition-transform duration-200 lg:translate-x-0">
+      <div class="flex h-full flex-col">
+        <div class="border-b border-white/10 p-5">
+          <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500 text-lg font-black">AI</div>
+          <h1 class="mt-4 text-xl font-black leading-tight">ERP Stok Risk Yapay Zeka Paneli</h1>
+          <p class="mt-2 text-sm leading-5 text-slate-400">Makine öğrenmesi yönetim paneli</p>
+        </div>
+
+        <nav class="flex-1 space-y-1 p-3" aria-label="Yan menü gezinmesi">
+          <button class="nav-link w-full rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 hover:bg-white/10" data-page="overview">Genel Bakış</button>
+          <button class="nav-link w-full rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 hover:bg-white/10" data-page="prediction">Yapay Zeka Tahmini</button>
+          <button class="nav-link w-full rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 hover:bg-white/10" data-page="dataset">Stok Veri Seti</button>
+          <button class="nav-link w-full rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 hover:bg-white/10" data-page="comparison">Model Karşılaştırması</button>
+          <button class="nav-link w-full rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 hover:bg-white/10" data-page="pipeline">ML Süreci</button>
+          <button class="nav-link w-full rounded-xl px-4 py-3 text-left text-sm font-semibold text-slate-300 hover:bg-white/10" data-page="about">Proje Hakkında</button>
+        </nav>
+
+     
+      </div>
+    </aside>
+
+    <div id="overlay" class="fixed inset-0 z-30 hidden bg-black/40 lg:hidden"></div>
+
+    <main class="min-w-0 flex-1 lg:ml-72">
+      <header class="sticky top-0 z-20 border-b border-border bg-white/95 px-4 py-4 backdrop-blur sm:px-6">
+        <div class="flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <button id="menuBtn" class="rounded-xl border border-border p-2 text-slate-700 lg:hidden" aria-label="Yan menüyü aç">&#9776;</button>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wide text-muted">Üniversite ML Projesi</p>
+              <h2 id="pageTitle" class="text-xl font-black text-slate-950">Genel Bakış</h2>
+            </div>
+          </div>
+          <div class="hidden items-center gap-3 md:flex">
+            <span class="rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700">HTML + Tailwind + Chart.js</span>
+            <span id="apiStatus" class="rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700">API: Kontrol ediliyor</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="mx-auto max-w-7xl space-y-6 p-4 sm:p-6">
+        <section id="overview" class="page space-y-6">
+          <div id="kpiCards" class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-7"></div>
+
+          <div class="grid gap-6 xl:grid-cols-2">
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <div class="mb-5 flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="font-black text-slate-950">Risk Dağılımı</h3>
+                  <p class="mt-1 text-sm text-muted">Görünen ERP örnek kayıtlarından hesaplanır.</p>
+                </div>
+                <span class="rounded-xl bg-slate-100 px-3 py-1.5 text-xs font-bold text-slate-600">Veri Seti</span>
+              </div>
+              <div class="chart-fade h-80"><canvas id="riskChart"></canvas></div>
+            </article>
+
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <div class="mb-5 flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="font-black text-slate-950">Algoritma Doğruluğu</h3>
+                  <p class="mt-1 text-sm text-muted">Decision Tree, Random Forest ve SVM karşılaştırması.</p>
+                </div>
+                <span class="rounded-xl bg-emerald-50 px-3 py-1.5 text-xs font-bold text-emerald-700">En iyi: Decision Tree</span>
+              </div>
+              <div class="chart-fade h-80"><canvas id="accuracyChart"></canvas></div>
+            </article>
+          </div>
+
+          <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+            <div class="mb-4">
+              <h3 class="font-black text-slate-950">Son Yüksek Riskli Ürünler</h3>
+              <p class="mt-1 text-sm text-muted">ERP yöneticisi tarafından önce incelenmesi gereken ürünler.</p>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full min-w-[760px] text-left text-sm">
+                <thead class="bg-slate-50 text-xs uppercase tracking-wide text-muted">
+                  <tr>
+                    <th class="rounded-l-xl px-4 py-3">Ürün</th>
+                    <th class="px-4 py-3">Kategori</th>
+                    <th class="px-4 py-3">Stok Miktarı</th>
+                    <th class="px-4 py-3">Haftalık Satış</th>
+                    <th class="px-4 py-3">Tedarikçi Gecikme Günü</th>
+                    <th class="rounded-r-xl px-4 py-3">Risk</th>
+                  </tr>
+                </thead>
+                <tbody id="highRiskTable" class="divide-y divide-border"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section id="prediction" class="page hidden space-y-6">
+          <div class="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <div class="mb-5">
+                <h3 class="text-lg font-black text-slate-950">Yapay Zeka Ürün Risk Tahmini</h3>
+                <p class="mt-1 text-sm text-muted">Bir model seçin, ERP ürün değerlerini girin ve isteği FastAPI'ye gönderin.</p>
+              </div>
+
+              <form id="predictionForm" class="grid gap-4 md:grid-cols-2">
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Ürün Adı</span>
+                  <input id="productName" class="field" value="Defter" required />
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Kategori</span>
+                  <select id="category" class="field"></select>
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Stok Miktarı</span>
+                  <input id="stock_quantity" type="number" min="0" class="field" value="5" required />
+                  <span class="block text-xs leading-5 text-muted">Envanterde mevcut olan ürün adedi.</span>
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Haftalık Satış</span>
+                  <input id="weekly_sales" type="number" min="0" class="field" value="20" required />
+                  <span class="block text-xs leading-5 text-muted">Haftada satılan ürün adedi.</span>
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Tedarikçi Gecikme Günü</span>
+                  <input id="supplier_delay_days" type="number" min="0" class="field" value="7" required />
+                  <span class="block text-xs leading-5 text-muted">Tedarikçi teslimatı için gereken gün sayısı.</span>
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Minimum Stok Seviyesi</span>
+                  <input id="min_stock_level" type="number" min="0" class="field" value="10" required />
+                  <span class="block text-xs leading-5 text-muted">Stokta kalması gereken güvenli minimum miktar.</span>
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Fiyat</span>
+                  <input id="price" type="number" min="0" step="0.01" class="field" value="250" required />
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Son Satıştan Geçen Gün</span>
+                  <input id="last_sale_days" type="number" min="0" class="field" value="1" required />
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Sezonsallık</span>
+                  <select id="seasonality" class="field">
+                    <option value="0">Sezonsal talep yok</option>
+                    <option value="1">Sezonsal talep aktif</option>
+                  </select>
+                </label>
+                <label class="space-y-1.5">
+                  <span class="text-sm font-bold text-slate-700">Tahmin Modeli</span>
+                  <select id="selected_model" class="field">
+                    <option value="best">En İyi Modeli Otomatik Seç</option>
+                    <option value="decision_tree">Decision Tree</option>
+                    <option value="svm">SVM</option>
+                    <option value="random_forest">Random Forest</option>
+                  </select>
+                </label>
+                <div class="md:col-span-2">
+                  <button id="analyzeBtn" type="submit" class="rounded-xl bg-cyan-600 px-5 py-3 text-sm font-black text-white shadow-card transition hover:bg-cyan-700 disabled:cursor-not-allowed disabled:opacity-60">
+                    Riski Analiz Et
+                  </button>
+                </div>
+              </form>
+            </article>
+
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <div class="mb-5 flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-black text-slate-950">Tahmin Sonucu</h3>
+                  <p class="mt-1 text-sm text-muted">Seçilen ML modelinden gelen yanıt.</p>
+                </div>
+                <span id="resultBadge" class="rounded-xl bg-slate-100 px-3 py-2 text-sm font-black text-slate-600">Bekleniyor</span>
+              </div>
+
+              <div id="apiAlert" class="mb-4 hidden rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-semibold text-red-700"></div>
+
+              <div class="space-y-5">
+                <div>
+                  <p class="text-sm font-semibold text-muted">Tahmin Edilen Risk Seviyesi</p>
+                  <p id="riskResult" class="mt-1 text-3xl font-black text-slate-950">Henüz tahmin yok</p>
+                </div>
+                <div class="grid gap-3 sm:grid-cols-3">
+                  <div class="rounded-xl border border-border p-4">
+                    <p class="text-sm font-semibold text-muted">Seçilen Model</p>
+                    <p id="selectedModelResult" class="mt-1 font-black text-slate-950">-</p>
+                  </div>
+                  <div class="rounded-xl border border-border p-4">
+                    <p class="text-sm font-semibold text-muted">Kullanılan Model</p>
+                    <p id="usedModelResult" class="mt-1 font-black text-slate-950">-</p>
+                  </div>
+                  <div class="rounded-xl border border-border p-4">
+                    <p class="text-sm font-semibold text-muted">Ürün</p>
+                    <p id="productResult" class="mt-1 font-black text-slate-950">-</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-sm font-black text-slate-700">Öneri</p>
+                  <p id="recommendationResult" class="mt-2 rounded-xl bg-slate-50 p-4 text-sm leading-6 text-slate-700">Öneri oluşturmak için tahmin çalıştırın.</p>
+                </div>
+                <div>
+                  <p class="text-sm font-black text-slate-700">Olasılıklar</p>
+                  <div id="probabilities" class="mt-3 space-y-3"></div>
+                </div>
+                <div>
+                  <p class="text-sm font-black text-slate-700">Açıklama</p>
+                  <p id="explanationResult" class="mt-2 rounded-xl bg-slate-50 p-4 text-sm leading-6 text-slate-700">Tahminin arkasındaki temel stok sinyallerini görmek için ürün bilgisi gönderin.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="dataset" class="page hidden space-y-6">
+          <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+            <div class="mb-5 flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
+              <div>
+                <h3 class="text-lg font-black text-slate-950">Stok Veri Seti</h3>
+                <p class="mt-1 text-sm text-muted">ERP stok risk veri setinden etkileşimli örnek kayıtlar.</p>
+              </div>
+              <div class="grid gap-3 sm:grid-cols-3 xl:w-[720px]">
+                <input id="searchInput" class="field text-sm" placeholder="Ürün adına göre ara" />
+                <select id="categoryFilter" class="field text-sm"></select>
+                <select id="riskFilter" class="field text-sm">
+                  <option value="">Tüm risk seviyeleri</option>
+                  <option value="Low">Düşük Risk</option>
+                  <option value="Medium">Orta Risk</option>
+                  <option value="High">Yüksek Risk</option>
+                </select>
+              </div>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full min-w-[1120px] text-left text-sm">
+                <thead class="bg-slate-50 text-xs uppercase tracking-wide text-muted">
+                  <tr>
+                    <th class="rounded-l-xl px-4 py-3">ID</th>
+                    <th class="px-4 py-3">Ürün</th>
+                    <th class="px-4 py-3">Kategori</th>
+                    <th class="px-4 py-3">Stok Miktarı</th>
+                    <th class="px-4 py-3">Haftalık Satış</th>
+                    <th class="px-4 py-3">Tedarikçi Gecikme Günü</th>
+                    <th class="px-4 py-3">Minimum Stok Seviyesi</th>
+                    <th class="px-4 py-3">Durum</th>
+                    <th class="rounded-r-xl px-4 py-3">Risk</th>
+                  </tr>
+                </thead>
+                <tbody id="datasetTable" class="divide-y divide-border"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section id="comparison" class="page hidden space-y-6">
+          <div class="grid gap-6 xl:grid-cols-[1fr_360px]">
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <h3 class="mb-4 text-lg font-black text-slate-950">Model Metrikleri</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full min-w-[720px] text-left text-sm">
+                  <thead class="bg-slate-50 text-xs uppercase tracking-wide text-muted">
+                    <tr>
+                      <th class="rounded-l-xl px-4 py-3">Model</th>
+                      <th class="px-4 py-3">Doğruluk</th>
+                      <th class="px-4 py-3">Kesinlik</th>
+                      <th class="px-4 py-3">Duyarlılık</th>
+                      <th class="px-4 py-3">F1 Skoru</th>
+                      <th class="rounded-r-xl px-4 py-3">Rol</th>
+                    </tr>
+                  </thead>
+                  <tbody id="metricsTable" class="divide-y divide-border"></tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <p class="text-sm font-bold uppercase tracking-wide text-purple-700">En İyi Model</p>
+              <h3 class="mt-2 text-4xl font-black text-slate-950">Decision Tree</h3>
+              <p class="mt-3 text-sm leading-6 text-muted">MATLAB test sonuçlarında en yüksek doğruluğa ulaştığı için Decision Tree en iyi model olarak gösterilmiştir.</p>
+              <div class="mt-5 rounded-xl bg-emerald-50 p-4">
+                <p class="text-sm font-semibold text-emerald-700">En İyi Doğruluk</p>
+                <p class="mt-1 text-3xl font-black text-emerald-900">98.3%</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="grid gap-6 xl:grid-cols-2">
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <h3 class="mb-4 font-black text-slate-950">Doğruluk Karşılaştırması</h3>
+              <div class="chart-fade h-80"><canvas id="comparisonAccuracyChart"></canvas></div>
+            </article>
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <h3 class="mb-4 font-black text-slate-950">Kesinlik, Duyarlılık ve F1</h3>
+              <div class="chart-fade h-80"><canvas id="metricsChart"></canvas></div>
+            </article>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-3">
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <h3 class="font-black text-slate-950">Decision Tree Karışıklık Matrisi</h3>
+              <img class="mt-4 aspect-square w-full rounded-xl border border-border object-contain p-2" src="../model/matlab_results/confusion_matrix_decision_tree.png" alt="Decision Tree karışıklık matrisi" />
+            </article>
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <h3 class="font-black text-slate-950">SVM Karışıklık Matrisi</h3>
+              <img class="mt-4 aspect-square w-full rounded-xl border border-border object-contain p-2" src="../model/matlab_results/confusion_matrix_svm.png" alt="SVM karışıklık matrisi" />
+            </article>
+            <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+              <h3 class="font-black text-slate-950">Random Forest Karışıklık Matrisi</h3>
+              <img class="mt-4 aspect-square w-full rounded-xl border border-border object-contain p-2" src="../model/matlab_results/confusion_matrix_random_forest.png" alt="Random Forest karışıklık matrisi" />
+            </article>
+          </div>
+        </section>
+
+        <section id="pipeline" class="page hidden space-y-6">
+          <article class="rounded-2xl border border-border bg-white p-6 shadow-card">
+            <h3 class="text-xl font-black text-slate-950">Makine Öğrenmesi Süreci</h3>
+            <p class="mt-2 max-w-3xl text-sm leading-6 text-muted">Bu görsel iş akışı, projenin ham ERP stok kayıtlarından FastAPI destekli panel tahminine nasıl geçtiğini açıklar.</p>
+          </article>
+          <div id="pipelineGrid" class="grid gap-4 md:grid-cols-2 xl:grid-cols-3"></div>
+        </section>
+
+        <section id="about" class="page hidden space-y-6">
+          <article class="rounded-2xl border border-border bg-white p-6 shadow-card">
+            <h3 class="text-2xl font-black text-slate-950">ERP Stok Risk Yapay Zeka Paneli Hakkında</h3>
+            <p class="mt-4 max-w-4xl leading-7 text-slate-600">ERP sistemleri önemli stok verilerini saklar, ancak yöneticilerin hangi ürünlerin stok sorununa yol açabileceğine karar verirken desteğe ihtiyacı vardır. Bu panel, ürünleri Düşük, Orta veya Yüksek risk olarak sınıflandırmak için makine öğrenmesi kullanır; böylece stok kararları daha erken alınabilir ve net şekilde açıklanabilir.</p>
+          </article>
+
+          <div class="grid gap-6 lg:grid-cols-2">
+            <article class="rounded-2xl border border-border bg-white p-6 shadow-card">
+              <h4 class="font-black text-slate-950">Bu Tahmin Neden Yararlı?</h4>
+              <p class="mt-3 leading-7 text-slate-600">Stok risk tahmini, ürün erişilemez hale gelmeden önce ERP yöneticisinin düşük stok, hızlı satış, tedarikçi gecikmesi ve sezonsal talebi fark etmesine yardımcı olur. Sonuç, yeniden sipariş planlamasını ve stok takibini destekler.</p>
+            </article>
+            <article class="rounded-2xl border border-border bg-white p-6 shadow-card">
+              <h4 class="font-black text-slate-950">Algoritmaları Neden Karşılaştırıyoruz?</h4>
+              <p class="mt-3 leading-7 text-slate-600">Decision Tree, Random Forest ve SVM stok riskini farklı karar sınırlarıyla sınıflandırır. Bu modelleri karşılaştırmak, veri seti için hangi yöntemin daha başarılı olduğunu gösterir ve raporda model seçimini açıklamayı kolaylaştırır.</p>
+            </article>
+            <article class="rounded-2xl border border-border bg-white p-6 shadow-card">
+              <h4 class="font-black text-slate-950">MATLAB + Python Gereksinimi</h4>
+              <p class="mt-3 leading-7 text-slate-600">Proje analiz, görselleştirme veya matris tabanlı deneyler için MATLAB kullanabilir. Python ise ön işleme, model eğitimi, model dışa aktarma ve FastAPI sunumunu yönetir.</p>
+            </article>
+            <article class="rounded-2xl border border-border bg-white p-6 shadow-card">
+              <h4 class="font-black text-slate-950">Frontend Rolü</h4>
+              <p class="mt-3 leading-7 text-slate-600">Bu HTML panel, Python/FastAPI bölümü için yönetici arayüzüdür. ERP özellik değerlerini backend'e gönderir ve tahmin edilen risk seviyesini profesyonel, rapora hazır bir düzende sunar.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <style>
+    .field {
+      width: 100%;
+      border-radius: 0.75rem;
+      border: 1px solid #e2e8f0;
+      background: #fff;
+      padding: 0.625rem 0.75rem;
+      color: #0f172a;
+      outline: none;
+    }
+
+    .field:focus {
+      border-color: #0891b2;
+      box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.12);
+    }
+
+    .chart-fade {
+      animation: chartFade 420ms ease-out both;
+    }
+
+    @keyframes chartFade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <script>
+    const API_BASE_URL = "http://127.0.0.1:8000";
+
+    const modelMetrics = [
+      { key: "decision_tree", model: "Decision Tree", accuracy: 0.9833, precision: 0.9841, recall: 0.9833, f1: 0.9833 },
+      { key: "random_forest", model: "Random Forest", accuracy: 0.9833, precision: 0.9841, recall: 0.9833, f1: 0.9833 },
+      { key: "svm", model: "SVM", accuracy: 0.9667, precision: 0.9667, recall: 0.9667, f1: 0.9667 }
+    ];
+
+    const inventoryData = [
+      { id: "1", name: "Defter", category: "Bilgisayar Aksesuarları", stock_quantity: 3, weekly_sales: 17, supplier_delay_days: 4, min_stock_level: 12, price: 611, last_sale_days: 47, seasonality: 0, risk_level: "High" },
+      { id: "2", name: "Kalem Paketi", category: "Depolama Cihazları", stock_quantity: 114, weekly_sales: 34, supplier_delay_days: 2, min_stock_level: 23, price: 1768, last_sale_days: 2, seasonality: 0, risk_level: "Low" },
+      { id: "3", name: "USB Bellek", category: "Ofis Malzemeleri", stock_quantity: 29, weekly_sales: 32, supplier_delay_days: 10, min_stock_level: 5, price: 2338, last_sale_days: 12, seasonality: 1, risk_level: "High" },
+      { id: "4", name: "Switch", category: "Yazıcı Malzemeleri", stock_quantity: 75, weekly_sales: 17, supplier_delay_days: 13, min_stock_level: 5, price: 693, last_sale_days: 44, seasonality: 1, risk_level: "Medium" },
+      { id: "5", name: "HDD", category: "Elektronik", stock_quantity: 19, weekly_sales: 13, supplier_delay_days: 13, min_stock_level: 15, price: 458, last_sale_days: 5, seasonality: 1, risk_level: "High" },
+      { id: "6", name: "Laptop Şarj Cihazı", category: "Elektronik", stock_quantity: 108, weekly_sales: 22, supplier_delay_days: 10, min_stock_level: 13, price: 217, last_sale_days: 46, seasonality: 1, risk_level: "Medium" },
+      { id: "7", name: "Mürekkep Kartuşu", category: "Bilgisayar Aksesuarları", stock_quantity: 118, weekly_sales: 24, supplier_delay_days: 2, min_stock_level: 22, price: 1240, last_sale_days: 53, seasonality: 0, risk_level: "Medium" },
+      { id: "8", name: "Toner", category: "Ofis Malzemeleri", stock_quantity: 90, weekly_sales: 4, supplier_delay_days: 1, min_stock_level: 26, price: 973, last_sale_days: 49, seasonality: 0, risk_level: "Medium" },
+      { id: "9", name: "USB Bellek", category: "Mobil Aksesuarlar", stock_quantity: 29, weekly_sales: 6, supplier_delay_days: 7, min_stock_level: 13, price: 1897, last_sale_days: 40, seasonality: 0, risk_level: "Medium" },
+      { id: "10", name: "Yazıcı Kablosu", category: "Elektronik", stock_quantity: 45, weekly_sales: 13, supplier_delay_days: 11, min_stock_level: 13, price: 332, last_sale_days: 38, seasonality: 0, risk_level: "Medium" },
+      { id: "11", name: "Mürekkep Kartuşu", category: "Depolama Cihazları", stock_quantity: 31, weekly_sales: 10, supplier_delay_days: 8, min_stock_level: 17, price: 1145, last_sale_days: 59, seasonality: 0, risk_level: "Medium" },
+      { id: "12", name: "Kalem Paketi", category: "Elektronik", stock_quantity: 107, weekly_sales: 3, supplier_delay_days: 4, min_stock_level: 6, price: 1332, last_sale_days: 25, seasonality: 0, risk_level: "Low" }
+    ];
+
+    const pipelineSteps = [
+      ["Veri Seti Toplama", "Stok, satış, tedarikçi gecikmesi, fiyat, sezonsallık ve risk seviyesi içeren ERP ürün kayıtları yüklenir."],
+      ["Veri Ön İşleme", "Veri seti temizlenir, veri tipleri kontrol edilir ve alanlar makine öğrenmesi için hazırlanır."],
+      ["Özellik Mühendisliği", "daily_sales, stock_coverage_days, reorder_gap ve sales_speed_category özellikleri oluşturulur."],
+      ["Eğitim/Test Ayrımı", "İşlenmiş veri eğitim ve test gruplarına ayrılır."],
+      ["Model Eğitimi", "Decision Tree, Random Forest ve SVM aynı özellik setiyle eğitilir."],
+      ["Model Değerlendirme", "Doğruluk, kesinlik, duyarlılık, F1 skoru ve karışıklık matrisleri karşılaştırılır."],
+      ["En İyi Model Seçimi", "En yüksek doğruluğa sahip olduğu için Decision Tree seçilir: %98.3."],
+      ["FastAPI Yayını", "Kaydedilen model dosyaları Python içinde yüklenir ve POST /predict endpoint'i sunulur."],
+      ["Panel Tahmini", "Yönetici girdileri bu panelden FastAPI'ye gönderilir ve tahmin sonucu gösterilir."]
+    ];
+
+    const riskColors = { Low: "#16a34a", Medium: "#f59e0b", High: "#dc2626" };
+    const riskBadgeClasses = {
+      Low: "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200",
+      Medium: "bg-amber-50 text-amber-700 ring-1 ring-amber-200",
+      High: "bg-red-50 text-red-700 ring-1 ring-red-200"
+    };
+    const modelBadgeClasses = {
+      "Decision Tree": "bg-blue-50 text-blue-700 ring-1 ring-blue-200",
+      SVM: "bg-purple-50 text-purple-700 ring-1 ring-purple-200",
+      "Random Forest": "bg-cyan-50 text-cyan-700 ring-1 ring-cyan-200",
+      Best: "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"
+    };
+    const modelLabels = {
+      best: "En İyi Modeli Otomatik Seç",
+      decision_tree: "Decision Tree",
+      svm: "SVM",
+      random_forest: "Random Forest"
+    };
+    const charts = {};
+    const chartConfigs = {};
+
+    function formatPercent(value) {
+      return `${(value * 100).toFixed(1)}%`;
+    }
+
+    function countBy(items, key) {
+      return items.reduce((acc, item) => {
+        acc[item[key]] = (acc[item[key]] || 0) + 1;
+        return acc;
+      }, {});
+    }
+
+    function getBestModel() {
+      return modelMetrics.reduce((best, item) => item.accuracy > best.accuracy ? item : best, modelMetrics[0]);
+    }
+
+    function getCategories() {
+      return [...new Set(inventoryData.map(item => item.category))].sort();
+    }
+
+    function riskBadge(level) {
+      const labels = { Low: "Düşük", Medium: "Orta", High: "Yüksek", Unknown: "Bilinmiyor" };
+      return `<span class="inline-flex rounded-full px-2.5 py-1 text-xs font-black ${riskBadgeClasses[level] || "bg-slate-100 text-slate-700"}">${labels[level] || level}</span>`;
+    }
+
+    function modelBadge(name) {
+      const key = name.includes("Best") ? "Best" : name;
+      const label = key === "Best" ? "En İyi" : name;
+      return `<span class="inline-flex rounded-full px-2.5 py-1 text-xs font-black ${modelBadgeClasses[key] || "bg-slate-100 text-slate-700"}">${label}</span>`;
+    }
+
+    function translateRisk(level) {
+      return { Low: "Düşük", Medium: "Orta", High: "Yüksek", Unknown: "Bilinmeyen" }[level] || level;
+    }
+
+    function translateRecommendation(text) {
+      const recommendations = {
+        "This product should be reordered immediately.": "Bu ürün için hemen yeniden sipariş verilmelidir.",
+        "This product needs monitoring.": "Bu ürün takip edilmelidir.",
+        "Stock level is currently safe.": "Stok seviyesi şu anda güvenlidir.",
+        "No recommendation returned by the API.": "API tarafından öneri döndürülmedi."
+      };
+      return recommendations[text] || text;
+    }
+
+    function translateExplanation(text) {
+      if (!text) return "";
+      const riskMatch = text.match(/predicted risk is (High|Medium|Low)/);
+      const risk = riskMatch ? translateRisk(riskMatch[1]) : "Bilinmeyen";
+      const signals = [];
+      if (text.includes("low stock")) signals.push("düşük stok");
+      if (text.includes("high weekly sales")) signals.push("yüksek haftalık satış");
+      if (text.includes("medium weekly sales")) signals.push("orta düzey haftalık satış");
+      if (text.includes("long supplier delay")) signals.push("uzun tedarikçi gecikmesi");
+      if (text.includes("low stock coverage")) signals.push("düşük stok karşılama süresi");
+      if (text.includes("seasonal demand")) signals.push("sezonsal talep");
+      if (text.includes("balanced stock and sales signals")) signals.push("dengeli stok ve satış sinyalleri");
+
+      const reason = signals.length ? signals.join(", ") : "mevcut stok sinyalleri";
+      return `Üründe ${reason} olduğu için tahmin edilen risk ${risk}.`;
+    }
+
+    function stockStatus(item) {
+      if (item.stock_quantity < item.min_stock_level) return `<span class="font-bold text-red-600">Minimumun altında</span>`;
+      if (item.stock_quantity < item.min_stock_level * 1.5) return `<span class="font-bold text-amber-600">Takip edilmeli</span>`;
+      return `<span class="font-bold text-emerald-600">Sağlıklı</span>`;
+    }
+
+    function setPage(pageId) {
+      document.querySelectorAll(".page").forEach(page => page.classList.toggle("hidden", page.id !== pageId));
+      document.querySelectorAll(".nav-link").forEach(link => {
+        const active = link.dataset.page === pageId;
+        link.classList.toggle("bg-cyan-600", active);
+        link.classList.toggle("text-white", active);
+      });
+      const activeLink = document.querySelector(`[data-page="${pageId}"]`);
+      document.getElementById("pageTitle").textContent = activeLink ? activeLink.textContent : "Genel Bakış";
+      closeSidebar();
+      setTimeout(() => {
+        Object.values(charts).forEach(chart => chart.resize());
+        revealPageCharts(pageId);
+      }, 80);
+    }
+
+    function openSidebar() {
+      document.getElementById("sidebar").classList.remove("-translate-x-full");
+      document.getElementById("overlay").classList.remove("hidden");
+    }
+
+    function closeSidebar() {
+      document.getElementById("sidebar").classList.add("-translate-x-full");
+      document.getElementById("overlay").classList.add("hidden");
+    }
+
+    function renderKpis() {
+      const counts = countBy(inventoryData, "risk_level");
+      const best = getBestModel();
+      const kpis = [
+        ["Toplam Ürün", inventoryData.length, "bg-slate-100 text-slate-700"],
+        ["Düşük Risk", counts.Low || 0, "bg-emerald-50 text-emerald-700"],
+        ["Orta Risk", counts.Medium || 0, "bg-amber-50 text-amber-700"],
+        ["Yüksek Risk", counts.High || 0, "bg-red-50 text-red-700"],
+        ["En İyi Model", best.model, "bg-purple-50 text-purple-700"],
+        ["En İyi Doğruluk", formatPercent(best.accuracy), "bg-cyan-50 text-cyan-700"],
+        ["API Durumu", document.getElementById("apiStatus").textContent.replace("API: ", ""), "bg-slate-100 text-slate-700"]
+      ];
+
+      document.getElementById("kpiCards").innerHTML = kpis.map(([label, value, color]) => `
+        <article class="rounded-2xl border border-border bg-white p-4 shadow-card">
+          <div class="mb-3 inline-flex rounded-xl px-2.5 py-1 text-xs font-black ${color}">${label}</div>
+          <p class="text-2xl font-black text-slate-950">${value}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderHighRiskTable() {
+      document.getElementById("highRiskTable").innerHTML = inventoryData
+        .filter(item => item.risk_level === "High")
+        .map(item => `
+          <tr class="hover:bg-slate-50">
+            <td class="px-4 py-3 font-bold">${item.name}</td>
+            <td class="px-4 py-3">${item.category}</td>
+            <td class="px-4 py-3">${item.stock_quantity}</td>
+            <td class="px-4 py-3">${item.weekly_sales}</td>
+            <td class="px-4 py-3">${item.supplier_delay_days} gün</td>
+            <td class="px-4 py-3">${riskBadge(item.risk_level)}</td>
+          </tr>
+        `).join("");
+    }
+
+    function renderDatasetTable() {
+      const search = document.getElementById("searchInput").value.toLowerCase();
+      const category = document.getElementById("categoryFilter").value;
+      const risk = document.getElementById("riskFilter").value;
+      const rows = inventoryData.filter(item => {
+        return item.name.toLowerCase().includes(search)
+          && (!category || item.category === category)
+          && (!risk || item.risk_level === risk);
+      });
+
+      document.getElementById("datasetTable").innerHTML = rows.map(item => `
+        <tr class="hover:bg-slate-50">
+          <td class="px-4 py-3 font-bold">${item.id}</td>
+          <td class="px-4 py-3">${item.name}</td>
+          <td class="px-4 py-3">${item.category}</td>
+          <td class="px-4 py-3">${item.stock_quantity}</td>
+          <td class="px-4 py-3">${item.weekly_sales}</td>
+          <td class="px-4 py-3">${item.supplier_delay_days}</td>
+          <td class="px-4 py-3">${item.min_stock_level}</td>
+          <td class="px-4 py-3">${stockStatus(item)}</td>
+          <td class="px-4 py-3">${riskBadge(item.risk_level)}</td>
+        </tr>
+      `).join("");
+    }
+
+    function renderMetricsTable() {
+      const best = getBestModel();
+      document.getElementById("metricsTable").innerHTML = modelMetrics.map(item => `
+        <tr class="hover:bg-slate-50">
+          <td class="px-4 py-3">${modelBadge(item.model)}</td>
+          <td class="px-4 py-3">${formatPercent(item.accuracy)}</td>
+          <td class="px-4 py-3">${formatPercent(item.precision)}</td>
+          <td class="px-4 py-3">${formatPercent(item.recall)}</td>
+          <td class="px-4 py-3">${formatPercent(item.f1)}</td>
+          <td class="px-4 py-3">${item.model === best.model ? "Seçilen en iyi model" : "Karşılaştırma modeli"}</td>
+        </tr>
+      `).join("");
+    }
+
+    function createChart(id, config) {
+      if (charts[id]) charts[id].destroy();
+      chartConfigs[id] = config;
+      const targetData = config.data.datasets.map(dataset => [...dataset.data]);
+
+      charts[id] = new Chart(document.getElementById(id), {
+        ...config,
+        data: {
+          ...config.data,
+          datasets: config.data.datasets.map(dataset => ({
+            ...dataset,
+            data: dataset.data.map(() => 0)
+          }))
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          animation: {
+            duration: 850,
+            easing: "easeOutCubic"
+          },
+          plugins: { legend: { labels: { boxWidth: 12 } } },
+          scales: config.type === "doughnut" ? {} : {
+            x: { grid: { color: "#eef2f7" } },
+            y: { grid: { color: "#eef2f7" }, beginAtZero: true, max: 100 }
+          },
+          ...config.options
+        }
+      });
+
+      charts[id].targetData = targetData;
+      revealChart(id);
+    }
+
+    function revealChart(id) {
+      const chart = charts[id];
+      if (!chart || !chart.targetData) return;
+
+      requestAnimationFrame(() => {
+        chart.data.datasets.forEach((dataset, index) => {
+          dataset.data = [...chart.targetData[index]];
+        });
+        chart.update();
+      });
+    }
+
+    function resetChartToZero(id) {
+      const chart = charts[id];
+      if (!chart || !chart.targetData) return;
+
+      chart.data.datasets.forEach(dataset => {
+        dataset.data = dataset.data.map(() => 0);
+      });
+      chart.update("none");
+      revealChart(id);
+    }
+
+    function revealPageCharts(pageId) {
+      const pageCharts = {
+        overview: ["riskChart", "accuracyChart"],
+        // Model Comparison page charts: Accuracy Comparison and Precision/Recall/F1.
+        comparison: ["comparisonAccuracyChart", "metricsChart"]
+      };
+
+      (pageCharts[pageId] || []).forEach(id => {
+        if (chartConfigs[id]) {
+          createChart(id, chartConfigs[id]);
+        } else {
+          resetChartToZero(id);
+        }
+      });
+    }
+
+    function renderCharts() {
+      const riskLabels = ["Low", "Medium", "High"];
+      const riskDisplayLabels = ["Düşük", "Orta", "Yüksek"];
+      const riskCounts = countBy(inventoryData, "risk_level");
+      const modelNames = modelMetrics.map(item => item.model);
+      const modelColors = ["#2563eb", "#7c3aed", "#0891b2"];
+
+      createChart("riskChart", {
+        type: "doughnut",
+        data: {
+          labels: riskDisplayLabels,
+          datasets: [{
+            data: riskLabels.map(label => riskCounts[label] || 0),
+            backgroundColor: riskLabels.map(label => riskColors[label]),
+            borderWidth: 0
+          }]
+        }
+      });
+
+      const accuracyChart = {
+        type: "bar",
+        data: {
+          labels: modelNames,
+          datasets: [{
+            label: "Doğruluk %",
+            data: modelMetrics.map(item => item.accuracy * 100),
+            backgroundColor: modelColors,
+            borderRadius: 8
+          }]
+        }
+      };
+      createChart("accuracyChart", accuracyChart);
+      createChart("comparisonAccuracyChart", accuracyChart);
+
+      createChart("metricsChart", {
+        type: "bar",
+        data: {
+          labels: modelNames,
+          datasets: [
+            { label: "Kesinlik", data: modelMetrics.map(item => item.precision * 100), backgroundColor: "#0ea5e9", borderRadius: 8 },
+            { label: "Duyarlılık", data: modelMetrics.map(item => item.recall * 100), backgroundColor: "#8b5cf6", borderRadius: 8 },
+            { label: "F1 Skoru", data: modelMetrics.map(item => item.f1 * 100), backgroundColor: "#14b8a6", borderRadius: 8 }
+          ]
+        }
+      });
+    }
+
+    function renderPipeline() {
+      document.getElementById("pipelineGrid").innerHTML = pipelineSteps.map(([title, text], index) => `
+        <article class="rounded-2xl border border-border bg-white p-5 shadow-card">
+          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-50 text-sm font-black text-cyan-700">${index + 1}</div>
+          <h4 class="font-black text-slate-950">${title}</h4>
+          <p class="mt-2 text-sm leading-6 text-muted">${text}</p>
+        </article>
+      `).join("");
+    }
+
+    function fillSelects() {
+      const options = getCategories().map(category => `<option value="${category}">${category}</option>`).join("");
+      document.getElementById("category").innerHTML = options;
+      document.getElementById("categoryFilter").innerHTML = `<option value="">Tüm kategoriler</option>${options}`;
+    }
+
+    function getEngineeredFeatures(payload) {
+      const dailySales = Math.max(payload.weekly_sales / 7, 0.1);
+      return {
+        dailySales,
+        stockCoverageDays: payload.stock_quantity / dailySales,
+        reorderGap: payload.stock_quantity - payload.min_stock_level,
+        salesSpeed: payload.weekly_sales <= 5 ? "Düşük" : payload.weekly_sales <= 15 ? "Orta" : "Yüksek"
+      };
+    }
+
+    function renderExplanation(payload, riskLevel, usedModel) {
+      const features = getEngineeredFeatures(payload);
+      const reasons = [
+        `${usedModel} ${translateRisk(riskLevel)} stok riski tahmin etti.`,
+        payload.stock_quantity < payload.min_stock_level
+          ? `Stok minimum seviyenin altında (${payload.stock_quantity} < ${payload.min_stock_level}).`
+          : `Stok minimum seviyenin üzerinde (${payload.stock_quantity} >= ${payload.min_stock_level}).`,
+        `Tahmini stok karşılama süresi ${features.stockCoverageDays.toFixed(1)} gündür.`,
+        `Yeniden sipariş farkı ${features.reorderGap}.`,
+        `Satış hızı kategorisi ${features.salesSpeed}.`
+      ];
+
+      if (payload.supplier_delay_days >= 7) reasons.push(`Tedarikçi gecikmesi yüksektir: ${payload.supplier_delay_days} gün.`);
+      if (payload.seasonality === 1) reasons.push("Sezonsal talep aktiftir.");
+
+      document.getElementById("explanationResult").textContent = reasons.join(" ");
+    }
+
+    function renderProbabilities(probabilities) {
+      const container = document.getElementById("probabilities");
+      if (!probabilities) {
+        container.innerHTML = `<p class="rounded-xl bg-slate-50 p-3 text-sm text-muted">Bu model tarafından olasılık değeri döndürülmedi.</p>`;
+        return;
+      }
+
+      container.innerHTML = Object.entries(probabilities).map(([level, value]) => {
+        const percent = Math.round(value * 100);
+        return `
+          <div>
+            <div class="mb-1 flex justify-between text-xs font-black text-slate-600">
+              <span>${translateRisk(level)}</span>
+              <span>${percent}%</span>
+            </div>
+            <div class="h-2.5 overflow-hidden rounded-full bg-slate-100">
+              <div class="h-2.5 rounded-full" style="width:${percent}%; background:${riskColors[level] || "#64748b"}"></div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function setApiStatus(status, detail = "") {
+      const element = document.getElementById("apiStatus");
+      const classes = {
+        checking: "rounded-xl bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700",
+        online: "rounded-xl bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-700",
+        offline: "rounded-xl bg-red-50 px-3 py-2 text-sm font-semibold text-red-700"
+      };
+      element.className = classes[status] || classes.checking;
+      element.textContent = detail || { checking: "API: Kontrol ediliyor", online: "API: Bağlandı", offline: "API: Çevrimdışı" }[status];
+      renderKpis();
+    }
+
+    async function checkApiHealth() {
+      setApiStatus("checking");
+      try {
+        const response = await fetch(`${API_BASE_URL}/`);
+        if (!response.ok) throw new Error("API health check failed");
+        setApiStatus("online", "API: Bağlandı");
+      } catch (error) {
+        setApiStatus("offline", "API: Çevrimdışı");
+      }
+    }
+
+    function getNumericInputValue(id) {
+      const element = document.getElementById(id);
+      const value = Number(element.value);
+
+      if (!Number.isFinite(value)) {
+        throw new Error(`Geçersiz değer: ${id}`);
+      }
+
+      return value;
+    }
+
+    function validatePredictionResponse(result) {
+      if (!result || typeof result !== "object") {
+        throw new Error("Backend geçersiz bir yanıt döndürdü.");
+      }
+
+      if (typeof result.risk_level !== "string" || !result.risk_level.trim()) {
+        throw new Error("Backend yanıtında risk_level eksik.");
+      }
+
+      if (typeof result.recommendation !== "string" || !result.recommendation.trim()) {
+        throw new Error("Backend yanıtında recommendation eksik.");
+      }
+
+      if (typeof result.used_model !== "string" || !result.used_model.trim()) {
+        throw new Error("Backend yanıtında used_model eksik.");
+      }
+    }
+
+    async function analyzeRisk(event) {
+      event.preventDefault();
+      const button = document.getElementById("analyzeBtn");
+      const alertBox = document.getElementById("apiAlert");
+      button.disabled = true;
+      button.textContent = "Analiz ediliyor...";
+      alertBox.classList.add("hidden");
+      setApiStatus("checking", "API: Gönderiliyor");
+
+      try {
+        const payload = {
+          stock_quantity: getNumericInputValue("stock_quantity"),
+          weekly_sales: getNumericInputValue("weekly_sales"),
+          supplier_delay_days: getNumericInputValue("supplier_delay_days"),
+          price: getNumericInputValue("price"),
+          last_sale_days: getNumericInputValue("last_sale_days"),
+          seasonality: getNumericInputValue("seasonality")
+        };
+
+        const response = await fetch(`${API_BASE_URL}/predict`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        }).catch(() => {
+          throw new Error("FastAPI backend ile bağlantı kurulamadı.");
+        });
+
+        let result;
+        try {
+          result = await response.json();
+        } catch (error) {
+          throw new Error("Backend JSON formatında yanıt döndürmedi.");
+        }
+
+        if (!response.ok) {
+          throw new Error(result?.detail || "Tahmin isteği backend tarafından reddedildi.");
+        }
+
+        validatePredictionResponse(result);
+
+        const riskLevel = result.risk_level.trim();
+        const usedModel = result.used_model.trim();
+        const recommendation = result.recommendation.trim();
+
+        document.getElementById("riskResult").textContent = `${translateRisk(riskLevel)} Risk`;
+        document.getElementById("selectedModelResult").innerHTML = modelBadge("Best");
+        document.getElementById("usedModelResult").textContent = usedModel;
+        document.getElementById("productResult").textContent = document.getElementById("productName").value;
+        document.getElementById("recommendationResult").textContent = translateRecommendation(recommendation);
+        renderProbabilities(null);
+        renderExplanation({
+          ...payload,
+          min_stock_level: getNumericInputValue("min_stock_level")
+        }, riskLevel, usedModel);
+
+        const badge = document.getElementById("resultBadge");
+        badge.className = `rounded-xl px-3 py-2 text-sm font-black ${riskBadgeClasses[riskLevel] || "bg-slate-100 text-slate-700"}`;
+        badge.textContent = `${translateRisk(riskLevel)} Risk`;
+        setApiStatus("online", "API: Bağlandı");
+      } catch (error) {
+        alertBox.textContent = error.message || "FastAPI backend ile bağlantı kurulamadı.";
+        alertBox.classList.remove("hidden");
+        setApiStatus("offline", "API: Çevrimdışı");
+      } finally {
+        button.disabled = false;
+        button.textContent = "Riski Analiz Et";
+      }
+    }
+
+    function init() {
+      fillSelects();
+      renderKpis();
+      renderHighRiskTable();
+      renderDatasetTable();
+      renderMetricsTable();
+      renderCharts();
+      renderPipeline();
+      renderProbabilities(null);
+      setPage("overview");
+      checkApiHealth();
+
+      document.querySelectorAll(".nav-link").forEach(link => link.addEventListener("click", () => setPage(link.dataset.page)));
+      document.getElementById("menuBtn").addEventListener("click", openSidebar);
+      document.getElementById("overlay").addEventListener("click", closeSidebar);
+      document.getElementById("predictionForm").addEventListener("submit", analyzeRisk);
+      ["searchInput", "categoryFilter", "riskFilter"].forEach(id => document.getElementById(id).addEventListener("input", renderDatasetTable));
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
+</body>
+</html>

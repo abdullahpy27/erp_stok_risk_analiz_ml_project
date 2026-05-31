@@ -1,0 +1,3001 @@
+product_id,product_name,category,stock_quantity,weekly_sales,supplier_delay_days,min_stock_level,price,last_sale_days,seasonality,risk_level
+1,Pen Pack,Office Supplies,58,35,8,54,245,6,0,Medium
+2,HDD,Printer Supplies,30,33,7,23,576,6,0,Medium
+3,Mouse,Computer Accessories,16,16,7,12,1624,7,1,Medium
+4,Laptop Charger,Printer Supplies,489,0,1,73,2119,6,0,Low
+5,Toner,Printer Supplies,0,59,13,20,588,2,1,High
+6,Router,Computer Accessories,78,38,5,76,2500,9,0,Medium
+7,Mouse,Mobile Accessories,82,35,6,68,2363,12,0,Medium
+8,Barcode Scanner,Printer Supplies,7,42,15,33,91,1,1,High
+9,Barcode Scanner,Storage Devices,290,2,2,40,1841,10,1,Low
+10,Toner,Storage Devices,10,48,10,44,1268,8,0,High
+11,Monitor Stand,Electronics,31,58,12,73,1077,4,0,High
+12,Ink Cartridge,Printer Supplies,208,2,1,47,1579,21,0,Low
+13,Laptop Charger,Office Supplies,113,4,1,10,426,16,1,Low
+14,Keyboard,Computer Accessories,45,5,5,55,318,106,1,Medium
+15,Mouse,Office Supplies,13,58,12,55,308,1,1,High
+16,Safety Gloves,Storage Devices,565,4,2,69,786,8,0,Low
+17,Keyboard,Mobile Accessories,9,4,2,16,2163,93,0,Medium
+18,USB Flash,Electronics,253,4,1,27,1118,24,0,Low
+19,Toner,Printer Supplies,4,58,13,44,1133,3,1,High
+20,Keyboard,Safety,4,46,15,10,1621,3,0,High
+21,Toner,Office Supplies,433,1,1,49,1393,7,1,Low
+22,Printer Cable,Safety,745,1,4,66,118,3,0,Low
+23,HDD,Office Supplies,344,3,1,43,232,15,0,Low
+24,Ink Cartridge,Printer Supplies,9,17,12,30,433,5,1,High
+25,Mouse,Mobile Accessories,76,35,6,61,2350,9,0,Medium
+26,Barcode Scanner,Safety,7,38,15,66,880,6,0,High
+27,Ink Cartridge,Office Supplies,1,55,10,57,1267,6,1,High
+28,Barcode Scanner,Safety,11,19,5,11,1682,23,1,Medium
+29,HDD,Computer Accessories,291,7,1,35,385,15,1,Low
+30,Keyboard,Safety,9,4,5,10,674,88,1,Medium
+31,Router,Mobile Accessories,11,20,7,10,1137,8,0,Medium
+32,HDD,Printer Supplies,76,38,8,55,1997,0,0,Medium
+33,Safety Gloves,Safety,149,2,3,17,734,4,0,Low
+34,HDD,Mobile Accessories,0,46,13,30,1265,4,1,High
+35,Keyboard,Office Supplies,468,0,2,39,2500,3,0,Low
+36,Barcode Scanner,Safety,273,0,3,45,1357,30,0,Low
+37,Ink Cartridge,Printer Supplies,12,37,11,32,1199,12,1,High
+38,Pen Pack,Storage Devices,380,4,1,48,239,9,0,Low
+39,Printer Cable,Electronics,347,1,1,34,236,32,1,Low
+40,Keyboard,Safety,33,38,6,30,1495,9,0,Medium
+41,Keyboard,Office Supplies,389,1,2,44,2438,3,0,Low
+42,USB Flash,Mobile Accessories,513,1,1,48,1258,18,0,Low
+43,HDD,Mobile Accessories,280,3,2,61,454,23,0,Low
+44,Barcode Scanner,Computer Accessories,549,1,1,59,870,28,0,Low
+45,Printer Cable,Safety,50,38,5,35,720,6,1,Medium
+46,Pen Pack,Printer Supplies,22,4,5,34,2343,69,0,Medium
+47,HDD,Safety,1,65,11,13,1644,0,1,High
+48,Safety Gloves,Computer Accessories,500,5,3,47,1449,18,0,Low
+49,Safety Gloves,Printer Supplies,10,32,15,54,541,8,0,High
+50,Safety Gloves,Mobile Accessories,27,9,5,25,750,13,1,Medium
+51,USB Flash,Storage Devices,29,4,2,56,1026,73,0,Medium
+52,Safety Gloves,Computer Accessories,21,40,11,66,1946,0,0,High
+53,Printer Cable,Safety,685,1,1,66,166,0,0,Low
+54,Toner,Electronics,0,66,13,10,2016,1,0,High
+55,Receipt Printer,Office Supplies,525,2,1,59,1345,28,0,Low
+56,Receipt Printer,Mobile Accessories,6,43,12,57,858,2,1,High
+57,USB Flash,Printer Supplies,16,15,8,21,1530,43,0,Medium
+58,Safety Gloves,Safety,177,5,2,22,907,2,0,Low
+59,Ink Cartridge,Electronics,19,69,15,31,2192,0,1,High
+60,Receipt Printer,Electronics,14,4,4,30,2180,88,0,Medium
+61,HDD,Mobile Accessories,528,0,1,64,618,22,0,Low
+62,Barcode Scanner,Mobile Accessories,665,2,2,80,2404,25,0,Low
+63,Toner,Printer Supplies,416,5,1,43,310,23,0,Low
+64,Toner,Printer Supplies,431,8,1,41,401,21,0,Low
+65,Switch,Computer Accessories,519,0,1,50,2007,7,0,Low
+66,Keyboard,Safety,34,35,6,30,1388,5,0,Medium
+67,Monitor Stand,Storage Devices,24,4,3,41,1899,113,0,Medium
+68,Mouse,Safety,12,15,7,22,1262,17,0,Medium
+69,Monitor Stand,Storage Devices,15,7,6,16,1144,9,0,Medium
+70,Pen Pack,Storage Devices,171,1,2,16,159,8,0,Low
+71,Switch,Safety,55,38,5,53,571,11,0,Medium
+72,USB Flash,Mobile Accessories,6,67,15,48,1619,0,1,High
+73,USB Flash,Computer Accessories,2,62,15,30,1096,7,1,High
+74,Laptop Charger,Electronics,86,14,6,70,1753,5,1,Medium
+75,Barcode Scanner,Safety,388,7,4,68,2290,12,0,Low
+76,Laptop Charger,Printer Supplies,527,6,1,69,1918,6,1,Low
+77,USB Flash,Storage Devices,17,42,12,41,2346,3,0,High
+78,Safety Gloves,Printer Supplies,9,53,7,69,1782,10,1,High
+79,Pen Pack,Electronics,0,71,15,23,121,6,0,High
+80,Notebook,Office Supplies,21,21,10,67,2309,6,1,High
+81,USB Flash,Safety,26,38,8,24,299,1,0,Medium
+82,HDD,Mobile Accessories,26,31,3,21,2131,1,1,Medium
+83,Receipt Printer,Printer Supplies,500,7,1,63,1285,22,0,Low
+84,Monitor Stand,Mobile Accessories,34,4,4,66,1915,84,0,Medium
+85,Toner,Storage Devices,20,50,10,38,1306,9,1,High
+86,Toner,Office Supplies,589,7,2,70,1316,30,0,Low
+87,Monitor Stand,Electronics,14,56,11,75,1033,4,1,High
+88,HDD,Safety,67,38,8,41,98,4,1,Medium
+89,Barcode Scanner,Computer Accessories,11,52,12,14,49,4,1,High
+90,Monitor Stand,Computer Accessories,19,38,13,33,1386,5,1,High
+91,Safety Gloves,Storage Devices,601,4,2,63,844,7,0,Low
+92,Receipt Printer,Computer Accessories,32,38,6,31,61,6,0,Medium
+93,Receipt Printer,Mobile Accessories,27,43,12,66,1176,0,1,High
+94,Receipt Printer,Computer Accessories,34,38,6,32,445,5,0,Medium
+95,Monitor Stand,Storage Devices,27,4,3,45,1787,105,0,Medium
+96,Barcode Scanner,Printer Supplies,517,8,4,39,2484,13,0,Low
+97,Safety Gloves,Safety,6,45,11,36,2442,0,1,High
+98,Safety Gloves,Electronics,27,53,13,51,1129,6,0,High
+99,Safety Gloves,Computer Accessories,499,1,2,57,1833,14,0,Low
+100,Toner,Printer Supplies,49,11,4,47,1192,30,1,Medium
+101,Barcode Scanner,Mobile Accessories,1,37,14,14,1045,0,0,High
+102,Printer Cable,Safety,782,1,1,71,179,2,0,Low
+103,Safety Gloves,Storage Devices,718,0,4,66,1236,11,1,Low
+104,Monitor Stand,Electronics,50,38,6,45,2039,0,0,Medium
+105,Safety Gloves,Computer Accessories,30,4,2,55,1471,80,0,Medium
+106,Safety Gloves,Storage Devices,695,1,3,67,945,12,0,Low
+107,Barcode Scanner,Safety,21,17,6,22,1617,23,0,Medium
+108,USB Flash,Office Supplies,452,1,2,80,135,2,0,Low
+109,Receipt Printer,Printer Supplies,448,3,1,62,1292,20,0,Low
+110,USB Flash,Storage Devices,43,4,2,61,921,79,1,Medium
+111,Safety Gloves,Office Supplies,8,49,15,30,616,4,1,High
+112,USB Flash,Office Supplies,552,3,3,60,745,22,0,Low
+113,Notebook,Mobile Accessories,33,36,12,65,1216,5,1,High
+114,Notebook,Electronics,18,64,10,67,594,8,0,High
+115,Mouse,Electronics,247,6,3,56,1722,1,0,Low
+116,Ink Cartridge,Safety,12,50,10,74,2350,9,0,High
+117,Laptop Charger,Office Supplies,227,3,1,32,1488,22,0,Low
+118,Barcode Scanner,Computer Accessories,109,3,1,22,149,18,1,Low
+119,USB Flash,Printer Supplies,20,13,8,17,1666,33,1,Medium
+120,Router,Printer Supplies,24,32,8,19,35,0,0,Medium
+121,Barcode Scanner,Office Supplies,20,44,9,27,2235,0,0,High
+122,USB Flash,Electronics,73,16,3,79,2336,24,0,Medium
+123,Router,Printer Supplies,696,2,1,63,1734,7,0,Low
+124,Keyboard,Safety,39,37,6,30,1236,6,1,Medium
+125,Router,Safety,35,38,5,33,1065,0,0,Medium
+126,Mouse,Office Supplies,53,58,15,72,1474,7,1,High
+127,Router,Printer Supplies,21,38,8,15,35,11,1,Medium
+128,Barcode Scanner,Printer Supplies,481,3,3,47,2260,20,0,Low
+129,Ink Cartridge,Printer Supplies,394,8,4,50,2458,22,0,Low
+130,HDD,Mobile Accessories,560,3,4,80,2123,6,0,Low
+131,Safety Gloves,Office Supplies,12,45,15,34,648,4,0,High
+132,HDD,Computer Accessories,54,4,4,80,1040,96,0,Medium
+133,Keyboard,Mobile Accessories,76,38,8,59,2193,0,1,Medium
+134,Ink Cartridge,Computer Accessories,51,38,5,49,1135,0,0,Medium
+135,Receipt Printer,Safety,136,5,1,17,2114,7,0,Low
+136,Safety Gloves,Computer Accessories,493,2,1,47,1393,19,0,Low
+137,Receipt Printer,Printer Supplies,539,5,1,70,1187,21,1,Low
+138,Router,Printer Supplies,20,38,8,16,77,0,0,Medium
+139,Switch,Safety,22,4,2,35,1305,72,0,Medium
+140,Monitor Stand,Electronics,35,61,15,71,1045,4,1,High
+141,Notebook,Office Supplies,5,47,10,70,2221,7,1,High
+142,Toner,Printer Supplies,29,16,4,44,1267,21,1,Medium
+143,Ink Cartridge,Electronics,19,65,15,27,2126,0,0,High
+144,Pen Pack,Storage Devices,1,39,11,79,1192,4,1,High
+145,Ink Cartridge,Safety,8,68,11,76,2390,10,1,High
+146,Router,Storage Devices,311,5,1,78,161,5,0,Low
+147,Safety Gloves,Mobile Accessories,0,58,15,10,1817,6,1,High
+148,Notebook,Computer Accessories,27,38,14,74,501,3,0,High
+149,Safety Gloves,Computer Accessories,22,57,12,69,1734,0,0,High
+150,Switch,Mobile Accessories,237,4,2,28,2462,23,1,Low
+151,Keyboard,Safety,115,38,8,74,1747,0,1,Medium
+152,Safety Gloves,Storage Devices,13,63,10,45,1398,11,0,High
+153,Safety Gloves,Computer Accessories,152,3,1,12,2096,25,0,Low
+154,USB Flash,Computer Accessories,5,53,13,36,1042,7,1,High
+155,Toner,Office Supplies,434,0,2,48,1424,4,0,Low
+156,Router,Mobile Accessories,10,29,7,10,1316,11,0,Medium
+157,Safety Gloves,Printer Supplies,304,0,1,50,1908,27,0,Low
+158,Ink Cartridge,Safety,19,39,10,74,747,4,1,High
+159,USB Flash,Safety,23,38,8,21,226,7,0,Medium
+160,Mouse,Mobile Accessories,2,62,12,22,575,12,0,High
+161,Safety Gloves,Electronics,46,38,5,44,588,16,0,Medium
+162,Switch,Office Supplies,37,4,4,48,1911,62,0,Medium
+163,Safety Gloves,Electronics,459,3,2,53,2320,13,0,Low
+164,Pen Pack,Electronics,304,1,1,24,1173,20,0,Low
+165,Keyboard,Storage Devices,42,13,7,40,293,9,0,Medium
+166,Receipt Printer,Office Supplies,36,7,7,31,2283,16,1,Medium
+167,Printer Cable,Safety,782,2,2,62,129,2,0,Low
+168,Toner,Printer Supplies,0,52,15,21,629,1,0,High
+169,Safety Gloves,Computer Accessories,18,39,13,65,1856,0,0,High
+170,Pen Pack,Storage Devices,370,4,1,43,168,4,0,Low
+171,Ink Cartridge,Safety,19,43,8,66,2284,11,0,High
+172,Monitor Stand,Printer Supplies,10,50,14,66,907,2,1,High
+173,Keyboard,Storage Devices,35,4,4,50,1871,75,0,Medium
+174,Laptop Charger,Printer Supplies,471,4,1,70,1969,10,1,Low
+175,Switch,Storage Devices,11,43,15,31,455,0,0,High
+176,Mouse,Mobile Accessories,71,35,6,66,2201,13,0,Medium
+177,Toner,Mobile Accessories,6,60,13,49,1038,0,1,High
+178,Notebook,Mobile Accessories,70,30,5,70,795,7,0,Medium
+179,Safety Gloves,Storage Devices,674,1,4,65,1072,11,0,Low
+180,Receipt Printer,Storage Devices,14,4,4,28,1626,76,1,Medium
+181,Safety Gloves,Computer Accessories,100,3,1,11,2304,22,0,Low
+182,Barcode Scanner,Storage Devices,35,65,15,50,182,12,1,High
+183,Keyboard,Mobile Accessories,9,4,2,10,2410,96,1,Medium
+184,Toner,Storage Devices,12,49,9,32,1352,8,0,High
+185,Notebook,Mobile Accessories,495,1,2,49,2307,8,1,Low
+186,Ink Cartridge,Mobile Accessories,642,6,1,64,2186,3,1,Low
+187,Laptop Charger,Electronics,400,4,1,48,2459,13,0,Low
+188,Laptop Charger,Office Supplies,22,43,15,44,1194,0,0,High
+189,HDD,Storage Devices,39,37,5,32,682,8,0,Medium
+190,Monitor Stand,Storage Devices,15,4,3,22,2500,89,1,Medium
+191,Printer Cable,Electronics,655,5,2,67,2408,12,0,Low
+192,Keyboard,Computer Accessories,26,4,5,48,440,104,0,Medium
+193,HDD,Printer Supplies,81,38,8,60,885,0,0,Medium
+194,Pen Pack,Electronics,416,1,1,29,1156,17,0,Low
+195,USB Flash,Electronics,73,6,3,74,2172,30,1,Medium
+196,Toner,Electronics,20,41,9,35,2186,3,1,High
+197,Toner,Office Supplies,454,1,1,55,1495,5,0,Low
+198,Toner,Electronics,0,59,13,49,2500,2,0,High
+199,Barcode Scanner,Electronics,238,2,1,29,85,25,0,Low
+200,Printer Cable,Office Supplies,165,4,1,42,1098,6,0,Low
+201,Safety Gloves,Computer Accessories,46,4,2,60,1367,72,1,Medium
+202,Receipt Printer,Electronics,29,4,4,30,2225,87,1,Medium
+203,Switch,Safety,513,1,1,64,166,4,0,Low
+204,Keyboard,Safety,3,50,13,11,1697,8,0,High
+205,HDD,Printer Supplies,21,37,8,17,678,13,0,Medium
+206,Receipt Printer,Safety,20,4,3,41,121,77,0,Medium
+207,Switch,Storage Devices,3,32,10,10,2063,0,1,High
+208,Safety Gloves,Storage Devices,28,50,14,59,700,5,1,High
+209,Safety Gloves,Computer Accessories,547,6,4,50,1498,17,1,Low
+210,HDD,Printer Supplies,3,22,9,33,1760,12,0,High
+211,Ink Cartridge,Printer Supplies,5,28,13,24,265,0,0,High
+212,Monitor Stand,Storage Devices,31,4,3,48,1670,108,0,Medium
+213,Switch,Safety,34,4,2,41,1281,85,1,Medium
+214,Mouse,Office Supplies,7,60,11,53,785,1,1,High
+215,Ink Cartridge,Printer Supplies,171,4,3,41,1755,20,0,Low
+216,USB Flash,Storage Devices,625,8,4,61,35,6,1,Low
+217,HDD,Mobile Accessories,387,6,4,68,766,19,0,Low
+218,Switch,Office Supplies,329,0,3,26,1585,18,0,Low
+219,Laptop Charger,Printer Supplies,84,38,3,64,2136,4,1,Medium
+220,Safety Gloves,Printer Supplies,10,30,14,56,635,2,0,High
+221,Safety Gloves,Storage Devices,7,15,7,14,1102,10,0,Medium
+222,Router,Printer Supplies,82,38,7,74,2230,13,1,Medium
+223,Ink Cartridge,Printer Supplies,317,0,1,52,1164,19,0,Low
+224,Laptop Charger,Office Supplies,13,56,11,38,1358,11,1,High
+225,Printer Cable,Mobile Accessories,27,38,8,23,351,16,0,Medium
+226,Barcode Scanner,Printer Supplies,484,5,1,39,2294,16,0,Low
+227,Receipt Printer,Office Supplies,330,5,3,60,1482,25,0,Low
+228,Laptop Charger,Office Supplies,25,44,15,46,1256,6,0,High
+229,Laptop Charger,Printer Supplies,71,38,3,67,1937,3,0,Medium
+230,Router,Storage Devices,171,1,2,22,636,16,1,Low
+231,Monitor Stand,Electronics,50,38,7,44,2191,0,1,Medium
+232,Barcode Scanner,Safety,14,4,3,20,2223,115,1,Medium
+233,Notebook,Computer Accessories,14,43,13,66,675,2,0,High
+234,Printer Cable,Electronics,272,6,1,20,63,25,0,Low
+235,Notebook,Mobile Accessories,508,0,2,52,2331,8,0,Low
+236,Keyboard,Safety,7,4,5,11,415,78,0,Medium
+237,Ink Cartridge,Mobile Accessories,473,1,2,42,855,6,0,Low
+238,Switch,Safety,39,4,2,65,2070,81,1,Medium
+239,Toner,Printer Supplies,0,53,12,48,1342,0,1,High
+240,Pen Pack,Storage Devices,292,2,1,47,74,9,0,Low
+241,HDD,Mobile Accessories,2,44,13,19,1048,5,1,High
+242,Printer Cable,Safety,469,5,4,71,2090,3,0,Low
+243,HDD,Printer Supplies,26,42,9,40,444,1,1,High
+244,HDD,Electronics,51,4,2,59,1293,70,1,Medium
+245,Ink Cartridge,Mobile Accessories,561,6,1,54,1942,6,0,Low
+246,Laptop Charger,Electronics,340,3,1,53,2186,8,0,Low
+247,Switch,Printer Supplies,55,38,5,43,1673,0,1,Medium
+248,HDD,Safety,138,4,3,30,1756,8,0,Low
+249,HDD,Storage Devices,647,0,3,76,2199,30,0,Low
+250,Switch,Storage Devices,17,58,14,29,1386,8,0,High
+251,Monitor Stand,Mobile Accessories,46,8,5,46,1589,2,0,Medium
+252,Keyboard,Computer Accessories,37,4,5,46,359,104,1,Medium
+253,Pen Pack,Printer Supplies,293,1,2,42,1276,21,1,Low
+254,Notebook,Storage Devices,10,8,6,10,788,12,0,Medium
+255,Laptop Charger,Printer Supplies,11,64,11,70,1379,1,1,High
+256,Monitor Stand,Printer Supplies,5,57,12,68,2500,1,1,High
+257,Safety Gloves,Computer Accessories,47,4,2,61,1548,78,1,Medium
+258,USB Flash,Computer Accessories,0,42,13,43,1076,1,1,High
+259,Barcode Scanner,Mobile Accessories,2,44,13,12,720,1,0,High
+260,Printer Cable,Mobile Accessories,25,40,8,63,1562,5,1,High
+261,Monitor Stand,Electronics,62,38,6,47,2057,0,0,Medium
+262,HDD,Printer Supplies,75,38,8,60,1891,0,0,Medium
+263,HDD,Printer Supplies,119,2,1,14,716,25,1,Low
+264,Router,Safety,44,38,5,42,1064,5,0,Medium
+265,Barcode Scanner,Office Supplies,659,2,1,59,1682,28,0,Low
+266,Toner,Storage Devices,10,60,14,56,2500,1,0,High
+267,Switch,Computer Accessories,8,62,14,26,1342,8,1,High
+268,Switch,Storage Devices,15,47,12,31,1591,3,1,High
+269,Barcode Scanner,Electronics,47,69,14,57,255,9,0,High
+270,Laptop Charger,Office Supplies,251,6,1,35,1536,20,0,Low
+271,Safety Gloves,Safety,27,4,5,56,35,68,0,Medium
+272,HDD,Printer Supplies,83,38,8,60,922,0,0,Medium
+273,Notebook,Electronics,19,66,11,68,700,10,0,High
+274,HDD,Storage Devices,451,9,3,77,2461,29,0,Low
+275,Router,Computer Accessories,126,38,5,80,2230,0,1,Medium
+276,Monitor Stand,Mobile Accessories,30,4,4,61,2018,79,0,Medium
+277,Safety Gloves,Electronics,15,50,14,58,1038,5,0,High
+278,Keyboard,Mobile Accessories,74,38,8,61,2016,9,1,Medium
+279,USB Flash,Storage Devices,687,6,4,58,35,12,0,Low
+280,Switch,Safety,407,1,1,60,225,5,0,Low
+281,Laptop Charger,Printer Supplies,77,38,4,62,1846,0,0,Medium
+282,USB Flash,Office Supplies,620,3,2,80,220,1,1,Low
+283,Barcode Scanner,Mobile Accessories,542,5,2,77,2418,22,0,Low
+284,HDD,Mobile Accessories,458,5,1,67,658,18,1,Low
+285,Receipt Printer,Safety,122,7,1,21,2349,0,0,Low
+286,HDD,Printer Supplies,22,35,7,20,741,3,0,Medium
+287,Switch,Electronics,623,5,2,77,1013,19,0,Low
+288,Safety Gloves,Electronics,6,44,11,29,2023,4,0,High
+289,Notebook,Safety,386,4,4,60,484,1,0,Low
+290,Safety Gloves,Computer Accessories,496,3,2,62,1690,13,1,Low
+291,Printer Cable,Safety,26,45,12,44,1747,6,1,High
+292,Keyboard,Safety,1,46,13,10,1750,12,1,High
+293,Notebook,Storage Devices,9,8,7,10,1905,23,1,Medium
+294,Keyboard,Computer Accessories,35,13,8,37,1510,22,0,Medium
+295,Notebook,Mobile Accessories,105,25,7,74,2478,0,1,Medium
+296,HDD,Printer Supplies,0,38,9,34,2004,9,0,High
+297,Notebook,Safety,494,3,2,68,481,1,0,Low
+298,Safety Gloves,Storage Devices,36,54,14,55,936,0,0,High
+299,Toner,Electronics,23,40,12,26,2132,4,1,High
+300,Safety Gloves,Computer Accessories,124,4,1,18,2311,23,0,Low
+301,Barcode Scanner,Office Supplies,455,1,1,49,1747,14,0,Low
+302,Router,Computer Accessories,81,38,5,79,2190,3,0,Medium
+303,Laptop Charger,Office Supplies,249,0,1,34,1580,22,0,Low
+304,HDD,Office Supplies,59,38,5,57,1367,12,0,Medium
+305,Monitor Stand,Computer Accessories,13,63,14,21,1234,10,1,High
+306,HDD,Safety,231,0,2,33,2162,12,0,Low
+307,Monitor Stand,Storage Devices,11,6,3,20,2500,120,0,Medium
+308,Receipt Printer,Office Supplies,40,10,7,31,2358,15,1,Medium
+309,Safety Gloves,Mobile Accessories,25,4,2,45,812,98,1,Medium
+310,USB Flash,Safety,187,4,5,28,873,23,1,Low
+311,Switch,Printer Supplies,716,7,3,67,641,23,0,Low
+312,Keyboard,Safety,40,38,6,29,1472,2,1,Medium
+313,USB Flash,Office Supplies,551,3,2,80,35,0,0,Low
+314,Ink Cartridge,Printer Supplies,11,38,13,38,1319,3,0,High
+315,Router,Printer Supplies,104,38,8,78,2500,20,0,Medium
+316,Keyboard,Office Supplies,3,37,14,29,268,5,0,High
+317,Ink Cartridge,Mobile Accessories,714,1,1,72,1320,3,0,Low
+318,Ink Cartridge,Storage Devices,13,64,12,66,376,3,0,High
+319,HDD,Printer Supplies,63,38,8,60,737,3,0,Medium
+320,Safety Gloves,Safety,23,4,5,41,1164,88,0,Medium
+321,Notebook,Storage Devices,10,12,7,10,1937,26,0,Medium
+322,USB Flash,Safety,190,4,4,21,1150,22,0,Low
+323,Keyboard,Safety,11,53,15,59,1130,4,0,High
+324,Toner,Printer Supplies,21,62,15,59,1773,2,1,High
+325,Receipt Printer,Electronics,24,4,4,32,2302,83,1,Medium
+326,Notebook,Storage Devices,13,9,7,17,1926,19,0,Medium
+327,Toner,Office Supplies,492,5,1,65,1107,32,0,Low
+328,Switch,Storage Devices,0,39,13,18,2305,2,1,High
+329,Barcode Scanner,Electronics,40,71,14,56,308,9,1,High
+330,Barcode Scanner,Printer Supplies,2,35,8,32,35,10,0,High
+331,Toner,Safety,247,1,2,28,732,24,0,Low
+332,Notebook,Storage Devices,21,6,6,18,875,20,1,Medium
+333,Printer Cable,Electronics,56,12,6,55,302,15,0,Medium
+334,Laptop Charger,Computer Accessories,36,14,7,31,323,15,1,Medium
+335,Printer Cable,Mobile Accessories,26,38,8,25,225,2,1,Medium
+336,Ink Cartridge,Printer Supplies,15,34,11,32,1198,11,1,High
+337,Router,Computer Accessories,19,39,10,38,1265,11,1,High
+338,Keyboard,Safety,111,38,7,77,1843,3,1,Medium
+339,Safety Gloves,Electronics,8,26,11,24,2046,6,1,High
+340,Keyboard,Computer Accessories,26,14,8,27,1496,14,0,Medium
+341,Ink Cartridge,Printer Supplies,11,41,12,28,1369,8,1,High
+342,Router,Storage Devices,353,4,1,77,35,1,0,Low
+343,Receipt Printer,Computer Accessories,37,38,6,35,645,4,0,Medium
+344,Monitor Stand,Printer Supplies,4,59,11,73,2300,10,1,High
+345,Barcode Scanner,Office Supplies,676,1,3,64,1363,29,0,Low
+346,Barcode Scanner,Safety,13,21,6,17,1754,25,0,Medium
+347,Notebook,Electronics,40,41,15,80,1068,8,1,High
+348,USB Flash,Electronics,233,2,1,23,746,28,0,Low
+349,Router,Mobile Accessories,16,29,7,12,1247,2,1,Medium
+350,Switch,Computer Accessories,545,1,2,51,1543,6,0,Low
+351,Receipt Printer,Electronics,25,4,4,33,2346,76,0,Medium
+352,Safety Gloves,Electronics,24,39,13,56,907,3,0,High
+353,Toner,Printer Supplies,361,4,1,41,781,22,0,Low
+354,Switch,Computer Accessories,7,66,11,24,1409,9,1,High
+355,Keyboard,Printer Supplies,7,68,12,18,782,0,1,High
+356,Monitor Stand,Mobile Accessories,169,5,3,29,803,7,0,Low
+357,Ink Cartridge,Office Supplies,0,58,9,67,1255,11,1,High
+358,Switch,Safety,426,2,3,73,1310,27,0,Low
+359,Receipt Printer,Mobile Accessories,12,44,9,69,961,11,0,High
+360,Laptop Charger,Safety,40,4,4,67,638,89,0,Medium
+361,Safety Gloves,Printer Supplies,10,57,9,75,1697,8,1,High
+362,Mouse,Electronics,4,69,14,65,2086,11,1,High
+363,Switch,Mobile Accessories,18,8,4,24,1964,75,0,Medium
+364,HDD,Mobile Accessories,508,2,4,64,632,20,1,Low
+365,Switch,Computer Accessories,252,0,1,38,1115,23,0,Low
+366,Printer Cable,Electronics,221,1,1,26,35,23,0,Low
+367,Pen Pack,Electronics,31,4,2,66,721,98,0,Medium
+368,Pen Pack,Printer Supplies,79,38,2,74,546,2,1,Medium
+369,Router,Office Supplies,26,4,4,51,323,120,0,Medium
+370,Safety Gloves,Printer Supplies,11,43,13,67,2045,2,1,High
+371,Toner,Printer Supplies,358,7,1,38,360,21,1,Low
+372,Safety Gloves,Computer Accessories,554,7,3,47,1427,18,0,Low
+373,Safety Gloves,Computer Accessories,33,11,2,60,1496,73,1,Medium
+374,Mouse,Computer Accessories,24,21,7,21,1613,9,0,Medium
+375,Router,Computer Accessories,250,4,2,16,766,23,0,Low
+376,Monitor Stand,Storage Devices,9,4,6,10,973,12,0,Medium
+377,Mouse,Computer Accessories,12,38,3,10,1980,8,1,Medium
+378,Switch,Office Supplies,42,4,4,60,1568,73,0,Medium
+379,Notebook,Electronics,618,1,3,69,1329,30,0,Low
+380,Pen Pack,Electronics,32,6,2,69,752,105,1,Medium
+381,Printer Cable,Computer Accessories,219,8,2,13,1774,13,0,Low
+382,Router,Printer Supplies,18,34,15,53,307,1,1,High
+383,USB Flash,Electronics,263,1,1,28,995,26,0,Low
+384,Safety Gloves,Computer Accessories,494,7,2,57,1988,16,0,Low
+385,USB Flash,Office Supplies,514,0,2,80,267,3,0,Low
+386,Toner,Electronics,16,41,12,31,1814,3,1,High
+387,Mouse,Computer Accessories,14,38,3,14,1566,13,0,Medium
+388,Barcode Scanner,Safety,365,6,3,63,2179,11,0,Low
+389,Receipt Printer,Printer Supplies,277,0,1,34,2484,10,1,Low
+390,Mouse,Computer Accessories,17,20,7,16,1757,6,1,Medium
+391,Ink Cartridge,Electronics,3,61,15,33,2353,0,1,High
+392,Notebook,Mobile Accessories,86,35,5,71,1010,2,0,Medium
+393,HDD,Electronics,35,4,2,61,1490,65,0,Medium
+394,Mouse,Mobile Accessories,80,33,6,63,2258,18,1,Medium
+395,Barcode Scanner,Printer Supplies,3,36,9,42,102,9,1,High
+396,Notebook,Mobile Accessories,71,30,6,69,770,14,0,Medium
+397,Printer Cable,Computer Accessories,520,2,3,50,35,5,1,Low
+398,Pen Pack,Electronics,319,1,1,28,1364,19,0,Low
+399,USB Flash,Mobile Accessories,500,2,3,42,1525,13,0,Low
+400,Barcode Scanner,Office Supplies,4,51,8,40,2291,0,0,High
+401,Notebook,Safety,400,2,4,58,339,1,1,Low
+402,Monitor Stand,Printer Supplies,4,54,10,69,763,6,1,High
+403,Switch,Safety,28,5,2,57,2130,83,1,Medium
+404,Router,Printer Supplies,16,35,14,52,339,3,1,High
+405,Toner,Electronics,0,57,11,49,2410,2,1,High
+406,HDD,Storage Devices,37,38,5,32,876,4,0,Medium
+407,Switch,Mobile Accessories,387,2,2,48,1818,25,0,Low
+408,USB Flash,Storage Devices,5,47,12,37,2304,5,0,High
+409,Ink Cartridge,Printer Supplies,409,4,3,49,2360,21,0,Low
+410,USB Flash,Mobile Accessories,4,65,15,59,1821,1,1,High
+411,Keyboard,Safety,6,4,5,10,620,76,0,Medium
+412,Router,Storage Devices,278,1,2,35,1398,9,0,Low
+413,Ink Cartridge,Electronics,75,38,4,72,1229,8,1,Medium
+414,Monitor Stand,Mobile Accessories,119,6,2,39,584,11,0,Low
+415,Barcode Scanner,Office Supplies,699,1,4,65,1275,28,0,Low
+416,Laptop Charger,Printer Supplies,81,38,2,69,2060,9,1,Medium
+417,HDD,Storage Devices,35,31,6,30,471,16,0,Medium
+418,Barcode Scanner,Safety,193,0,1,46,1098,29,0,Low
+419,Printer Cable,Safety,48,38,5,40,670,6,0,Medium
+420,HDD,Storage Devices,425,7,1,79,2234,30,0,Low
+421,Barcode Scanner,Office Supplies,695,2,4,63,1174,32,0,Low
+422,USB Flash,Computer Accessories,15,62,9,29,977,9,1,High
+423,Keyboard,Safety,7,4,5,10,772,74,0,Medium
+424,Keyboard,Safety,82,38,8,71,1936,3,0,Medium
+425,Printer Cable,Computer Accessories,592,2,2,56,70,8,0,Low
+426,USB Flash,Office Supplies,662,0,2,80,200,1,0,Low
+427,Mouse,Electronics,73,9,2,19,919,24,0,Low
+428,Laptop Charger,Safety,117,5,1,26,1759,1,0,Low
+429,Pen Pack,Storage Devices,350,1,1,53,118,6,0,Low
+430,Ink Cartridge,Electronics,432,0,2,67,685,9,1,Low
+431,Laptop Charger,Safety,1,37,8,19,1306,2,0,High
+432,Notebook,Printer Supplies,505,5,3,69,1340,5,1,Low
+433,Safety Gloves,Mobile Accessories,0,49,15,10,2162,6,0,High
+434,Mouse,Computer Accessories,16,38,3,14,1979,0,0,Medium
+435,HDD,Storage Devices,41,32,5,28,655,0,1,Medium
+436,Toner,Electronics,36,38,4,35,168,7,0,Medium
+437,Router,Printer Supplies,126,38,6,79,2137,0,1,Medium
+438,Safety Gloves,Mobile Accessories,43,4,4,47,2278,76,1,Medium
+439,Safety Gloves,Mobile Accessories,1,53,15,13,2082,4,1,High
+440,USB Flash,Office Supplies,375,5,4,43,1791,11,0,Low
+441,Safety Gloves,Storage Devices,572,5,1,67,856,11,1,Low
+442,Monitor Stand,Mobile Accessories,31,4,4,54,1770,83,0,Medium
+443,Safety Gloves,Electronics,17,35,13,47,931,5,0,High
+444,Keyboard,Safety,33,4,5,57,2230,64,0,Medium
+445,Safety Gloves,Storage Devices,14,59,14,45,1242,10,0,High
+446,USB Flash,Electronics,220,4,1,28,979,27,0,Low
+447,Safety Gloves,Storage Devices,33,48,14,61,895,6,1,High
+448,Toner,Storage Devices,39,60,13,48,2303,2,0,High
+449,HDD,Mobile Accessories,328,6,2,64,795,17,0,Low
+450,Toner,Printer Supplies,1,57,13,41,1095,0,0,High
+451,Safety Gloves,Safety,8,58,12,35,2378,12,0,High
+452,Mouse,Safety,24,14,7,18,1105,17,1,Medium
+453,Printer Cable,Mobile Accessories,23,39,9,66,1614,0,0,High
+454,Router,Mobile Accessories,16,21,7,11,1340,14,1,Medium
+455,Receipt Printer,Storage Devices,17,4,3,18,1641,77,1,Medium
+456,Keyboard,Computer Accessories,360,2,3,40,688,0,0,Low
+457,Keyboard,Storage Devices,51,11,7,41,337,13,1,Medium
+458,Safety Gloves,Electronics,434,0,3,57,2036,12,0,Low
+459,Switch,Electronics,441,5,2,68,973,18,0,Low
+460,Ink Cartridge,Printer Supplies,406,1,4,51,2188,20,0,Low
+461,Keyboard,Storage Devices,32,4,5,50,1678,75,0,Medium
+462,Notebook,Storage Devices,167,1,2,13,740,7,0,Low
+463,Barcode Scanner,Computer Accessories,122,3,1,21,35,19,0,Low
+464,Barcode Scanner,Storage Devices,215,2,2,39,1702,10,0,Low
+465,Pen Pack,Printer Supplies,85,38,3,74,551,18,0,Medium
+466,Printer Cable,Mobile Accessories,12,38,8,11,197,7,1,Medium
+467,Ink Cartridge,Printer Supplies,340,4,3,46,1633,21,0,Low
+468,Printer Cable,Electronics,225,7,3,24,273,25,1,Low
+469,Ink Cartridge,Mobile Accessories,647,0,3,54,2290,5,0,Low
+470,Toner,Office Supplies,18,39,10,67,174,7,0,High
+471,Switch,Computer Accessories,540,0,2,51,1600,7,1,Low
+472,Toner,Mobile Accessories,5,56,7,49,1071,1,1,High
+473,USB Flash,Computer Accessories,14,63,9,27,1201,8,0,High
+474,Ink Cartridge,Printer Supplies,387,5,1,45,2500,21,0,Low
+475,Monitor Stand,Printer Supplies,6,58,7,65,2227,11,1,High
+476,Laptop Charger,Office Supplies,9,39,15,47,1152,9,0,High
+477,Notebook,Mobile Accessories,30,31,12,67,1101,7,0,High
+478,Safety Gloves,Storage Devices,20,61,10,43,1225,8,0,High
+479,Toner,Safety,28,4,6,53,381,84,1,Medium
+480,Notebook,Storage Devices,17,14,7,13,1827,35,1,Medium
+481,USB Flash,Computer Accessories,1,29,13,40,1172,7,1,High
+482,Safety Gloves,Storage Devices,557,0,2,68,771,8,0,Low
+483,Notebook,Storage Devices,27,16,6,20,1067,17,1,Medium
+484,Toner,Electronics,1,59,12,48,2500,2,1,High
+485,Toner,Electronics,4,64,13,44,2410,0,0,High
+486,Barcode Scanner,Computer Accessories,13,52,13,18,185,6,0,High
+487,Toner,Computer Accessories,7,52,14,11,645,6,1,High
+488,Switch,Storage Devices,0,67,12,17,2144,3,1,High
+489,Safety Gloves,Computer Accessories,495,0,2,47,1364,20,0,Low
+490,Barcode Scanner,Office Supplies,17,48,8,33,2413,1,1,High
+491,Safety Gloves,Electronics,341,3,1,52,2104,10,0,Low
+492,Router,Mobile Accessories,26,4,5,57,199,59,0,Medium
+493,Toner,Electronics,16,41,15,29,2128,2,1,High
+494,Pen Pack,Storage Devices,2,57,11,10,1383,11,1,High
+495,Notebook,Storage Devices,24,14,6,20,901,29,1,Medium
+496,Safety Gloves,Storage Devices,590,3,2,68,758,11,0,Low
+497,USB Flash,Storage Devices,699,8,1,57,170,10,0,Low
+498,Monitor Stand,Computer Accessories,26,44,15,68,1579,6,0,High
+499,Router,Storage Devices,439,3,1,76,241,3,1,Low
+500,Notebook,Computer Accessories,29,21,13,62,991,4,0,High
+501,USB Flash,Safety,25,38,8,18,469,5,0,Medium
+502,Laptop Charger,Printer Supplies,439,6,1,73,1924,8,1,Low
+503,Receipt Printer,Printer Supplies,263,3,4,33,2325,8,0,Low
+504,Ink Cartridge,Printer Supplies,6,34,14,27,296,3,0,High
+505,USB Flash,Office Supplies,366,0,1,42,1887,11,0,Low
+506,Safety Gloves,Electronics,32,38,5,31,759,8,0,Medium
+507,Receipt Printer,Mobile Accessories,49,36,14,65,933,6,1,High
+508,Keyboard,Computer Accessories,35,9,8,32,1474,12,0,Medium
+509,HDD,Mobile Accessories,10,30,12,31,1384,3,1,High
+510,Printer Cable,Safety,515,1,2,74,2008,2,0,Low
+511,Notebook,Office Supplies,10,27,10,67,2394,0,1,High
+512,Router,Storage Devices,303,0,2,40,1369,10,1,Low
+513,Switch,Mobile Accessories,221,4,2,22,2107,22,0,Low
+514,Receipt Printer,Electronics,22,4,5,32,2094,83,0,Medium
+515,USB Flash,Office Supplies,520,3,3,61,942,20,0,Low
+516,Toner,Mobile Accessories,8,62,7,56,829,2,1,High
+517,Barcode Scanner,Computer Accessories,601,7,1,57,960,27,0,Low
+518,USB Flash,Office Supplies,369,8,3,42,1929,11,0,Low
+519,Notebook,Mobile Accessories,80,37,5,74,760,9,1,Medium
+520,Monitor Stand,Mobile Accessories,28,4,4,57,2123,84,0,Medium
+521,Printer Cable,Safety,800,1,3,70,364,1,0,Low
+522,Switch,Office Supplies,336,0,3,35,1597,18,0,Low
+523,Safety Gloves,Mobile Accessories,49,4,4,48,2191,69,1,Medium
+524,Mouse,Electronics,449,8,2,53,1821,2,0,Low
+525,Switch,Safety,398,1,1,65,360,4,0,Low
+526,Printer Cable,Safety,50,15,4,72,862,26,0,Medium
+527,Safety Gloves,Office Supplies,13,45,6,36,661,4,1,High
+528,Router,Computer Accessories,16,40,8,41,1150,5,1,High
+529,Switch,Safety,31,4,2,63,1944,94,0,Medium
+530,Keyboard,Printer Supplies,5,61,11,26,463,0,1,High
+531,Toner,Electronics,3,58,12,47,2500,1,0,High
+532,Mouse,Safety,19,17,7,18,1029,16,0,Medium
+533,Safety Gloves,Safety,17,4,5,37,1418,76,0,Medium
+534,HDD,Printer Supplies,0,29,12,37,1994,7,1,High
+535,Printer Cable,Office Supplies,187,2,3,42,1042,7,0,Low
+536,Safety Gloves,Computer Accessories,19,59,11,72,1919,1,1,High
+537,Pen Pack,Printer Supplies,46,4,4,51,452,120,1,Medium
+538,Monitor Stand,Computer Accessories,37,48,15,66,1661,6,1,High
+539,HDD,Printer Supplies,86,38,7,71,733,5,1,Medium
+540,Monitor Stand,Mobile Accessories,48,4,4,56,1857,77,1,Medium
+541,USB Flash,Storage Devices,16,25,15,37,2419,4,1,High
+542,Switch,Mobile Accessories,25,4,3,33,1850,94,1,Medium
+543,Switch,Computer Accessories,575,1,2,51,1535,6,0,Low
+544,USB Flash,Printer Supplies,21,54,15,56,1844,0,1,High
+545,Ink Cartridge,Mobile Accessories,139,0,1,24,1041,19,1,Low
+546,Receipt Printer,Electronics,17,4,4,27,2068,95,0,Medium
+547,Ink Cartridge,Mobile Accessories,448,1,2,42,727,8,0,Low
+548,Router,Office Supplies,0,59,13,22,2098,4,1,High
+549,Monitor Stand,Printer Supplies,29,52,10,68,899,8,0,High
+550,Switch,Office Supplies,337,0,1,25,1831,18,0,Low
+551,HDD,Printer Supplies,31,36,7,23,615,6,1,Medium
+552,Toner,Computer Accessories,1,47,14,12,625,5,1,High
+553,Ink Cartridge,Printer Supplies,270,4,3,41,1366,22,0,Low
+554,Printer Cable,Mobile Accessories,21,38,8,17,35,11,0,Medium
+555,Toner,Office Supplies,187,0,3,24,1566,30,1,Low
+556,Mouse,Electronics,6,69,14,69,2013,5,0,High
+557,Switch,Safety,468,1,3,77,1318,26,0,Low
+558,Switch,Printer Supplies,722,8,3,65,452,28,0,Low
+559,Receipt Printer,Storage Devices,221,5,2,36,1589,27,0,Low
+560,Safety Gloves,Computer Accessories,483,0,2,59,1953,13,1,Low
+561,Safety Gloves,Storage Devices,17,59,9,45,1248,8,1,High
+562,Laptop Charger,Mobile Accessories,6,67,12,58,1607,4,1,High
+563,Monitor Stand,Safety,21,49,9,69,1438,2,0,High
+564,Router,Storage Devices,266,1,1,80,167,0,0,Low
+565,Printer Cable,Office Supplies,350,3,3,44,966,3,0,Low
+566,Receipt Printer,Computer Accessories,30,38,5,28,214,5,0,Medium
+567,Receipt Printer,Electronics,13,4,4,26,2103,92,0,Medium
+568,Barcode Scanner,Safety,357,7,4,72,2237,8,1,Low
+569,Monitor Stand,Storage Devices,36,4,3,44,1984,100,1,Medium
+570,Monitor Stand,Safety,18,54,11,63,1469,4,0,High
+571,Keyboard,Computer Accessories,356,8,3,45,369,1,0,Low
+572,Barcode Scanner,Mobile Accessories,550,2,2,67,2334,20,0,Low
+573,Mouse,Electronics,31,34,13,76,312,0,1,High
+574,Router,Computer Accessories,90,38,5,73,2202,18,1,Medium
+575,Switch,Storage Devices,5,47,12,29,1499,9,1,High
+576,Router,Computer Accessories,324,9,2,24,997,27,0,Low
+577,Notebook,Printer Supplies,505,6,4,62,1443,4,0,Low
+578,Laptop Charger,Office Supplies,99,9,2,10,562,14,0,Low
+579,Receipt Printer,Storage Devices,11,4,4,19,1283,74,0,Medium
+580,Keyboard,Office Supplies,430,0,2,46,2466,1,0,Low
+581,Barcode Scanner,Computer Accessories,550,3,1,68,603,27,1,Low
+582,Router,Storage Devices,240,0,2,35,979,16,0,Low
+583,Barcode Scanner,Printer Supplies,5,39,11,20,1822,4,1,High
+584,Barcode Scanner,Mobile Accessories,1,35,13,17,1051,1,1,High
+585,Keyboard,Office Supplies,386,0,2,49,2477,3,0,Low
+586,Notebook,Storage Devices,13,13,7,13,1819,27,0,Medium
+587,Pen Pack,Electronics,2,64,10,20,444,7,1,High
+588,Router,Office Supplies,32,4,4,51,271,112,0,Medium
+589,USB Flash,Storage Devices,661,7,4,65,35,11,0,Low
+590,HDD,Computer Accessories,58,4,4,80,1531,98,1,Medium
+591,Printer Cable,Mobile Accessories,29,42,11,60,1770,6,0,High
+592,Toner,Electronics,3,51,12,25,2260,2,1,High
+593,Barcode Scanner,Storage Devices,5,72,13,58,2086,6,0,High
+594,Safety Gloves,Safety,25,4,5,42,1138,73,0,Medium
+595,Ink Cartridge,Printer Supplies,42,38,6,37,1933,3,1,Medium
+596,Keyboard,Computer Accessories,213,8,1,44,568,0,0,Low
+597,Switch,Storage Devices,7,40,14,35,1566,9,1,High
+598,Toner,Printer Supplies,436,6,1,41,735,21,1,Low
+599,Pen Pack,Printer Supplies,31,4,5,51,427,120,0,Medium
+600,Receipt Printer,Safety,77,14,4,80,1578,23,0,Medium
+601,Ink Cartridge,Mobile Accessories,473,1,2,45,861,9,0,Low
+602,USB Flash,Office Supplies,352,7,4,46,1961,9,0,Low
+603,Switch,Safety,497,1,1,58,241,5,1,Low
+604,Router,Office Supplies,35,5,4,56,166,110,0,Medium
+605,Laptop Charger,Safety,17,4,3,30,843,104,0,Medium
+606,Switch,Safety,30,4,2,46,1210,75,0,Medium
+607,Mouse,Electronics,116,8,2,20,812,25,0,Low
+608,Keyboard,Storage Devices,32,5,7,37,528,5,1,Medium
+609,Ink Cartridge,Mobile Accessories,0,65,10,42,1753,6,1,High
+610,USB Flash,Office Supplies,6,51,15,13,2408,4,1,High
+611,Toner,Printer Supplies,30,67,15,72,1549,0,1,High
+612,Keyboard,Computer Accessories,418,2,3,49,485,0,0,Low
+613,Toner,Computer Accessories,3,50,14,10,947,5,0,High
+614,Router,Safety,49,38,5,34,1415,8,1,Medium
+615,Laptop Charger,Electronics,87,11,6,71,1764,21,1,Medium
+616,Barcode Scanner,Storage Devices,38,64,14,48,234,12,1,High
+617,Ink Cartridge,Computer Accessories,66,38,6,47,1407,0,1,Medium
+618,Switch,Storage Devices,10,4,2,16,496,77,0,Medium
+619,Barcode Scanner,Storage Devices,293,1,3,49,1879,11,0,Low
+620,Switch,Safety,603,0,3,76,909,21,0,Low
+621,Safety Gloves,Storage Devices,25,54,13,61,661,5,1,High
+622,HDD,Storage Devices,130,0,1,26,1318,13,0,Low
+623,HDD,Mobile Accessories,11,4,5,14,451,65,0,Medium
+624,Safety Gloves,Mobile Accessories,23,9,2,44,1016,98,0,Medium
+625,Barcode Scanner,Mobile Accessories,4,29,12,24,1218,1,1,High
+626,Monitor Stand,Printer Supplies,9,75,9,73,2288,0,1,High
+627,Safety Gloves,Safety,367,2,3,29,1107,29,1,Low
+628,Monitor Stand,Office Supplies,26,4,3,31,1143,93,1,Medium
+629,Mouse,Computer Accessories,8,38,3,14,1934,3,0,Medium
+630,Keyboard,Office Supplies,405,0,2,46,2500,2,0,Low
+631,Laptop Charger,Printer Supplies,460,5,1,69,1986,6,0,Low
+632,USB Flash,Mobile Accessories,6,70,14,53,1929,5,0,High
+633,Safety Gloves,Storage Devices,4,62,13,37,1243,9,1,High
+634,USB Flash,Computer Accessories,19,66,10,34,1090,3,1,High
+635,HDD,Electronics,5,66,11,52,2126,2,1,High
+636,HDD,Printer Supplies,177,5,1,14,638,28,0,Low
+637,Toner,Printer Supplies,28,68,15,63,1839,1,1,High
+638,Keyboard,Computer Accessories,358,9,1,46,465,1,0,Low
+639,Safety Gloves,Printer Supplies,5,51,14,52,579,8,1,High
+640,Safety Gloves,Mobile Accessories,37,4,4,49,2445,73,0,Medium
+641,Router,Mobile Accessories,44,4,4,62,35,58,1,Medium
+642,Router,Office Supplies,36,7,4,51,284,107,0,Medium
+643,Keyboard,Mobile Accessories,9,4,2,15,2309,97,0,Medium
+644,USB Flash,Mobile Accessories,4,67,15,56,1899,5,1,High
+645,Printer Cable,Computer Accessories,504,2,2,51,35,6,1,Low
+646,Router,Computer Accessories,114,38,5,77,2427,1,1,Medium
+647,Printer Cable,Mobile Accessories,27,53,15,55,1678,8,1,High
+648,Printer Cable,Electronics,684,4,1,69,2185,9,0,Low
+649,HDD,Office Supplies,339,4,2,39,213,15,1,Low
+650,Keyboard,Mobile Accessories,17,12,6,20,1928,35,1,Medium
+651,USB Flash,Storage Devices,36,4,2,60,985,63,0,Medium
+652,USB Flash,Office Supplies,529,3,2,63,1000,21,0,Low
+653,Toner,Electronics,0,61,11,48,2500,3,1,High
+654,Mouse,Printer Supplies,2,52,13,34,781,2,1,High
+655,Printer Cable,Mobile Accessories,31,36,15,54,1592,6,0,High
+656,Mouse,Printer Supplies,1,48,13,33,576,0,0,High
+657,Ink Cartridge,Computer Accessories,52,37,5,43,1233,0,0,Medium
+658,Barcode Scanner,Office Supplies,7,50,13,32,2137,0,1,High
+659,Receipt Printer,Printer Supplies,495,3,1,68,1229,18,0,Low
+660,USB Flash,Office Supplies,8,75,15,21,2383,4,1,High
+661,HDD,Mobile Accessories,241,7,2,62,481,20,0,Low
+662,Barcode Scanner,Computer Accessories,8,52,9,21,35,3,1,High
+663,Barcode Scanner,Storage Devices,39,66,13,49,290,12,1,High
+664,Toner,Printer Supplies,391,1,1,43,597,19,0,Low
+665,Toner,Safety,238,0,1,38,1032,25,1,Low
+666,Pen Pack,Electronics,0,64,13,18,280,6,1,High
+667,Toner,Storage Devices,38,58,13,57,2489,2,1,High
+668,Barcode Scanner,Storage Devices,245,0,2,46,1885,12,0,Low
+669,Safety Gloves,Computer Accessories,27,4,2,59,1433,72,0,Medium
+670,Barcode Scanner,Storage Devices,63,38,5,51,1753,8,0,Medium
+671,Toner,Electronics,1,61,14,12,1978,1,1,High
+672,Monitor Stand,Mobile Accessories,39,8,5,41,1793,25,1,Medium
+673,Printer Cable,Computer Accessories,546,2,3,51,35,6,0,Low
+674,Keyboard,Safety,29,54,15,58,1218,4,1,High
+675,Switch,Safety,708,1,3,80,1102,27,1,Low
+676,Mouse,Mobile Accessories,0,58,11,17,811,2,1,High
+677,Switch,Office Supplies,38,4,3,50,1757,60,0,Medium
+678,Barcode Scanner,Safety,222,1,4,41,1042,28,0,Low
+679,Laptop Charger,Safety,3,53,9,21,1331,2,1,High
+680,HDD,Storage Devices,37,38,5,30,444,12,1,Medium
+681,USB Flash,Printer Supplies,25,39,15,57,1804,1,1,High
+682,Ink Cartridge,Safety,17,32,12,73,2328,9,1,High
+683,USB Flash,Storage Devices,13,33,12,35,2429,4,1,High
+684,Mouse,Computer Accessories,24,37,3,23,1794,6,0,Medium
+685,Router,Storage Devices,490,5,1,77,35,3,0,Low
+686,Barcode Scanner,Computer Accessories,12,54,15,20,257,8,1,High
+687,Keyboard,Computer Accessories,41,19,8,29,1608,11,1,Medium
+688,USB Flash,Safety,32,38,9,23,333,14,0,Medium
+689,Toner,Printer Supplies,39,18,4,42,1353,8,0,Medium
+690,Monitor Stand,Electronics,48,37,6,43,2301,5,0,Medium
+691,Ink Cartridge,Safety,15,39,9,65,2416,9,0,High
+692,Safety Gloves,Office Supplies,9,50,14,32,875,5,0,High
+693,USB Flash,Storage Devices,27,4,2,59,938,72,0,Medium
+694,Mouse,Computer Accessories,16,38,3,15,1809,0,0,Medium
+695,USB Flash,Office Supplies,13,48,15,15,2500,4,0,High
+696,Barcode Scanner,Computer Accessories,4,49,14,14,101,10,0,High
+697,Safety Gloves,Electronics,6,36,13,53,1058,4,1,High
+698,Switch,Storage Devices,0,19,10,10,2171,0,1,High
+699,Switch,Safety,38,4,2,67,1913,90,0,Medium
+700,Safety Gloves,Computer Accessories,44,4,2,65,1387,77,1,Medium
+701,HDD,Printer Supplies,105,5,1,12,578,29,1,Low
+702,Mouse,Printer Supplies,52,38,5,45,390,0,0,Medium
+703,Switch,Electronics,434,6,2,68,929,18,1,Low
+704,Safety Gloves,Computer Accessories,17,28,11,68,1820,0,1,High
+705,Ink Cartridge,Storage Devices,519,4,3,47,2171,0,1,Low
+706,Toner,Storage Devices,26,47,11,49,1443,9,0,High
+707,Ink Cartridge,Printer Supplies,642,0,2,80,354,29,1,Low
+708,Laptop Charger,Office Supplies,115,0,4,13,703,15,1,Low
+709,Barcode Scanner,Mobile Accessories,640,5,2,78,2460,22,0,Low
+710,Barcode Scanner,Office Supplies,6,48,9,28,2311,0,0,High
+711,Keyboard,Storage Devices,45,8,7,37,431,9,1,Medium
+712,Router,Storage Devices,28,4,2,49,2500,91,1,Medium
+713,USB Flash,Office Supplies,589,3,2,80,35,3,0,Low
+714,HDD,Office Supplies,66,38,5,57,1113,11,0,Medium
+715,Pen Pack,Storage Devices,0,52,15,75,1060,5,0,High
+716,Receipt Printer,Electronics,19,4,4,29,2305,81,0,Medium
+717,Monitor Stand,Computer Accessories,21,33,13,32,1253,1,1,High
+718,USB Flash,Mobile Accessories,538,0,3,44,1570,19,1,Low
+719,USB Flash,Office Supplies,424,6,3,40,1721,9,0,Low
+720,Toner,Printer Supplies,49,22,4,46,1432,20,1,Medium
+721,Switch,Office Supplies,31,4,4,47,1609,50,1,Medium
+722,Laptop Charger,Office Supplies,49,28,8,32,367,1,1,Medium
+723,Router,Office Supplies,0,31,13,32,1918,0,0,High
+724,Notebook,Printer Supplies,450,5,4,68,1149,7,1,Low
+725,HDD,Printer Supplies,61,38,8,50,2163,0,0,Medium
+726,HDD,Office Supplies,53,38,5,52,1648,7,0,Medium
+727,HDD,Printer Supplies,106,4,1,13,403,29,1,Low
+728,Mouse,Mobile Accessories,75,34,5,64,2101,13,0,Medium
+729,Laptop Charger,Printer Supplies,29,68,11,80,1670,1,1,High
+730,Receipt Printer,Printer Supplies,311,7,2,29,2236,7,0,Low
+731,Printer Cable,Mobile Accessories,27,35,12,71,1633,12,0,High
+732,Safety Gloves,Computer Accessories,29,4,2,56,1421,82,0,Medium
+733,Safety Gloves,Storage Devices,544,3,1,69,910,10,0,Low
+734,USB Flash,Office Supplies,10,52,15,20,2490,6,1,High
+735,Safety Gloves,Mobile Accessories,30,4,4,44,2358,76,0,Medium
+736,Notebook,Office Supplies,19,38,10,65,2322,2,1,High
+737,Ink Cartridge,Mobile Accessories,765,4,1,76,1101,6,0,Low
+738,HDD,Safety,146,4,2,31,1911,11,1,Low
+739,Router,Mobile Accessories,18,29,7,16,1179,9,0,Medium
+740,Keyboard,Office Supplies,0,42,14,24,382,3,0,High
+741,Laptop Charger,Office Supplies,224,6,1,37,1515,17,0,Low
+742,HDD,Electronics,47,4,2,57,1559,77,1,Medium
+743,USB Flash,Storage Devices,655,9,4,67,38,7,0,Low
+744,HDD,Office Supplies,63,38,5,56,1354,10,1,Medium
+745,Printer Cable,Safety,22,26,12,43,1610,7,0,High
+746,Switch,Safety,508,1,3,69,1317,25,0,Low
+747,Laptop Charger,Printer Supplies,70,38,3,70,1953,0,0,Medium
+748,Laptop Charger,Mobile Accessories,2,66,10,62,1803,4,1,High
+749,Safety Gloves,Mobile Accessories,16,4,5,29,688,2,0,Medium
+750,Laptop Charger,Office Supplies,288,6,1,30,1234,22,0,Low
+751,HDD,Safety,20,25,13,37,903,5,0,High
+752,Switch,Electronics,479,4,2,70,739,19,0,Low
+753,HDD,Printer Supplies,62,38,8,56,1974,8,0,Medium
+754,Printer Cable,Electronics,74,13,6,59,321,3,1,Medium
+755,Receipt Printer,Mobile Accessories,635,5,4,63,1038,14,0,Low
+756,Printer Cable,Mobile Accessories,21,38,9,71,1566,12,1,High
+757,Pen Pack,Electronics,318,1,1,24,1418,22,0,Low
+758,Switch,Safety,482,2,1,59,154,7,1,Low
+759,Notebook,Electronics,16,64,9,62,676,9,0,High
+760,HDD,Office Supplies,336,0,1,43,505,14,0,Low
+761,Mouse,Safety,21,18,7,20,1117,2,0,Medium
+762,Switch,Storage Devices,6,51,14,32,442,0,1,High
+763,Router,Storage Devices,218,0,2,30,746,15,1,Low
+764,USB Flash,Printer Supplies,37,29,14,55,1742,1,1,High
+765,Ink Cartridge,Printer Supplies,12,45,11,36,1243,12,1,High
+766,Safety Gloves,Safety,146,8,1,21,605,4,1,Low
+767,Switch,Storage Devices,2,51,12,19,2033,2,1,High
+768,USB Flash,Storage Devices,12,39,11,41,2286,0,0,High
+769,Notebook,Printer Supplies,26,33,8,47,304,11,0,High
+770,Monitor Stand,Printer Supplies,9,50,10,67,781,7,1,High
+771,Receipt Printer,Office Supplies,36,12,7,31,2029,22,1,Medium
+772,Router,Storage Devices,208,1,2,35,1403,7,0,Low
+773,Notebook,Computer Accessories,30,63,14,55,728,4,0,High
+774,HDD,Printer Supplies,101,38,8,73,663,12,1,Medium
+775,Toner,Storage Devices,409,3,2,63,1838,24,0,Low
+776,HDD,Mobile Accessories,495,5,1,63,442,20,0,Low
+777,Monitor Stand,Storage Devices,8,4,5,14,872,10,0,Medium
+778,Safety Gloves,Storage Devices,13,62,15,38,1240,10,0,High
+779,Barcode Scanner,Safety,311,0,1,45,1211,28,1,Low
+780,Notebook,Mobile Accessories,430,1,2,47,2240,7,0,Low
+781,Mouse,Electronics,146,2,2,17,1049,25,0,Low
+782,Mouse,Mobile Accessories,95,38,6,67,2402,3,1,Medium
+783,HDD,Printer Supplies,6,62,9,44,1984,0,0,High
+784,Ink Cartridge,Mobile Accessories,693,4,1,72,1192,3,1,Low
+785,HDD,Printer Supplies,66,38,8,56,1778,0,0,Medium
+786,Printer Cable,Electronics,235,8,1,26,44,25,0,Low
+787,HDD,Electronics,3,34,13,58,2211,3,1,High
+788,Toner,Electronics,10,42,9,30,2256,2,0,High
+789,Monitor Stand,Safety,22,44,13,70,1325,6,0,High
+790,HDD,Printer Supplies,78,38,8,61,620,0,0,Medium
+791,Printer Cable,Safety,8,44,13,51,1602,6,1,High
+792,Notebook,Storage Devices,181,0,2,10,796,6,0,Low
+793,USB Flash,Office Supplies,396,4,1,38,1775,9,0,Low
+794,HDD,Computer Accessories,234,1,3,26,294,17,0,Low
+795,Keyboard,Safety,51,4,5,57,2325,55,1,Medium
+796,Laptop Charger,Office Supplies,40,27,7,29,331,0,1,Medium
+797,Monitor Stand,Printer Supplies,2,56,7,66,2218,0,1,High
+798,Keyboard,Storage Devices,17,4,2,28,1921,64,0,Medium
+799,Keyboard,Safety,34,52,12,57,1145,4,0,High
+800,Monitor Stand,Safety,9,23,8,64,1272,0,0,High
+801,Ink Cartridge,Printer Supplies,415,2,3,48,2357,19,0,Low
+802,Printer Cable,Safety,9,33,13,42,1395,5,0,High
+803,Safety Gloves,Mobile Accessories,31,4,2,43,785,92,1,Medium
+804,Ink Cartridge,Electronics,474,4,2,78,457,8,0,Low
+805,Pen Pack,Office Supplies,75,30,8,49,454,15,1,Medium
+806,Monitor Stand,Computer Accessories,35,50,15,67,1949,7,0,High
+807,Mouse,Computer Accessories,10,38,3,10,1621,0,0,Medium
+808,Barcode Scanner,Safety,399,7,4,63,2210,8,1,Low
+809,Keyboard,Safety,121,38,7,74,1893,5,1,Medium
+810,Laptop Charger,Printer Supplies,420,4,1,69,1895,7,0,Low
+811,Ink Cartridge,Storage Devices,478,2,3,50,2121,3,0,Low
+812,HDD,Mobile Accessories,9,54,12,25,1168,0,0,High
+813,HDD,Mobile Accessories,3,39,13,24,1084,0,1,High
+814,Router,Mobile Accessories,38,4,4,62,171,59,1,Medium
+815,Switch,Mobile Accessories,12,4,3,22,1996,93,0,Medium
+816,Toner,Printer Supplies,7,57,12,43,1509,2,0,High
+817,Toner,Electronics,2,63,11,51,2475,4,0,High
+818,USB Flash,Office Supplies,446,7,2,80,52,0,0,Low
+819,Notebook,Mobile Accessories,33,38,13,66,1141,8,0,High
+820,Toner,Storage Devices,320,0,2,52,1845,25,1,Low
+821,Laptop Charger,Office Supplies,17,39,12,36,1265,8,1,High
+822,Notebook,Storage Devices,197,1,1,16,980,5,0,Low
+823,Monitor Stand,Safety,19,53,10,65,1336,5,1,High
+824,Router,Storage Devices,93,0,2,30,788,14,0,Low
+825,Ink Cartridge,Storage Devices,13,62,15,67,363,6,1,High
+826,Router,Printer Supplies,20,38,8,18,292,1,0,Medium
+827,Toner,Computer Accessories,4,58,14,10,717,4,1,High
+828,Safety Gloves,Mobile Accessories,33,4,5,29,852,1,1,Medium
+829,Ink Cartridge,Printer Supplies,41,38,6,35,2052,3,0,Medium
+830,Safety Gloves,Mobile Accessories,33,4,5,30,837,11,1,Medium
+831,Notebook,Computer Accessories,28,35,13,61,677,2,1,High
+832,Printer Cable,Electronics,57,14,6,53,228,0,1,Medium
+833,USB Flash,Office Supplies,509,0,3,61,947,23,1,Low
+834,Mouse,Computer Accessories,25,20,7,22,1464,9,0,Medium
+835,Toner,Safety,300,0,2,30,1020,26,0,Low
+836,Pen Pack,Printer Supplies,195,0,2,49,1367,21,0,Low
+837,Safety Gloves,Storage Devices,649,0,2,68,1055,11,0,Low
+838,Ink Cartridge,Safety,22,46,9,80,606,3,0,High
+839,Laptop Charger,Office Supplies,27,41,13,69,2500,0,1,High
+840,USB Flash,Computer Accessories,13,60,13,27,1147,11,1,High
+841,Toner,Storage Devices,12,60,15,52,2453,3,1,High
+842,USB Flash,Computer Accessories,12,63,9,23,1132,10,1,High
+843,Notebook,Electronics,60,51,7,80,920,9,1,High
+844,Keyboard,Electronics,39,46,12,64,1774,5,0,High
+845,Pen Pack,Storage Devices,156,0,1,11,267,11,1,Low
+846,Switch,Office Supplies,323,0,1,31,1705,15,0,Low
+847,Ink Cartridge,Electronics,3,64,15,37,2366,0,1,High
+848,Keyboard,Storage Devices,36,7,7,38,487,8,0,Medium
+849,Ink Cartridge,Storage Devices,15,64,10,70,415,0,0,High
+850,HDD,Printer Supplies,14,33,8,12,786,12,0,Medium
+851,Receipt Printer,Electronics,21,9,4,26,2180,82,1,Medium
+852,Receipt Printer,Office Supplies,37,14,7,32,2392,6,1,Medium
+853,Safety Gloves,Printer Supplies,11,40,11,73,1789,7,1,High
+854,Laptop Charger,Office Supplies,6,37,11,37,1260,9,0,High
+855,USB Flash,Storage Devices,42,5,2,59,898,71,1,Medium
+856,USB Flash,Office Supplies,376,2,1,37,1843,10,1,Low
+857,Mouse,Printer Supplies,55,38,5,42,600,5,1,Medium
+858,Router,Printer Supplies,83,38,6,75,2298,16,0,Medium
+859,Barcode Scanner,Printer Supplies,5,32,9,34,35,9,0,High
+860,Pen Pack,Electronics,7,65,7,24,236,1,1,High
+861,Ink Cartridge,Printer Supplies,15,50,11,32,1377,10,0,High
+862,Safety Gloves,Safety,345,4,1,32,1461,28,0,Low
+863,Switch,Electronics,439,3,2,64,910,21,0,Low
+864,Mouse,Storage Devices,726,1,1,79,395,28,0,Low
+865,Safety Gloves,Electronics,406,7,3,52,2095,13,0,Low
+866,Keyboard,Electronics,17,59,13,57,1534,0,0,High
+867,Laptop Charger,Computer Accessories,290,0,1,13,2106,23,0,Low
+868,Toner,Office Supplies,6,55,8,76,298,6,1,High
+869,Toner,Office Supplies,12,45,12,64,185,5,1,High
+870,Laptop Charger,Office Supplies,29,46,13,67,2256,2,0,High
+871,Barcode Scanner,Storage Devices,280,2,3,40,1926,9,1,Low
+872,Ink Cartridge,Mobile Accessories,175,4,4,27,1066,20,0,Low
+873,HDD,Printer Supplies,128,4,1,13,571,31,0,Low
+874,Router,Office Supplies,0,42,15,29,2148,5,1,High
+875,Barcode Scanner,Storage Devices,200,1,4,51,1858,10,0,Low
+876,Receipt Printer,Safety,72,8,1,24,2380,2,0,Low
+877,Keyboard,Safety,36,38,6,26,1308,14,1,Medium
+878,Toner,Electronics,0,62,12,45,2472,2,1,High
+879,Keyboard,Safety,45,38,6,30,1486,15,1,Medium
+880,USB Flash,Office Supplies,548,0,3,53,903,22,1,Low
+881,Barcode Scanner,Storage Devices,0,70,11,53,2409,1,1,High
+882,Monitor Stand,Storage Devices,8,4,4,17,2393,107,0,Medium
+883,Notebook,Storage Devices,16,11,7,18,1880,38,1,Medium
+884,Router,Mobile Accessories,14,27,7,13,1558,9,0,Medium
+885,HDD,Mobile Accessories,416,2,1,70,918,18,1,Low
+886,Pen Pack,Electronics,2,64,9,22,35,2,1,High
+887,HDD,Office Supplies,72,38,5,59,1413,20,0,Medium
+888,Notebook,Printer Supplies,27,43,8,57,442,0,1,High
+889,Switch,Safety,453,2,1,61,332,6,0,Low
+890,Keyboard,Computer Accessories,29,11,8,29,1532,3,1,Medium
+891,Router,Printer Supplies,15,38,9,15,46,8,0,Medium
+892,Toner,Computer Accessories,3,48,14,10,560,4,1,High
+893,Switch,Storage Devices,11,4,2,19,84,78,0,Medium
+894,Barcode Scanner,Mobile Accessories,633,0,1,77,2500,23,0,Low
+895,Switch,Safety,31,4,2,66,1959,94,0,Medium
+896,Toner,Storage Devices,10,54,14,55,2222,2,1,High
+897,Pen Pack,Electronics,343,1,1,28,1165,19,0,Low
+898,Switch,Printer Supplies,64,38,5,45,1775,0,1,Medium
+899,Switch,Mobile Accessories,239,4,1,28,2321,20,0,Low
+900,Mouse,Electronics,152,7,2,21,882,24,0,Low
+901,Keyboard,Computer Accessories,329,0,1,46,396,1,0,Low
+902,Laptop Charger,Computer Accessories,246,2,1,15,2147,21,0,Low
+903,Toner,Electronics,0,61,13,10,1869,1,1,High
+904,Mouse,Electronics,338,5,3,52,1616,1,0,Low
+905,Router,Printer Supplies,75,38,7,73,2032,0,1,Medium
+906,Receipt Printer,Storage Devices,15,4,3,22,1302,75,0,Medium
+907,Safety Gloves,Safety,154,8,3,21,714,4,0,Low
+908,Toner,Safety,29,4,4,49,286,73,0,Medium
+909,HDD,Mobile Accessories,500,5,1,77,1990,7,0,Low
+910,Printer Cable,Electronics,333,7,2,37,35,31,0,Low
+911,Receipt Printer,Mobile Accessories,47,45,13,63,787,3,1,High
+912,Router,Office Supplies,5,33,15,25,1899,3,0,High
+913,Router,Computer Accessories,7,36,10,41,1167,11,1,High
+914,Mouse,Computer Accessories,14,38,3,13,1518,8,0,Medium
+915,Mouse,Electronics,208,3,2,57,2049,4,0,Low
+916,Receipt Printer,Electronics,24,4,4,35,2156,83,0,Medium
+917,Safety Gloves,Printer Supplies,12,24,14,57,681,7,1,High
+918,Mouse,Printer Supplies,0,62,12,30,507,3,0,High
+919,Router,Mobile Accessories,18,25,7,15,1371,9,0,Medium
+920,Router,Storage Devices,268,0,2,34,1458,8,0,Low
+921,Printer Cable,Mobile Accessories,29,47,11,67,1434,9,1,High
+922,Safety Gloves,Computer Accessories,130,4,1,15,2245,22,0,Low
+923,HDD,Safety,23,32,13,41,979,8,1,High
+924,Barcode Scanner,Computer Accessories,144,2,1,18,35,19,1,Low
+925,Switch,Computer Accessories,5,63,10,17,1374,5,1,High
+926,Monitor Stand,Storage Devices,13,9,4,22,2496,108,1,Medium
+927,Printer Cable,Electronics,54,9,6,53,253,1,0,Medium
+928,USB Flash,Safety,28,38,8,24,405,0,0,Medium
+929,Switch,Office Supplies,320,0,3,31,1906,15,0,Low
+930,Mouse,Mobile Accessories,2,58,10,13,714,6,1,High
+931,Mouse,Electronics,98,4,1,28,502,25,0,Low
+932,HDD,Computer Accessories,61,32,4,54,1092,3,0,Medium
+933,Notebook,Storage Devices,13,12,7,18,1744,28,0,Medium
+934,Switch,Mobile Accessories,11,4,3,17,2062,91,1,Medium
+935,Toner,Printer Supplies,3,53,13,44,1467,1,1,High
+936,HDD,Office Supplies,57,38,5,54,1346,8,1,Medium
+937,Mouse,Computer Accessories,26,38,3,22,1738,6,0,Medium
+938,Router,Storage Devices,33,6,2,49,2367,86,0,Medium
+939,Laptop Charger,Safety,13,7,3,23,696,108,0,Medium
+940,Barcode Scanner,Safety,10,4,4,15,2179,108,0,Medium
+941,Toner,Electronics,0,62,11,47,2488,3,1,High
+942,Safety Gloves,Printer Supplies,194,0,3,50,1837,24,0,Low
+943,Monitor Stand,Electronics,55,38,6,44,2248,6,1,Medium
+944,Notebook,Mobile Accessories,514,1,2,47,2408,12,0,Low
+945,Router,Storage Devices,296,5,1,80,438,2,0,Low
+946,Router,Printer Supplies,101,38,7,69,2172,4,1,Medium
+947,Barcode Scanner,Electronics,110,2,1,19,240,26,1,Low
+948,Keyboard,Safety,3,47,12,13,1691,7,1,High
+949,Notebook,Mobile Accessories,74,32,7,69,2369,2,0,Medium
+950,Safety Gloves,Safety,37,4,5,59,62,64,0,Medium
+951,Safety Gloves,Electronics,33,38,6,31,568,3,0,Medium
+952,Pen Pack,Printer Supplies,84,38,3,77,431,0,0,Medium
+953,Safety Gloves,Computer Accessories,557,6,4,49,1430,18,1,Low
+954,Notebook,Printer Supplies,14,47,14,46,427,0,1,High
+955,Keyboard,Storage Devices,43,6,7,32,556,1,1,Medium
+956,Mouse,Electronics,346,4,3,63,1628,2,0,Low
+957,Laptop Charger,Computer Accessories,25,9,6,21,208,20,1,Medium
+958,Keyboard,Safety,26,53,11,53,1280,5,1,High
+959,Laptop Charger,Electronics,340,7,1,51,2275,10,0,Low
+960,Keyboard,Safety,1,43,14,10,1765,12,0,High
+961,Safety Gloves,Electronics,367,4,3,54,1814,12,0,Low
+962,Toner,Printer Supplies,51,17,4,52,1108,22,0,Medium
+963,Laptop Charger,Safety,131,5,1,25,1818,3,0,Low
+964,Barcode Scanner,Mobile Accessories,1,33,13,20,989,0,1,High
+965,Mouse,Printer Supplies,0,62,14,37,416,2,0,High
+966,Safety Gloves,Storage Devices,11,9,7,19,1141,2,0,Medium
+967,HDD,Mobile Accessories,8,41,11,30,1085,4,0,High
+968,Laptop Charger,Office Supplies,249,9,1,31,1391,20,0,Low
+969,Laptop Charger,Printer Supplies,78,38,3,65,1863,3,0,Medium
+970,Monitor Stand,Mobile Accessories,38,4,5,60,1670,91,0,Medium
+971,Keyboard,Safety,16,52,12,49,1195,4,1,High
+972,Printer Cable,Safety,63,15,4,63,688,18,0,Medium
+973,Barcode Scanner,Mobile Accessories,525,0,2,77,2411,23,0,Low
+974,HDD,Mobile Accessories,18,31,2,17,1941,10,0,Medium
+975,Notebook,Electronics,33,57,15,77,1119,7,0,High
+976,Ink Cartridge,Printer Supplies,14,39,11,33,1317,0,1,High
+977,Router,Office Supplies,2,32,14,28,2042,3,1,High
+978,Pen Pack,Electronics,1,64,8,21,344,7,1,High
+979,Toner,Storage Devices,40,57,14,55,2500,2,1,High
+980,Notebook,Printer Supplies,508,6,2,69,1025,5,0,Low
+981,Barcode Scanner,Printer Supplies,466,7,4,41,2289,14,0,Low
+982,Pen Pack,Storage Devices,7,60,9,17,1629,3,0,High
+983,Barcode Scanner,Office Supplies,17,47,11,27,2226,0,0,High
+984,Safety Gloves,Computer Accessories,132,3,1,18,2165,26,0,Low
+985,Toner,Printer Supplies,7,66,15,53,1434,2,0,High
+986,Printer Cable,Safety,6,41,12,44,1404,1,1,High
+987,Safety Gloves,Printer Supplies,12,20,10,72,1881,12,0,High
+988,Receipt Printer,Mobile Accessories,624,4,1,64,1160,16,0,Low
+989,Barcode Scanner,Computer Accessories,161,4,1,22,43,16,0,Low
+990,Pen Pack,Electronics,0,64,9,13,35,6,0,High
+991,Safety Gloves,Computer Accessories,20,39,11,73,2102,0,1,High
+992,USB Flash,Mobile Accessories,517,1,3,46,1342,15,1,Low
+993,Keyboard,Storage Devices,19,4,2,27,2016,59,0,Medium
+994,Ink Cartridge,Safety,18,41,8,69,2474,7,1,High
+995,Printer Cable,Safety,25,31,13,40,1264,6,0,High
+996,Router,Computer Accessories,336,9,2,26,996,26,0,Low
+997,Ink Cartridge,Mobile Accessories,495,2,2,37,915,8,0,Low
+998,Laptop Charger,Computer Accessories,34,14,7,26,35,17,1,Medium
+999,Mouse,Computer Accessories,19,38,2,21,1768,5,1,Medium
+1000,Safety Gloves,Storage Devices,15,16,7,17,1298,10,0,Medium
+1001,Notebook,Computer Accessories,27,27,13,70,551,3,1,High
+1002,Receipt Printer,Office Supplies,250,3,1,62,1195,26,0,Low
+1003,Router,Printer Supplies,103,38,7,75,2290,0,1,Medium
+1004,USB Flash,Office Supplies,715,3,2,80,158,3,0,Low
+1005,Notebook,Printer Supplies,167,0,2,20,2150,17,0,Low
+1006,Safety Gloves,Printer Supplies,6,51,12,64,1717,12,0,High
+1007,Safety Gloves,Safety,9,31,10,27,2482,0,1,High
+1008,Notebook,Printer Supplies,526,3,1,66,1064,7,0,Low
+1009,USB Flash,Office Supplies,12,50,15,19,2375,0,1,High
+1010,Receipt Printer,Mobile Accessories,723,2,2,61,1287,15,0,Low
+1011,Mouse,Computer Accessories,6,38,3,10,1562,6,0,Medium
+1012,Notebook,Printer Supplies,7,30,9,43,489,10,0,High
+1013,Receipt Printer,Printer Supplies,296,7,4,32,2399,8,0,Low
+1014,Keyboard,Safety,108,38,7,73,1938,13,1,Medium
+1015,Ink Cartridge,Electronics,3,63,15,33,2457,0,1,High
+1016,Monitor Stand,Storage Devices,8,4,3,16,2412,120,1,Medium
+1017,Ink Cartridge,Mobile Accessories,102,7,4,24,1332,21,0,Low
+1018,Router,Printer Supplies,121,38,7,80,2370,5,1,Medium
+1019,Laptop Charger,Office Supplies,252,0,1,36,1616,21,0,Low
+1020,USB Flash,Printer Supplies,21,9,9,21,1377,37,0,Medium
+1021,Toner,Safety,25,4,5,55,550,74,1,Medium
+1022,Toner,Printer Supplies,50,17,4,46,1228,15,1,Medium
+1023,HDD,Storage Devices,609,8,4,80,2213,29,0,Low
+1024,Switch,Computer Accessories,1,65,14,29,1466,8,1,High
+1025,Router,Printer Supplies,17,47,14,57,237,7,0,High
+1026,Pen Pack,Storage Devices,371,4,1,51,126,8,0,Low
+1027,Toner,Computer Accessories,97,0,1,15,1000,27,0,Low
+1028,Switch,Mobile Accessories,348,6,3,57,1829,29,0,Low
+1029,HDD,Office Supplies,371,4,2,35,328,16,0,Low
+1030,Notebook,Storage Devices,20,5,6,17,830,17,1,Medium
+1031,HDD,Safety,25,29,12,34,798,0,1,High
+1032,Pen Pack,Storage Devices,0,61,9,10,1384,8,1,High
+1033,Pen Pack,Printer Supplies,25,4,4,47,410,115,0,Medium
+1034,Receipt Printer,Office Supplies,321,5,3,59,1508,26,1,Low
+1035,HDD,Safety,57,38,7,46,273,0,1,Medium
+1036,Keyboard,Computer Accessories,39,4,5,46,543,108,1,Medium
+1037,Switch,Office Supplies,340,0,1,33,1828,16,1,Low
+1038,Keyboard,Electronics,37,27,14,56,1655,5,1,High
+1039,Laptop Charger,Electronics,369,8,1,49,2500,10,0,Low
+1040,USB Flash,Computer Accessories,1,35,13,30,1254,8,1,High
+1041,HDD,Electronics,4,22,10,53,2076,5,0,High
+1042,Monitor Stand,Printer Supplies,3,58,11,74,2500,12,1,High
+1043,Keyboard,Safety,1,46,13,10,1630,9,0,High
+1044,Mouse,Storage Devices,691,1,1,72,695,28,0,Low
+1045,Switch,Storage Devices,14,41,13,27,1366,9,0,High
+1046,Laptop Charger,Electronics,81,9,6,74,2015,3,1,Medium
+1047,Router,Printer Supplies,80,38,8,74,2472,15,0,Medium
+1048,USB Flash,Office Supplies,484,8,2,78,35,1,0,Low
+1049,Ink Cartridge,Computer Accessories,54,36,5,49,1566,0,0,Medium
+1050,Mouse,Computer Accessories,19,38,3,18,1432,4,1,Medium
+1051,Laptop Charger,Safety,5,56,15,18,1196,3,1,High
+1052,Receipt Printer,Office Supplies,45,16,7,36,2416,6,1,Medium
+1053,Barcode Scanner,Storage Devices,77,38,4,51,1762,10,1,Medium
+1054,Receipt Printer,Office Supplies,26,9,7,38,2380,18,1,Medium
+1055,Laptop Charger,Office Supplies,38,38,15,45,1062,5,1,High
+1056,Safety Gloves,Safety,8,51,12,33,2396,10,0,High
+1057,Keyboard,Computer Accessories,26,12,8,26,1328,21,0,Medium
+1058,Toner,Electronics,0,51,12,45,2500,0,1,High
+1059,Pen Pack,Storage Devices,368,3,1,48,186,7,0,Low
+1060,Toner,Computer Accessories,0,46,14,18,722,6,1,High
+1061,Barcode Scanner,Safety,4,52,10,22,697,3,1,High
+1062,Ink Cartridge,Computer Accessories,51,38,5,46,1218,16,1,Medium
+1063,HDD,Printer Supplies,54,5,1,14,663,30,0,Low
+1064,Switch,Safety,445,1,1,62,315,3,0,Low
+1065,Safety Gloves,Electronics,50,38,5,35,698,4,1,Medium
+1066,HDD,Printer Supplies,91,38,8,66,804,4,1,Medium
+1067,USB Flash,Safety,26,38,8,23,196,6,0,Medium
+1068,Barcode Scanner,Safety,20,39,12,67,965,5,1,High
+1069,Barcode Scanner,Electronics,3,66,15,58,35,0,0,High
+1070,Monitor Stand,Mobile Accessories,32,4,4,55,1591,74,0,Medium
+1071,Toner,Storage Devices,379,0,1,56,2011,23,0,Low
+1072,USB Flash,Storage Devices,13,49,13,37,2169,4,0,High
+1073,HDD,Printer Supplies,45,4,1,19,515,30,0,Low
+1074,Keyboard,Safety,7,7,5,10,762,81,0,Medium
+1075,USB Flash,Storage Devices,616,1,4,65,48,9,0,Low
+1076,Switch,Safety,59,38,5,49,631,11,0,Medium
+1077,USB Flash,Mobile Accessories,16,4,5,25,2047,80,0,Medium
+1078,Monitor Stand,Mobile Accessories,129,2,4,35,574,9,0,Low
+1079,Barcode Scanner,Electronics,32,68,15,49,133,8,1,High
+1080,Notebook,Mobile Accessories,502,0,2,47,2246,9,0,Low
+1081,Safety Gloves,Electronics,326,7,3,57,2144,14,0,Low
+1082,HDD,Printer Supplies,64,38,8,54,842,6,0,Medium
+1083,Router,Safety,38,38,5,33,1420,1,0,Medium
+1084,Printer Cable,Electronics,746,5,3,71,2271,14,1,Low
+1085,Printer Cable,Computer Accessories,581,0,3,54,60,7,0,Low
+1086,USB Flash,Safety,27,38,8,26,537,14,1,Medium
+1087,Toner,Electronics,0,61,11,47,2500,3,1,High
+1088,Safety Gloves,Electronics,5,39,13,53,1132,0,0,High
+1089,Laptop Charger,Safety,25,4,3,28,875,91,1,Medium
+1090,USB Flash,Electronics,49,11,3,75,2409,20,0,Medium
+1091,Switch,Computer Accessories,212,3,1,40,1076,18,0,Low
+1092,Barcode Scanner,Safety,358,0,4,47,1313,27,0,Low
+1093,Laptop Charger,Safety,40,4,4,62,572,69,0,Medium
+1094,Ink Cartridge,Printer Supplies,383,7,3,55,2387,22,0,Low
+1095,Ink Cartridge,Safety,13,41,13,79,892,0,0,High
+1096,Pen Pack,Storage Devices,0,60,12,76,1129,6,0,High
+1097,USB Flash,Mobile Accessories,17,4,5,29,2283,91,0,Medium
+1098,HDD,Mobile Accessories,4,51,12,31,1303,4,0,High
+1099,Pen Pack,Storage Devices,7,40,13,73,961,6,1,High
+1100,Mouse,Computer Accessories,20,38,3,14,1543,7,1,Medium
+1101,Barcode Scanner,Electronics,122,1,1,21,101,25,1,Low
+1102,HDD,Printer Supplies,22,31,7,19,818,9,0,Medium
+1103,Ink Cartridge,Safety,20,26,15,74,2413,6,1,High
+1104,Ink Cartridge,Printer Supplies,422,7,4,53,2407,21,0,Low
+1105,Notebook,Electronics,19,66,15,72,674,10,1,High
+1106,Safety Gloves,Safety,9,43,11,33,2096,4,1,High
+1107,Pen Pack,Storage Devices,4,46,11,80,781,6,1,High
+1108,Toner,Storage Devices,14,53,11,40,1427,9,1,High
+1109,Safety Gloves,Storage Devices,14,22,6,12,1211,1,0,Medium
+1110,Pen Pack,Printer Supplies,26,4,6,35,2171,54,1,Medium
+1111,USB Flash,Office Supplies,5,51,15,23,2375,6,1,High
+1112,Receipt Printer,Printer Supplies,469,4,1,64,1458,21,0,Low
+1113,USB Flash,Safety,21,38,7,19,181,4,0,Medium
+1114,Ink Cartridge,Safety,32,6,5,47,2218,104,0,Medium
+1115,Mouse,Printer Supplies,0,59,13,31,653,3,0,High
+1116,Switch,Computer Accessories,310,2,1,43,1352,19,0,Low
+1117,Receipt Printer,Computer Accessories,48,37,6,32,356,3,1,Medium
+1118,Keyboard,Electronics,17,57,14,56,1847,0,0,High
+1119,Barcode Scanner,Mobile Accessories,2,36,12,15,996,2,1,High
+1120,Laptop Charger,Safety,18,5,3,26,1043,108,1,Medium
+1121,Keyboard,Storage Devices,14,4,2,28,1964,69,0,Medium
+1122,Printer Cable,Office Supplies,296,1,3,37,1181,8,0,Low
+1123,Safety Gloves,Computer Accessories,17,43,11,68,1649,0,1,High
+1124,Safety Gloves,Computer Accessories,505,7,4,48,1436,16,1,Low
+1125,Safety Gloves,Computer Accessories,583,6,3,51,1541,20,0,Low
+1126,Router,Mobile Accessories,8,29,6,10,1044,12,0,Medium
+1127,Safety Gloves,Electronics,381,5,1,50,1899,10,0,Low
+1128,Laptop Charger,Office Supplies,3,45,14,57,2200,10,1,High
+1129,HDD,Office Supplies,261,5,2,38,585,16,0,Low
+1130,Pen Pack,Electronics,31,4,2,65,506,91,0,Medium
+1131,Receipt Printer,Office Supplies,30,10,6,30,2331,12,1,Medium
+1132,Toner,Computer Accessories,69,0,1,23,814,27,0,Low
+1133,Barcode Scanner,Mobile Accessories,4,35,13,12,717,1,1,High
+1134,Ink Cartridge,Mobile Accessories,703,2,1,75,1072,2,1,Low
+1135,Safety Gloves,Safety,37,4,5,55,151,83,0,Medium
+1136,Safety Gloves,Mobile Accessories,39,4,2,44,877,109,1,Medium
+1137,Safety Gloves,Safety,23,4,5,36,1401,85,0,Medium
+1138,Toner,Printer Supplies,399,8,1,41,642,19,0,Low
+1139,Safety Gloves,Storage Devices,593,0,1,65,1134,12,0,Low
+1140,Keyboard,Safety,29,49,14,61,1100,4,1,High
+1141,Switch,Safety,34,4,2,56,2126,82,0,Medium
+1142,Router,Mobile Accessories,40,4,5,59,210,59,1,Medium
+1143,Toner,Office Supplies,17,47,9,70,35,6,1,High
+1144,Monitor Stand,Mobile Accessories,32,4,5,58,1728,72,0,Medium
+1145,HDD,Office Supplies,360,4,2,40,306,17,0,Low
+1146,Receipt Printer,Storage Devices,14,4,3,27,1258,70,0,Medium
+1147,Barcode Scanner,Safety,366,1,4,45,1157,29,0,Low
+1148,Toner,Electronics,28,38,4,28,164,0,1,Medium
+1149,Router,Computer Accessories,16,34,9,35,1218,4,1,High
+1150,Notebook,Storage Devices,8,12,7,10,2060,17,0,Medium
+1151,USB Flash,Storage Devices,50,4,2,55,785,73,1,Medium
+1152,Laptop Charger,Safety,0,37,12,21,1203,2,1,High
+1153,Switch,Mobile Accessories,438,6,4,58,1763,26,0,Low
+1154,Router,Computer Accessories,275,5,2,30,1039,26,0,Low
+1155,Switch,Safety,33,4,2,42,1043,82,1,Medium
+1156,Safety Gloves,Safety,334,0,1,37,1407,28,0,Low
+1157,Barcode Scanner,Computer Accessories,131,0,1,19,116,19,0,Low
+1158,Monitor Stand,Electronics,34,59,12,74,1016,5,1,High
+1159,Toner,Office Supplies,345,2,2,69,1362,31,1,Low
+1160,Printer Cable,Safety,716,2,2,66,174,2,1,Low
+1161,Router,Storage Devices,305,4,1,80,302,4,1,Low
+1162,HDD,Printer Supplies,89,38,8,64,2071,0,0,Medium
+1163,HDD,Office Supplies,67,38,5,60,1268,7,0,Medium
+1164,Toner,Office Supplies,465,1,2,49,1396,3,0,Low
+1165,Keyboard,Safety,5,4,5,10,654,67,0,Medium
+1166,Ink Cartridge,Safety,23,41,8,80,554,5,1,High
+1167,Pen Pack,Office Supplies,0,62,9,21,729,0,0,High
+1168,Monitor Stand,Computer Accessories,5,31,13,27,1083,9,0,High
+1169,Pen Pack,Electronics,56,4,2,70,554,96,1,Medium
+1170,Safety Gloves,Computer Accessories,551,6,2,62,1669,13,0,Low
+1171,Barcode Scanner,Electronics,24,67,15,51,215,9,1,High
+1172,USB Flash,Safety,124,4,2,18,962,22,0,Low
+1173,Router,Printer Supplies,17,38,8,13,153,4,1,Medium
+1174,Monitor Stand,Printer Supplies,37,51,11,73,843,8,1,High
+1175,Switch,Mobile Accessories,399,6,1,51,1600,28,0,Low
+1176,Switch,Safety,20,5,2,34,1318,86,0,Medium
+1177,HDD,Printer Supplies,89,38,8,64,1009,3,0,Medium
+1178,Mouse,Electronics,34,35,14,65,413,2,1,High
+1179,HDD,Mobile Accessories,395,4,4,80,2029,8,0,Low
+1180,Laptop Charger,Safety,2,37,8,20,1200,3,1,High
+1181,Safety Gloves,Storage Devices,652,0,4,70,1240,12,0,Low
+1182,Safety Gloves,Computer Accessories,491,6,2,56,1529,16,0,Low
+1183,Notebook,Safety,480,2,4,65,235,3,0,Low
+1184,USB Flash,Office Supplies,16,43,15,20,2390,3,1,High
+1185,Printer Cable,Mobile Accessories,34,45,11,63,1489,12,1,High
+1186,Switch,Mobile Accessories,208,0,2,31,2128,22,0,Low
+1187,Toner,Storage Devices,26,47,9,39,1524,5,0,High
+1188,HDD,Office Supplies,350,1,2,47,228,16,0,Low
+1189,Toner,Safety,301,0,1,35,616,24,1,Low
+1190,Monitor Stand,Safety,14,47,9,61,1227,1,0,High
+1191,Keyboard,Office Supplies,3,45,15,29,708,0,0,High
+1192,Ink Cartridge,Mobile Accessories,525,1,2,39,1045,7,0,Low
+1193,Printer Cable,Computer Accessories,185,1,2,10,1739,9,0,Low
+1194,Safety Gloves,Electronics,35,38,5,34,722,15,1,Medium
+1195,Laptop Charger,Electronics,90,10,7,75,1887,11,1,Medium
+1196,Printer Cable,Safety,503,4,4,71,2184,1,0,Low
+1197,Pen Pack,Storage Devices,144,1,2,17,255,6,1,Low
+1198,Mouse,Electronics,243,8,2,58,1796,0,0,Low
+1199,Receipt Printer,Safety,136,0,1,17,2297,2,0,Low
+1200,Toner,Storage Devices,32,64,13,48,2500,0,1,High
+1201,HDD,Storage Devices,569,5,1,77,2250,30,0,Low
+1202,Safety Gloves,Printer Supplies,14,55,11,70,1745,8,1,High
+1203,Keyboard,Computer Accessories,26,4,5,52,461,108,1,Medium
+1204,Toner,Safety,271,0,2,31,573,26,0,Low
+1205,Toner,Printer Supplies,47,16,4,47,1204,17,0,Medium
+1206,HDD,Electronics,0,27,11,48,2129,2,0,High
+1207,Pen Pack,Electronics,47,9,6,55,2203,38,0,Medium
+1208,Monitor Stand,Safety,7,65,13,66,1477,5,1,High
+1209,HDD,Storage Devices,201,6,1,27,1253,11,0,Low
+1210,USB Flash,Storage Devices,663,9,4,67,35,13,0,Low
+1211,Notebook,Safety,600,1,3,67,315,2,0,Low
+1212,Router,Storage Devices,257,0,2,26,1379,7,0,Low
+1213,Safety Gloves,Printer Supplies,11,34,15,57,738,7,1,High
+1214,Switch,Computer Accessories,249,2,1,31,1254,19,1,Low
+1215,Monitor Stand,Safety,3,30,10,67,1517,4,1,High
+1216,Notebook,Printer Supplies,447,0,4,64,1262,5,0,Low
+1217,USB Flash,Office Supplies,13,43,15,21,2449,0,1,High
+1218,Monitor Stand,Computer Accessories,15,42,13,29,1287,0,1,High
+1219,Ink Cartridge,Printer Supplies,8,39,10,38,1336,2,0,High
+1220,Receipt Printer,Office Supplies,26,10,7,32,2324,6,0,Medium
+1221,Mouse,Mobile Accessories,63,33,6,61,2488,0,0,Medium
+1222,Barcode Scanner,Storage Devices,56,38,5,50,1853,15,0,Medium
+1223,Ink Cartridge,Storage Devices,463,5,1,45,1941,4,0,Low
+1224,Monitor Stand,Safety,5,21,15,60,1241,4,1,High
+1225,Ink Cartridge,Safety,15,57,8,70,2225,10,1,High
+1226,Printer Cable,Electronics,53,13,6,52,176,9,0,Medium
+1227,Notebook,Computer Accessories,22,42,15,70,611,0,1,High
+1228,HDD,Office Supplies,380,3,2,39,565,16,0,Low
+1229,HDD,Mobile Accessories,462,5,4,61,602,18,1,Low
+1230,Printer Cable,Safety,64,12,4,63,427,22,1,Medium
+1231,Keyboard,Office Supplies,0,37,13,21,327,7,0,High
+1232,Safety Gloves,Storage Devices,664,0,3,59,1289,10,0,Low
+1233,USB Flash,Safety,25,38,8,23,315,1,0,Medium
+1234,Notebook,Safety,393,2,1,62,437,2,0,Low
+1235,Safety Gloves,Electronics,333,5,1,50,2352,10,0,Low
+1236,Pen Pack,Electronics,42,4,2,67,693,100,0,Medium
+1237,Printer Cable,Safety,721,1,3,70,51,3,1,Low
+1238,HDD,Safety,27,38,12,31,973,7,1,High
+1239,USB Flash,Office Supplies,484,9,1,80,210,3,1,Low
+1240,Printer Cable,Computer Accessories,170,8,2,10,1863,13,0,Low
+1241,Notebook,Printer Supplies,25,27,7,44,535,11,1,High
+1242,HDD,Mobile Accessories,8,38,12,33,1211,5,1,High
+1243,Receipt Printer,Storage Devices,13,4,4,19,1263,84,0,Medium
+1244,Barcode Scanner,Electronics,33,72,15,54,59,10,1,High
+1245,HDD,Electronics,2,23,8,54,2143,6,0,High
+1246,Safety Gloves,Storage Devices,20,22,7,17,1075,5,0,Medium
+1247,Toner,Office Supplies,239,4,3,21,1428,31,0,Low
+1248,Router,Printer Supplies,117,38,8,79,2085,7,1,Medium
+1249,Router,Mobile Accessories,10,25,7,10,1222,16,1,Medium
+1250,Mouse,Office Supplies,13,33,15,70,1372,7,0,High
+1251,Notebook,Electronics,21,59,11,64,823,6,1,High
+1252,Pen Pack,Storage Devices,1,58,13,19,1297,7,0,High
+1253,Monitor Stand,Storage Devices,24,4,3,42,1788,103,0,Medium
+1254,Toner,Electronics,0,63,13,13,1813,1,1,High
+1255,Keyboard,Office Supplies,375,0,2,55,2500,5,0,Low
+1256,Printer Cable,Electronics,46,13,6,56,320,11,0,Medium
+1257,Notebook,Computer Accessories,18,54,14,75,682,3,1,High
+1258,Toner,Computer Accessories,142,2,1,22,1193,23,0,Low
+1259,Switch,Printer Supplies,56,38,5,42,1524,24,1,Medium
+1260,Barcode Scanner,Mobile Accessories,494,4,2,73,2500,19,0,Low
+1261,Laptop Charger,Office Supplies,26,34,8,23,233,2,0,Medium
+1262,Pen Pack,Printer Supplies,93,38,3,77,700,0,0,Medium
+1263,Barcode Scanner,Storage Devices,3,68,11,62,2311,3,0,High
+1264,Receipt Printer,Storage Devices,230,8,2,28,1653,27,0,Low
+1265,Router,Computer Accessories,9,37,9,43,896,12,1,High
+1266,Keyboard,Office Supplies,0,64,14,20,614,4,1,High
+1267,Ink Cartridge,Printer Supplies,155,3,1,40,1540,18,0,Low
+1268,Router,Printer Supplies,17,47,15,53,382,0,1,High
+1269,Toner,Office Supplies,21,55,12,69,323,3,1,High
+1270,HDD,Safety,3,58,9,21,1800,8,0,High
+1271,Barcode Scanner,Safety,15,48,14,72,1053,5,1,High
+1272,Toner,Printer Supplies,4,58,11,40,1193,0,1,High
+1273,Printer Cable,Safety,800,0,4,67,90,4,0,Low
+1274,USB Flash,Office Supplies,329,0,3,43,1797,13,0,Low
+1275,Monitor Stand,Storage Devices,29,4,3,47,1879,92,0,Medium
+1276,Router,Office Supplies,35,4,4,55,344,120,0,Medium
+1277,HDD,Storage Devices,97,6,1,23,1288,11,0,Low
+1278,Printer Cable,Electronics,270,8,2,26,130,24,0,Low
+1279,HDD,Printer Supplies,20,43,9,39,219,2,0,High
+1280,Keyboard,Mobile Accessories,27,13,6,26,2032,33,1,Medium
+1281,Switch,Safety,464,2,1,58,299,7,0,Low
+1282,Toner,Computer Accessories,5,47,14,12,672,4,1,High
+1283,Pen Pack,Office Supplies,0,65,14,23,767,11,0,High
+1284,Monitor Stand,Computer Accessories,4,52,13,31,1321,2,0,High
+1285,Router,Office Supplies,2,32,13,31,1939,4,1,High
+1286,Mouse,Electronics,30,34,14,60,174,2,0,High
+1287,Switch,Printer Supplies,56,38,5,47,1430,0,0,Medium
+1288,Ink Cartridge,Electronics,79,38,4,72,1350,11,0,Medium
+1289,Printer Cable,Electronics,661,6,1,68,2198,13,0,Low
+1290,Router,Printer Supplies,736,6,1,66,1692,9,0,Low
+1291,USB Flash,Printer Supplies,39,30,15,52,1581,0,1,High
+1292,Switch,Computer Accessories,241,0,1,39,1184,22,1,Low
+1293,Barcode Scanner,Safety,30,19,6,23,1510,37,1,Medium
+1294,USB Flash,Storage Devices,596,5,4,60,35,10,0,Low
+1295,Safety Gloves,Safety,186,7,3,27,828,5,0,Low
+1296,Receipt Printer,Safety,87,12,4,71,1554,4,1,Medium
+1297,Mouse,Printer Supplies,0,51,14,32,652,2,0,High
+1298,Monitor Stand,Safety,7,44,14,66,1214,4,1,High
+1299,Toner,Safety,324,0,1,30,741,26,0,Low
+1300,Toner,Office Supplies,521,0,2,64,991,29,0,Low
+1301,Toner,Electronics,36,38,4,33,35,3,0,Medium
+1302,Printer Cable,Safety,468,0,4,70,2268,3,0,Low
+1303,Ink Cartridge,Storage Devices,473,0,3,43,1804,3,0,Low
+1304,HDD,Printer Supplies,0,44,15,38,1923,10,1,High
+1305,USB Flash,Office Supplies,502,2,3,58,821,21,0,Low
+1306,Monitor Stand,Mobile Accessories,38,4,5,49,1742,4,0,Medium
+1307,USB Flash,Storage Devices,618,2,2,51,35,8,0,Low
+1308,Receipt Printer,Printer Supplies,494,2,1,58,1305,21,0,Low
+1309,Safety Gloves,Electronics,41,38,5,38,436,29,1,Medium
+1310,Ink Cartridge,Mobile Accessories,5,65,10,45,1490,7,1,High
+1311,Safety Gloves,Computer Accessories,150,0,1,10,2222,26,0,Low
+1312,Laptop Charger,Safety,4,42,11,20,1323,3,0,High
+1313,Router,Printer Supplies,82,38,7,79,2092,2,0,Medium
+1314,Keyboard,Storage Devices,29,4,5,53,1353,89,1,Medium
+1315,Laptop Charger,Safety,2,49,9,25,1178,3,1,High
+1316,Switch,Mobile Accessories,15,4,3,28,2085,80,1,Medium
+1317,Laptop Charger,Office Supplies,11,47,15,31,1304,11,1,High
+1318,Barcode Scanner,Safety,173,1,1,43,982,29,0,Low
+1319,Safety Gloves,Printer Supplies,8,35,15,51,766,7,0,High
+1320,Pen Pack,Storage Devices,1,42,15,77,619,5,1,High
+1321,USB Flash,Office Supplies,354,0,4,42,1869,11,0,Low
+1322,Printer Cable,Electronics,55,17,6,52,126,10,0,Medium
+1323,HDD,Safety,65,38,7,53,227,0,0,Medium
+1324,Keyboard,Safety,32,38,6,26,1474,7,0,Medium
+1325,USB Flash,Office Supplies,9,46,15,21,2457,4,1,High
+1326,Keyboard,Computer Accessories,34,4,5,56,212,107,0,Medium
+1327,Router,Storage Devices,692,1,1,78,68,2,0,Low
+1328,HDD,Safety,5,58,10,15,1435,10,1,High
+1329,HDD,Mobile Accessories,461,6,4,66,739,20,1,Low
+1330,Monitor Stand,Electronics,52,38,6,45,2181,4,0,Medium
+1331,Safety Gloves,Computer Accessories,170,3,1,22,2141,24,1,Low
+1332,USB Flash,Storage Devices,14,53,12,32,2400,0,1,High
+1333,Pen Pack,Storage Devices,112,1,2,19,210,8,0,Low
+1334,USB Flash,Storage Devices,7,52,15,43,2329,3,1,High
+1335,Monitor Stand,Electronics,56,38,6,46,2246,17,0,Medium
+1336,Monitor Stand,Printer Supplies,5,58,12,71,2358,10,1,High
+1337,Laptop Charger,Office Supplies,25,54,15,46,1401,7,1,High
+1338,Router,Office Supplies,2,27,13,36,2159,2,1,High
+1339,Ink Cartridge,Mobile Accessories,2,71,10,49,1587,0,1,High
+1340,Printer Cable,Safety,72,38,5,50,853,0,1,Medium
+1341,Printer Cable,Mobile Accessories,31,23,9,59,1591,2,0,High
+1342,Barcode Scanner,Printer Supplies,472,4,1,46,2185,13,0,Low
+1343,Keyboard,Safety,26,67,12,55,1203,4,1,High
+1344,Pen Pack,Printer Supplies,154,2,2,40,1552,21,0,Low
+1345,Safety Gloves,Electronics,3,54,14,53,941,5,0,High
+1346,Monitor Stand,Storage Devices,13,4,6,17,1132,15,0,Medium
+1347,Switch,Computer Accessories,525,0,2,57,1766,7,0,Low
+1348,Switch,Office Supplies,33,4,4,47,1574,60,0,Medium
+1349,Laptop Charger,Printer Supplies,34,68,11,76,1778,0,0,High
+1350,Barcode Scanner,Electronics,11,74,15,54,236,5,1,High
+1351,Toner,Safety,351,0,2,34,607,24,0,Low
+1352,HDD,Safety,204,3,1,37,1727,13,0,Low
+1353,HDD,Mobile Accessories,24,31,4,24,2220,0,1,Medium
+1354,Toner,Printer Supplies,3,65,14,20,519,2,1,High
+1355,HDD,Safety,184,4,1,27,1801,12,0,Low
+1356,Pen Pack,Electronics,34,4,2,62,855,94,0,Medium
+1357,USB Flash,Safety,213,4,3,15,953,23,0,Low
+1358,Keyboard,Safety,3,43,12,10,1505,1,1,High
+1359,Safety Gloves,Mobile Accessories,24,4,2,46,767,97,0,Medium
+1360,Switch,Computer Accessories,226,2,1,41,995,20,0,Low
+1361,Laptop Charger,Safety,135,6,1,26,1706,3,1,Low
+1362,Safety Gloves,Printer Supplies,13,38,14,69,1705,9,1,High
+1363,Toner,Office Supplies,8,40,11,68,140,4,1,High
+1364,Switch,Storage Devices,1,63,13,22,2271,2,1,High
+1365,HDD,Office Supplies,87,38,5,55,1479,0,1,Medium
+1366,USB Flash,Storage Devices,689,8,1,60,35,8,1,Low
+1367,Keyboard,Mobile Accessories,20,15,6,25,1870,25,0,Medium
+1368,Pen Pack,Electronics,375,1,1,24,1199,20,0,Low
+1369,Safety Gloves,Safety,26,4,5,46,1225,70,0,Medium
+1370,Keyboard,Storage Devices,35,4,5,49,1704,85,1,Medium
+1371,Safety Gloves,Safety,335,3,3,28,1251,26,1,Low
+1372,Notebook,Storage Devices,16,15,6,19,1921,36,0,Medium
+1373,Switch,Storage Devices,0,55,12,10,2150,0,0,High
+1374,Pen Pack,Electronics,39,4,2,64,402,99,0,Medium
+1375,Switch,Computer Accessories,355,0,1,40,998,22,0,Low
+1376,HDD,Mobile Accessories,502,2,4,58,631,21,0,Low
+1377,Toner,Computer Accessories,3,49,14,11,616,4,0,High
+1378,Notebook,Safety,488,2,3,58,628,3,1,Low
+1379,Switch,Mobile Accessories,210,3,2,34,2229,26,0,Low
+1380,Monitor Stand,Mobile Accessories,41,5,5,50,1726,0,0,Medium
+1381,USB Flash,Storage Devices,34,4,2,62,975,80,0,Medium
+1382,USB Flash,Safety,27,38,8,23,259,5,1,Medium
+1383,Receipt Printer,Safety,87,4,1,21,2312,4,0,Low
+1384,Notebook,Printer Supplies,177,5,2,20,2410,13,1,Low
+1385,Keyboard,Safety,27,55,11,58,1238,4,0,High
+1386,Ink Cartridge,Safety,8,53,10,76,699,3,0,High
+1387,Toner,Storage Devices,273,0,2,62,1840,20,0,Low
+1388,Router,Computer Accessories,13,32,9,28,1019,11,1,High
+1389,Printer Cable,Mobile Accessories,33,39,13,61,1676,11,0,High
+1390,Router,Mobile Accessories,15,18,7,15,1231,17,1,Medium
+1391,HDD,Electronics,4,39,9,51,2058,8,1,High
+1392,Barcode Scanner,Office Supplies,730,2,4,63,1235,30,0,Low
+1393,Notebook,Office Supplies,8,28,10,60,2306,6,1,High
+1394,USB Flash,Mobile Accessories,500,0,2,44,1469,18,1,Low
+1395,HDD,Safety,237,4,2,30,1945,9,0,Low
+1396,Keyboard,Storage Devices,14,4,3,22,1959,62,0,Medium
+1397,Barcode Scanner,Mobile Accessories,4,36,13,17,1186,1,1,High
+1398,Router,Computer Accessories,83,38,5,79,2212,3,0,Medium
+1399,Toner,Printer Supplies,5,56,13,49,1431,0,0,High
+1400,Router,Computer Accessories,16,41,9,41,982,11,0,High
+1401,Barcode Scanner,Printer Supplies,5,45,9,25,1594,1,0,High
+1402,HDD,Office Supplies,70,38,5,56,1055,9,0,Medium
+1403,Safety Gloves,Storage Devices,4,56,9,45,1198,11,1,High
+1404,HDD,Mobile Accessories,13,4,5,14,292,73,1,Medium
+1405,Ink Cartridge,Printer Supplies,397,4,1,52,2181,23,0,Low
+1406,Barcode Scanner,Computer Accessories,172,3,1,23,318,18,0,Low
+1407,Keyboard,Mobile Accessories,11,8,2,20,2407,110,1,Medium
+1408,Router,Mobile Accessories,52,4,5,63,117,61,0,Medium
+1409,Keyboard,Safety,5,51,12,54,1051,4,1,High
+1410,Mouse,Computer Accessories,17,38,3,27,1502,13,0,Medium
+1411,Keyboard,Office Supplies,0,47,14,31,424,4,0,High
+1412,Ink Cartridge,Printer Supplies,494,4,1,76,360,30,0,Low
+1413,Toner,Computer Accessories,143,6,1,26,1066,26,0,Low
+1414,Safety Gloves,Mobile Accessories,31,6,5,31,801,3,1,Medium
+1415,Notebook,Storage Devices,12,5,7,10,1855,25,1,Medium
+1416,Safety Gloves,Safety,13,36,11,33,2500,7,0,High
+1417,Switch,Office Supplies,36,4,4,52,1837,62,0,Medium
+1418,Receipt Printer,Printer Supplies,497,7,1,66,1178,18,0,Low
+1419,Monitor Stand,Mobile Accessories,38,4,4,49,1916,16,0,Medium
+1420,Pen Pack,Office Supplies,71,36,7,53,255,0,0,Medium
+1421,Safety Gloves,Computer Accessories,509,0,3,47,1477,17,0,Low
+1422,Keyboard,Safety,19,61,12,62,1218,3,0,High
+1423,Barcode Scanner,Storage Devices,10,62,11,59,2344,13,1,High
+1424,Notebook,Electronics,61,38,13,77,1123,4,0,High
+1425,USB Flash,Storage Devices,40,4,2,59,872,71,1,Medium
+1426,Keyboard,Computer Accessories,249,9,3,43,510,2,0,Low
+1427,Laptop Charger,Safety,3,35,8,17,951,3,1,High
+1428,Barcode Scanner,Storage Devices,80,38,5,59,1657,12,1,Medium
+1429,Barcode Scanner,Electronics,37,66,15,53,35,10,0,High
+1430,Printer Cable,Electronics,687,6,3,64,2282,11,0,Low
+1431,Router,Storage Devices,620,5,1,80,303,1,0,Low
+1432,Toner,Safety,293,1,1,36,619,23,1,Low
+1433,Safety Gloves,Mobile Accessories,0,53,15,12,2078,0,0,High
+1434,Router,Printer Supplies,11,47,14,54,269,9,0,High
+1435,Keyboard,Storage Devices,33,4,4,47,1636,74,0,Medium
+1436,Toner,Printer Supplies,0,35,14,23,554,0,0,High
+1437,Router,Computer Accessories,120,38,5,80,2463,0,1,Medium
+1438,Monitor Stand,Storage Devices,11,4,6,13,1223,22,0,Medium
+1439,Receipt Printer,Storage Devices,17,4,4,22,1439,65,0,Medium
+1440,Receipt Printer,Electronics,27,4,4,29,2027,83,1,Medium
+1441,Ink Cartridge,Safety,33,4,5,47,2106,112,0,Medium
+1442,Ink Cartridge,Mobile Accessories,691,0,1,74,866,3,0,Low
+1443,Monitor Stand,Computer Accessories,34,43,15,76,2092,1,0,High
+1444,Receipt Printer,Office Supplies,365,5,3,56,1231,31,0,Low
+1445,Router,Mobile Accessories,31,4,5,65,35,64,0,Medium
+1446,Barcode Scanner,Printer Supplies,2,49,8,23,1504,5,0,High
+1447,USB Flash,Computer Accessories,15,64,10,27,1235,11,1,High
+1448,Ink Cartridge,Printer Supplies,2,56,14,32,399,5,0,High
+1449,HDD,Mobile Accessories,9,4,5,10,471,89,1,Medium
+1450,Receipt Printer,Computer Accessories,35,38,6,26,327,0,1,Medium
+1451,Receipt Printer,Electronics,14,6,3,29,2241,73,0,Medium
+1452,Mouse,Printer Supplies,3,50,13,31,684,3,0,High
+1453,Monitor Stand,Printer Supplies,2,58,7,73,2153,9,1,High
+1454,Router,Computer Accessories,109,38,5,76,2273,0,1,Medium
+1455,Notebook,Office Supplies,10,64,10,61,2353,5,1,High
+1456,Notebook,Printer Supplies,144,0,2,27,2212,19,0,Low
+1457,HDD,Printer Supplies,156,3,1,17,624,29,0,Low
+1458,Keyboard,Safety,29,38,6,27,1489,22,0,Medium
+1459,Monitor Stand,Mobile Accessories,40,4,4,56,2002,80,0,Medium
+1460,Router,Printer Supplies,101,38,7,78,2246,0,0,Medium
+1461,Switch,Printer Supplies,722,8,3,66,312,27,0,Low
+1462,Printer Cable,Safety,718,1,3,65,354,4,0,Low
+1463,Barcode Scanner,Computer Accessories,5,54,12,22,179,4,1,High
+1464,Printer Cable,Computer Accessories,175,4,2,13,1818,13,0,Low
+1465,Keyboard,Mobile Accessories,84,38,8,62,1914,3,0,Medium
+1466,HDD,Printer Supplies,65,38,8,63,812,5,0,Medium
+1467,Receipt Printer,Electronics,19,4,4,33,2219,88,1,Medium
+1468,Keyboard,Mobile Accessories,79,38,8,57,1896,0,0,Medium
+1469,HDD,Printer Supplies,148,6,1,17,475,30,0,Low
+1470,Safety Gloves,Mobile Accessories,0,56,14,12,1750,6,1,High
+1471,Safety Gloves,Safety,110,0,2,16,833,0,0,Low
+1472,Notebook,Storage Devices,16,8,7,15,1933,30,1,Medium
+1473,Receipt Printer,Printer Supplies,250,7,3,32,2500,7,0,Low
+1474,Mouse,Computer Accessories,14,38,3,14,1604,5,0,Medium
+1475,Barcode Scanner,Computer Accessories,8,55,11,24,94,9,0,High
+1476,Keyboard,Mobile Accessories,70,38,8,60,2056,2,0,Medium
+1477,Ink Cartridge,Mobile Accessories,712,3,1,74,1051,0,0,Low
+1478,Safety Gloves,Office Supplies,8,46,11,34,668,4,1,High
+1479,Router,Computer Accessories,52,10,5,52,258,19,1,Medium
+1480,Router,Mobile Accessories,42,4,4,64,138,61,1,Medium
+1481,HDD,Mobile Accessories,14,4,5,15,271,79,1,Medium
+1482,Ink Cartridge,Printer Supplies,480,3,2,75,470,29,0,Low
+1483,HDD,Storage Devices,86,3,1,24,1518,12,0,Low
+1484,Router,Computer Accessories,69,11,5,60,283,11,1,Medium
+1485,Notebook,Safety,487,1,4,64,461,5,0,Low
+1486,Safety Gloves,Storage Devices,13,14,7,15,1100,13,1,Medium
+1487,Mouse,Storage Devices,727,0,1,74,601,29,1,Low
+1488,Router,Storage Devices,218,0,1,29,1338,11,1,Low
+1489,Switch,Safety,69,38,5,48,581,11,1,Medium
+1490,Printer Cable,Mobile Accessories,24,38,8,19,437,0,0,Medium
+1491,Mouse,Electronics,40,36,14,62,203,1,0,High
+1492,Toner,Printer Supplies,424,4,1,43,667,19,1,Low
+1493,Laptop Charger,Computer Accessories,265,0,1,21,2068,20,0,Low
+1494,USB Flash,Computer Accessories,5,38,13,41,1097,9,1,High
+1495,Safety Gloves,Printer Supplies,11,46,15,72,1777,7,1,High
+1496,Keyboard,Storage Devices,37,4,5,49,1620,77,0,Medium
+1497,USB Flash,Mobile Accessories,5,68,15,52,1927,6,0,High
+1498,Laptop Charger,Printer Supplies,26,68,11,74,1501,0,1,High
+1499,Barcode Scanner,Mobile Accessories,2,32,13,19,1093,1,0,High
+1500,HDD,Electronics,34,4,2,66,1267,61,0,Medium
+1501,Ink Cartridge,Printer Supplies,405,4,1,47,990,20,0,Low
+1502,Switch,Office Supplies,276,0,3,27,1758,17,0,Low
+1503,Safety Gloves,Computer Accessories,218,1,1,15,2172,27,0,Low
+1504,Keyboard,Computer Accessories,288,8,3,45,455,4,0,Low
+1505,Receipt Printer,Electronics,17,4,4,26,2181,84,0,Medium
+1506,Printer Cable,Mobile Accessories,31,37,14,68,1610,4,1,High
+1507,USB Flash,Storage Devices,17,64,11,40,2453,4,0,High
+1508,Router,Mobile Accessories,37,4,5,56,249,66,0,Medium
+1509,Safety Gloves,Mobile Accessories,0,59,15,10,1898,6,1,High
+1510,Printer Cable,Safety,27,23,13,51,1387,3,1,High
+1511,Mouse,Printer Supplies,57,38,4,43,550,0,1,Medium
+1512,Keyboard,Safety,7,4,6,10,786,80,1,Medium
+1513,Laptop Charger,Office Supplies,37,41,14,45,1211,9,1,High
+1514,Safety Gloves,Mobile Accessories,23,9,5,25,666,10,0,Medium
+1515,Pen Pack,Electronics,338,1,1,24,1477,18,0,Low
+1516,Ink Cartridge,Printer Supplies,7,43,11,38,1212,5,1,High
+1517,Router,Computer Accessories,88,38,5,80,2500,4,0,Medium
+1518,Pen Pack,Office Supplies,0,62,14,25,641,11,0,High
+1519,Switch,Safety,59,37,5,48,890,10,0,Medium
+1520,Ink Cartridge,Storage Devices,15,62,9,72,485,6,1,High
+1521,Safety Gloves,Safety,32,4,5,36,1168,74,1,Medium
+1522,Keyboard,Computer Accessories,34,17,8,30,1358,9,0,Medium
+1523,Ink Cartridge,Office Supplies,3,61,12,57,1085,7,1,High
+1524,Monitor Stand,Mobile Accessories,28,4,4,59,1602,76,0,Medium
+1525,Laptop Charger,Office Supplies,29,30,8,22,178,0,0,Medium
+1526,HDD,Printer Supplies,1,43,11,42,1924,4,1,High
+1527,Laptop Charger,Office Supplies,12,43,10,29,1482,10,1,High
+1528,Toner,Office Supplies,14,64,12,66,161,6,1,High
+1529,Pen Pack,Printer Supplies,37,4,4,48,393,108,1,Medium
+1530,Keyboard,Printer Supplies,12,66,12,15,630,1,1,High
+1531,Monitor Stand,Electronics,55,38,6,45,2500,0,0,Medium
+1532,Ink Cartridge,Mobile Accessories,180,1,3,23,1075,18,1,Low
+1533,Monitor Stand,Electronics,37,60,15,72,1173,5,0,High
+1534,Pen Pack,Electronics,40,4,2,70,524,99,0,Medium
+1535,Switch,Safety,449,1,1,61,303,2,0,Low
+1536,Router,Storage Devices,450,5,1,79,565,1,0,Low
+1537,HDD,Mobile Accessories,346,4,4,62,740,21,0,Low
+1538,Router,Storage Devices,217,0,2,33,1710,10,0,Low
+1539,Router,Storage Devices,295,0,1,78,373,5,0,Low
+1540,Barcode Scanner,Safety,127,1,4,38,1039,28,1,Low
+1541,USB Flash,Safety,143,3,4,21,971,21,1,Low
+1542,Router,Storage Devices,311,0,2,40,1574,9,0,Low
+1543,Ink Cartridge,Printer Supplies,13,52,12,29,1352,6,1,High
+1544,Router,Office Supplies,25,4,4,48,178,120,0,Medium
+1545,Barcode Scanner,Storage Devices,55,38,6,50,1588,14,0,Medium
+1546,Ink Cartridge,Mobile Accessories,190,7,2,19,870,21,0,Low
+1547,Printer Cable,Office Supplies,304,3,3,44,1019,6,0,Low
+1548,Safety Gloves,Storage Devices,13,59,15,45,1072,10,1,High
+1549,Keyboard,Office Supplies,369,0,2,41,2373,7,0,Low
+1550,HDD,Mobile Accessories,1,60,14,22,925,5,1,High
+1551,USB Flash,Printer Supplies,35,53,15,52,1856,0,1,High
+1552,Toner,Safety,301,0,2,31,393,23,1,Low
+1553,Barcode Scanner,Safety,445,5,2,60,2232,9,0,Low
+1554,Barcode Scanner,Storage Devices,334,2,4,44,1956,10,0,Low
+1555,Safety Gloves,Electronics,13,36,11,23,2042,1,0,High
+1556,Router,Office Supplies,29,4,4,52,81,102,0,Medium
+1557,Switch,Printer Supplies,747,8,1,66,337,28,1,Low
+1558,Laptop Charger,Safety,71,6,1,29,1897,3,0,Low
+1559,Pen Pack,Office Supplies,0,60,10,26,773,3,0,High
+1560,Printer Cable,Safety,710,0,4,66,359,0,0,Low
+1561,Safety Gloves,Office Supplies,10,54,13,30,670,5,0,High
+1562,Switch,Safety,433,2,3,73,1228,25,1,Low
+1563,Safety Gloves,Electronics,11,58,11,19,2078,8,0,High
+1564,USB Flash,Office Supplies,10,50,15,16,2490,5,1,High
+1565,Laptop Charger,Office Supplies,21,66,15,50,1019,7,1,High
+1566,Safety Gloves,Electronics,12,44,11,22,2124,1,1,High
+1567,Laptop Charger,Office Supplies,15,37,11,35,1437,8,0,High
+1568,Barcode Scanner,Computer Accessories,11,52,11,22,257,6,1,High
+1569,Toner,Computer Accessories,5,53,15,13,918,3,0,High
+1570,Monitor Stand,Office Supplies,7,31,11,45,1862,9,1,High
+1571,HDD,Computer Accessories,261,8,1,29,158,15,0,Low
+1572,Laptop Charger,Printer Supplies,421,5,1,78,1870,6,0,Low
+1573,Ink Cartridge,Electronics,653,8,4,74,461,7,1,Low
+1574,Router,Mobile Accessories,17,31,8,16,1248,14,1,Medium
+1575,Toner,Office Supplies,456,1,2,53,1353,4,0,Low
+1576,Ink Cartridge,Printer Supplies,406,4,3,48,2448,23,0,Low
+1577,Safety Gloves,Storage Devices,6,24,6,10,1320,7,0,Medium
+1578,Notebook,Safety,500,2,3,66,391,0,0,Low
+1579,Safety Gloves,Mobile Accessories,19,4,4,39,2153,87,1,Medium
+1580,Pen Pack,Printer Supplies,25,5,5,35,2244,69,0,Medium
+1581,Notebook,Computer Accessories,31,21,15,56,948,2,0,High
+1582,Router,Storage Devices,262,0,2,31,1549,11,0,Low
+1583,Receipt Printer,Computer Accessories,35,38,6,31,348,5,0,Medium
+1584,Barcode Scanner,Electronics,42,3,1,17,283,26,0,Low
+1585,Switch,Safety,17,4,2,36,1306,90,0,Medium
+1586,Toner,Printer Supplies,6,64,12,45,1324,1,0,High
+1587,Toner,Office Supplies,434,1,1,47,1597,6,1,Low
+1588,Keyboard,Mobile Accessories,61,38,8,56,2032,0,0,Medium
+1589,Keyboard,Safety,2,4,5,10,477,87,0,Medium
+1590,Toner,Printer Supplies,0,32,14,22,387,1,1,High
+1591,Keyboard,Computer Accessories,39,17,9,27,1372,24,1,Medium
+1592,HDD,Mobile Accessories,2,56,13,28,1231,4,1,High
+1593,Toner,Office Supplies,454,8,2,61,1202,29,1,Low
+1594,Laptop Charger,Printer Supplies,39,64,12,73,1389,2,1,High
+1595,USB Flash,Storage Devices,684,0,3,68,35,11,0,Low
+1596,HDD,Storage Devices,66,4,1,26,1357,10,0,Low
+1597,Switch,Safety,43,4,2,64,2123,97,1,Medium
+1598,USB Flash,Electronics,92,15,3,78,2148,31,1,Medium
+1599,Receipt Printer,Office Supplies,26,6,7,32,2250,3,0,Medium
+1600,Laptop Charger,Safety,20,4,3,30,728,88,0,Medium
+1601,Monitor Stand,Mobile Accessories,36,4,5,60,2030,75,0,Medium
+1602,Toner,Storage Devices,266,9,2,57,1981,24,0,Low
+1603,Safety Gloves,Printer Supplies,238,0,3,51,1904,30,0,Low
+1604,Keyboard,Safety,46,4,5,59,2197,60,0,Medium
+1605,Monitor Stand,Storage Devices,17,5,3,23,2500,120,1,Medium
+1606,Barcode Scanner,Storage Devices,65,38,5,48,1803,7,1,Medium
+1607,Monitor Stand,Computer Accessories,5,47,15,70,1990,9,0,High
+1608,Monitor Stand,Safety,21,52,9,66,1471,4,0,High
+1609,Printer Cable,Electronics,203,8,3,31,62,25,0,Low
+1610,Toner,Electronics,33,38,4,31,35,0,0,Medium
+1611,Printer Cable,Mobile Accessories,18,38,8,17,240,26,0,Medium
+1612,Pen Pack,Storage Devices,153,1,1,12,94,9,0,Low
+1613,USB Flash,Electronics,259,4,1,29,1157,26,0,Low
+1614,Barcode Scanner,Office Supplies,444,0,2,48,1653,14,0,Low
+1615,Router,Printer Supplies,756,6,1,65,1622,8,0,Low
+1616,Notebook,Mobile Accessories,111,35,7,73,2271,0,1,Medium
+1617,USB Flash,Computer Accessories,7,57,8,57,1118,9,1,High
+1618,Router,Computer Accessories,245,2,2,24,1020,25,0,Low
+1619,Receipt Printer,Storage Devices,25,4,4,27,1468,79,1,Medium
+1620,Ink Cartridge,Mobile Accessories,748,4,1,78,1101,2,1,Low
+1621,Ink Cartridge,Printer Supplies,560,6,1,79,461,30,0,Low
+1622,Keyboard,Storage Devices,37,12,7,36,532,12,0,Medium
+1623,Safety Gloves,Safety,140,8,3,19,838,0,0,Low
+1624,Safety Gloves,Office Supplies,9,46,11,33,326,6,1,High
+1625,HDD,Safety,152,5,2,33,1990,11,0,Low
+1626,Pen Pack,Storage Devices,0,54,9,18,1476,0,1,High
+1627,Toner,Office Supplies,581,10,1,75,1090,31,0,Low
+1628,Printer Cable,Computer Accessories,509,0,2,45,35,5,0,Low
+1629,HDD,Computer Accessories,322,7,2,40,360,17,0,Low
+1630,Notebook,Electronics,21,66,10,61,702,10,1,High
+1631,Safety Gloves,Mobile Accessories,26,4,2,46,857,98,0,Medium
+1632,Ink Cartridge,Computer Accessories,56,38,5,47,1394,1,1,Medium
+1633,Ink Cartridge,Mobile Accessories,0,70,11,52,1777,4,0,High
+1634,Safety Gloves,Electronics,444,3,2,57,2109,14,0,Low
+1635,Keyboard,Safety,80,38,7,76,2089,1,0,Medium
+1636,Toner,Electronics,1,55,11,47,2500,0,0,High
+1637,HDD,Computer Accessories,48,30,4,47,1214,11,0,Medium
+1638,Barcode Scanner,Printer Supplies,4,50,10,36,146,10,1,High
+1639,Laptop Charger,Office Supplies,28,29,8,22,359,5,0,Medium
+1640,Ink Cartridge,Printer Supplies,9,38,11,35,1158,1,1,High
+1641,Notebook,Storage Devices,19,12,8,15,2100,29,1,Medium
+1642,HDD,Safety,6,62,14,14,1747,0,0,High
+1643,Printer Cable,Electronics,60,13,5,57,425,3,0,Medium
+1644,Ink Cartridge,Mobile Accessories,149,4,3,22,962,19,0,Low
+1645,Keyboard,Computer Accessories,27,12,8,25,1439,11,0,Medium
+1646,Notebook,Mobile Accessories,77,32,7,68,2277,8,1,Medium
+1647,Monitor Stand,Mobile Accessories,44,4,4,59,1786,72,0,Medium
+1648,Barcode Scanner,Mobile Accessories,7,26,14,21,959,1,1,High
+1649,Toner,Printer Supplies,0,26,15,26,496,1,1,High
+1650,Pen Pack,Printer Supplies,21,4,5,29,2489,79,1,Medium
+1651,Monitor Stand,Storage Devices,28,4,3,43,1900,101,0,Medium
+1652,Toner,Electronics,29,38,4,28,381,3,0,Medium
+1653,Barcode Scanner,Safety,383,6,1,68,2434,7,0,Low
+1654,Toner,Safety,325,0,2,27,632,24,0,Low
+1655,Switch,Safety,21,4,2,42,1073,96,0,Medium
+1656,HDD,Electronics,38,4,2,53,1571,55,0,Medium
+1657,USB Flash,Office Supplies,14,43,15,21,2350,5,1,High
+1658,Toner,Storage Devices,4,59,15,41,1413,8,0,High
+1659,Laptop Charger,Safety,15,4,3,25,451,96,0,Medium
+1660,Laptop Charger,Office Supplies,25,41,13,66,2500,9,1,High
+1661,HDD,Office Supplies,69,38,5,53,1261,3,1,Medium
+1662,Ink Cartridge,Mobile Accessories,7,70,14,51,1519,7,0,High
+1663,Barcode Scanner,Mobile Accessories,559,4,2,76,2332,22,0,Low
+1664,Keyboard,Storage Devices,20,4,2,22,2108,60,1,Medium
+1665,Notebook,Electronics,46,41,9,71,1069,7,0,High
+1666,HDD,Storage Devices,673,6,4,80,2351,31,0,Low
+1667,Ink Cartridge,Storage Devices,17,62,11,67,328,5,1,High
+1668,Mouse,Electronics,52,0,2,11,1055,22,0,Low
+1669,USB Flash,Storage Devices,635,6,4,59,35,11,0,Low
+1670,Mouse,Safety,15,14,7,23,1262,12,0,Medium
+1671,Laptop Charger,Office Supplies,13,27,15,33,1608,10,1,High
+1672,Toner,Office Supplies,216,5,3,27,1645,31,1,Low
+1673,Router,Storage Devices,327,0,1,80,440,3,1,Low
+1674,Receipt Printer,Office Supplies,40,10,7,37,2137,6,0,Medium
+1675,Keyboard,Safety,79,38,7,77,1984,2,0,Medium
+1676,Safety Gloves,Computer Accessories,18,50,12,67,1675,0,1,High
+1677,HDD,Safety,8,59,15,15,1811,3,1,High
+1678,Receipt Printer,Mobile Accessories,23,43,9,64,898,3,1,High
+1679,HDD,Printer Supplies,73,38,8,68,844,0,0,Medium
+1680,Notebook,Mobile Accessories,33,30,15,65,1085,7,1,High
+1681,HDD,Printer Supplies,64,38,8,58,601,0,0,Medium
+1682,Pen Pack,Storage Devices,0,59,10,10,1246,13,1,High
+1683,Toner,Mobile Accessories,3,61,7,47,812,1,1,High
+1684,HDD,Mobile Accessories,4,53,12,24,1186,4,1,High
+1685,Switch,Mobile Accessories,16,4,3,26,2029,90,0,Medium
+1686,Safety Gloves,Electronics,423,8,3,54,2108,10,1,Low
+1687,Pen Pack,Printer Supplies,323,1,2,41,1640,26,0,Low
+1688,Pen Pack,Storage Devices,372,4,1,54,214,7,1,Low
+1689,USB Flash,Safety,23,38,8,20,399,2,0,Medium
+1690,Laptop Charger,Office Supplies,16,32,11,37,1457,10,1,High
+1691,Laptop Charger,Mobile Accessories,0,66,13,60,1753,7,1,High
+1692,HDD,Printer Supplies,15,32,12,35,386,1,1,High
+1693,Receipt Printer,Printer Supplies,301,8,1,34,2481,11,0,Low
+1694,Barcode Scanner,Safety,19,46,11,73,929,5,1,High
+1695,Pen Pack,Printer Supplies,87,38,3,77,425,6,0,Medium
+1696,Ink Cartridge,Office Supplies,5,60,14,64,1184,6,1,High
+1697,Laptop Charger,Electronics,73,13,6,72,1707,9,0,Medium
+1698,Monitor Stand,Safety,21,45,9,70,1279,5,0,High
+1699,Laptop Charger,Electronics,85,7,6,69,1831,8,1,Medium
+1700,Switch,Office Supplies,27,7,3,49,1867,63,0,Medium
+1701,Notebook,Electronics,20,66,11,63,721,11,1,High
+1702,Monitor Stand,Computer Accessories,17,37,13,33,1367,10,1,High
+1703,Monitor Stand,Electronics,37,58,12,74,1086,3,1,High
+1704,USB Flash,Computer Accessories,13,69,8,30,1251,12,0,High
+1705,Barcode Scanner,Mobile Accessories,4,53,14,15,1027,0,1,High
+1706,Ink Cartridge,Electronics,454,2,1,69,563,5,0,Low
+1707,Receipt Printer,Safety,151,6,1,29,2371,5,0,Low
+1708,Barcode Scanner,Safety,23,20,5,23,1612,47,0,Medium
+1709,Safety Gloves,Printer Supplies,11,30,11,77,1827,0,0,High
+1710,Keyboard,Safety,5,4,5,10,408,77,0,Medium
+1711,HDD,Storage Devices,143,5,1,21,1525,11,0,Low
+1712,Switch,Mobile Accessories,13,4,3,22,2266,93,0,Medium
+1713,Toner,Storage Devices,18,48,14,35,1453,4,1,High
+1714,Keyboard,Office Supplies,422,2,2,38,2424,6,0,Low
+1715,Barcode Scanner,Safety,444,6,4,70,2438,6,1,Low
+1716,USB Flash,Mobile Accessories,2,67,15,56,1833,1,1,High
+1717,Laptop Charger,Safety,12,4,3,26,663,99,0,Medium
+1718,Ink Cartridge,Printer Supplies,7,36,13,29,450,4,0,High
+1719,Mouse,Computer Accessories,22,38,3,21,1734,8,0,Medium
+1720,Pen Pack,Storage Devices,6,37,13,78,1003,7,1,High
+1721,Ink Cartridge,Electronics,13,65,15,27,2187,0,1,High
+1722,Barcode Scanner,Printer Supplies,478,7,1,41,2247,16,0,Low
+1723,Safety Gloves,Mobile Accessories,0,53,15,10,1900,6,1,High
+1724,Toner,Printer Supplies,2,59,14,25,293,0,1,High
+1725,USB Flash,Mobile Accessories,12,4,5,18,2180,88,1,Medium
+1726,Receipt Printer,Storage Devices,15,4,4,20,1481,78,0,Medium
+1727,Receipt Printer,Mobile Accessories,590,3,1,69,1107,18,0,Low
+1728,Notebook,Electronics,197,1,3,68,1208,26,0,Low
+1729,Keyboard,Safety,32,38,5,28,1308,12,0,Medium
+1730,Pen Pack,Printer Supplies,27,4,6,32,2293,63,1,Medium
+1731,Ink Cartridge,Safety,11,45,9,69,2362,10,1,High
+1732,Pen Pack,Electronics,0,62,9,25,35,7,1,High
+1733,Safety Gloves,Storage Devices,7,16,7,14,1202,3,0,Medium
+1734,Safety Gloves,Computer Accessories,19,30,13,68,1831,0,1,High
+1735,Printer Cable,Mobile Accessories,31,26,13,55,1741,7,1,High
+1736,Router,Storage Devices,223,0,2,30,829,15,1,Low
+1737,Router,Safety,44,34,5,36,952,0,1,Medium
+1738,Printer Cable,Safety,24,39,12,39,1496,4,1,High
+1739,USB Flash,Mobile Accessories,493,0,3,47,1248,15,0,Low
+1740,Keyboard,Safety,121,38,7,77,2049,13,1,Medium
+1741,Mouse,Printer Supplies,78,38,6,51,634,1,1,Medium
+1742,USB Flash,Storage Devices,639,8,3,62,113,12,1,Low
+1743,Switch,Computer Accessories,573,1,2,55,1549,8,0,Low
+1744,HDD,Electronics,0,34,12,47,1972,10,1,High
+1745,Switch,Storage Devices,14,45,15,28,387,8,1,High
+1746,USB Flash,Electronics,67,11,3,77,2245,36,1,Medium
+1747,Safety Gloves,Electronics,374,2,1,58,2099,13,0,Low
+1748,Ink Cartridge,Mobile Accessories,634,5,4,60,1880,5,0,Low
+1749,Barcode Scanner,Storage Devices,31,73,13,62,457,12,1,High
+1750,Receipt Printer,Computer Accessories,48,38,6,35,139,29,1,Medium
+1751,Printer Cable,Computer Accessories,175,2,2,10,2171,10,0,Low
+1752,Notebook,Computer Accessories,30,21,13,68,681,3,1,High
+1753,Monitor Stand,Electronics,50,38,6,45,2087,0,0,Medium
+1754,Receipt Printer,Computer Accessories,37,38,6,31,361,11,0,Medium
+1755,HDD,Safety,160,0,1,33,2014,10,0,Low
+1756,Monitor Stand,Electronics,41,59,11,77,1106,3,1,High
+1757,Ink Cartridge,Printer Supplies,471,4,2,80,469,29,0,Low
+1758,Monitor Stand,Storage Devices,16,5,5,14,1086,0,1,Medium
+1759,HDD,Computer Accessories,61,4,4,78,1290,109,1,Medium
+1760,HDD,Mobile Accessories,9,4,5,12,268,78,1,Medium
+1761,Notebook,Safety,437,3,1,67,195,4,0,Low
+1762,Laptop Charger,Electronics,79,14,6,74,1681,5,0,Medium
+1763,Toner,Storage Devices,24,55,11,42,1617,9,1,High
+1764,Mouse,Computer Accessories,29,14,7,25,1773,15,1,Medium
+1765,Pen Pack,Electronics,307,0,1,22,1261,16,1,Low
+1766,Switch,Storage Devices,9,4,2,13,164,65,0,Medium
+1767,Pen Pack,Electronics,1,65,7,25,285,6,1,High
+1768,Barcode Scanner,Mobile Accessories,2,56,13,22,873,1,0,High
+1769,Toner,Safety,37,4,5,55,220,68,0,Medium
+1770,Monitor Stand,Printer Supplies,5,60,7,69,2131,2,1,High
+1771,USB Flash,Safety,30,38,8,24,577,3,1,Medium
+1772,Safety Gloves,Storage Devices,657,0,3,60,1155,9,1,Low
+1773,USB Flash,Mobile Accessories,29,4,5,30,2104,81,1,Medium
+1774,Toner,Printer Supplies,433,8,1,43,449,20,0,Low
+1775,Switch,Office Supplies,334,0,3,26,2026,15,1,Low
+1776,Safety Gloves,Mobile Accessories,0,52,15,14,1924,6,1,High
+1777,Notebook,Office Supplies,25,46,10,60,2420,1,0,High
+1778,Barcode Scanner,Computer Accessories,577,9,1,57,797,28,1,Low
+1779,Ink Cartridge,Computer Accessories,68,38,5,54,1239,0,0,Medium
+1780,Safety Gloves,Mobile Accessories,26,4,4,50,2324,79,0,Medium
+1781,Barcode Scanner,Computer Accessories,8,52,14,23,225,8,1,High
+1782,HDD,Printer Supplies,62,38,7,59,1908,6,0,Medium
+1783,Printer Cable,Electronics,66,13,6,53,333,0,1,Medium
+1784,Switch,Computer Accessories,282,2,1,44,1170,22,0,Low
+1785,HDD,Office Supplies,322,5,2,51,374,14,0,Low
+1786,Printer Cable,Safety,723,1,1,67,406,3,0,Low
+1787,Toner,Electronics,0,59,11,44,2437,4,0,High
+1788,HDD,Storage Devices,31,38,5,30,557,2,0,Medium
+1789,Router,Mobile Accessories,14,18,6,10,1371,3,1,Medium
+1790,Pen Pack,Printer Supplies,262,1,1,39,1201,23,0,Low
+1791,Keyboard,Computer Accessories,286,9,3,53,746,1,0,Low
+1792,Mouse,Electronics,35,32,12,65,185,1,1,High
+1793,Printer Cable,Electronics,62,13,7,56,254,12,1,Medium
+1794,Safety Gloves,Computer Accessories,561,6,4,50,1431,18,0,Low
+1795,HDD,Safety,186,4,3,34,1803,13,0,Low
+1796,Safety Gloves,Safety,31,4,5,58,199,74,0,Medium
+1797,USB Flash,Computer Accessories,0,45,14,43,1144,0,1,High
+1798,Barcode Scanner,Mobile Accessories,496,4,2,76,2276,20,0,Low
+1799,HDD,Printer Supplies,29,38,7,18,337,0,1,Medium
+1800,Keyboard,Safety,41,38,7,33,1266,11,0,Medium
+1801,HDD,Safety,5,55,13,25,1817,0,0,High
+1802,Printer Cable,Mobile Accessories,21,40,11,69,1570,6,1,High
+1803,Safety Gloves,Safety,33,4,5,41,1057,79,1,Medium
+1804,Switch,Computer Accessories,575,1,1,55,1681,8,0,Low
+1805,HDD,Printer Supplies,22,35,11,38,513,0,1,High
+1806,Router,Computer Accessories,59,14,4,49,35,21,1,Medium
+1807,Barcode Scanner,Mobile Accessories,620,2,2,71,2432,21,0,Low
+1808,Notebook,Printer Supplies,18,44,8,54,493,8,0,High
+1809,HDD,Mobile Accessories,25,37,4,19,1984,6,1,Medium
+1810,Safety Gloves,Printer Supplies,14,44,15,53,674,8,0,High
+1811,USB Flash,Printer Supplies,37,31,15,53,1703,0,0,High
+1812,Notebook,Mobile Accessories,31,55,13,73,1118,4,1,High
+1813,Ink Cartridge,Safety,23,43,8,77,597,4,1,High
+1814,Mouse,Printer Supplies,2,52,13,34,786,3,0,High
+1815,Keyboard,Storage Devices,33,4,5,49,1678,86,0,Medium
+1816,Notebook,Electronics,42,37,7,76,1082,7,1,High
+1817,Switch,Mobile Accessories,245,3,2,28,2312,23,0,Low
+1818,Barcode Scanner,Office Supplies,16,49,8,33,2370,0,0,High
+1819,Receipt Printer,Electronics,23,4,4,28,2319,84,1,Medium
+1820,Pen Pack,Storage Devices,186,0,2,10,286,12,1,Low
+1821,Switch,Storage Devices,10,4,2,12,337,60,1,Medium
+1822,Mouse,Electronics,6,70,15,70,2052,7,1,High
+1823,Toner,Electronics,0,61,12,12,1952,1,1,High
+1824,Toner,Storage Devices,338,2,2,56,1892,20,0,Low
+1825,Ink Cartridge,Printer Supplies,332,3,2,44,1316,22,0,Low
+1826,Notebook,Electronics,54,42,7,75,1141,7,0,High
+1827,Safety Gloves,Storage Devices,9,11,7,10,1053,4,0,Medium
+1828,Keyboard,Safety,8,46,12,14,1472,12,0,High
+1829,Switch,Printer Supplies,789,5,3,66,269,21,0,Low
+1830,Toner,Safety,44,9,5,48,643,79,1,Medium
+1831,Laptop Charger,Computer Accessories,24,19,7,24,153,7,0,Medium
+1832,Toner,Computer Accessories,2,55,14,14,679,3,0,High
+1833,HDD,Storage Devices,37,38,5,29,914,3,0,Medium
+1834,Router,Computer Accessories,253,8,2,24,947,26,0,Low
+1835,Toner,Storage Devices,22,48,11,42,1466,4,0,High
+1836,Notebook,Printer Supplies,503,5,1,69,1203,0,1,Low
+1837,Notebook,Safety,466,0,4,62,549,4,0,Low
+1838,Toner,Storage Devices,301,0,2,56,2041,23,0,Low
+1839,Notebook,Storage Devices,205,3,2,13,757,5,0,Low
+1840,Notebook,Electronics,399,1,1,72,1176,31,0,Low
+1841,Router,Storage Devices,255,0,1,27,1304,9,0,Low
+1842,Barcode Scanner,Computer Accessories,562,8,1,62,740,30,0,Low
+1843,Safety Gloves,Safety,100,4,3,14,807,3,0,Low
+1844,USB Flash,Electronics,233,4,1,27,1095,28,1,Low
+1845,Toner,Office Supplies,396,1,2,52,1321,4,0,Low
+1846,Monitor Stand,Storage Devices,43,4,3,50,1788,107,1,Medium
+1847,Pen Pack,Electronics,394,2,1,33,1198,19,1,Low
+1848,Switch,Safety,487,1,3,74,1161,24,0,Low
+1849,Barcode Scanner,Printer Supplies,7,47,12,37,35,2,1,High
+1850,Laptop Charger,Safety,20,4,3,26,694,97,1,Medium
+1851,HDD,Printer Supplies,95,38,8,65,744,2,1,Medium
+1852,Printer Cable,Mobile Accessories,7,27,8,60,1671,6,0,High
+1853,Router,Computer Accessories,117,38,5,77,2238,7,1,Medium
+1854,Ink Cartridge,Electronics,23,69,15,36,2190,0,1,High
+1855,Mouse,Computer Accessories,24,19,7,21,1807,7,0,Medium
+1856,Mouse,Computer Accessories,14,38,3,11,1716,8,1,Medium
+1857,Switch,Office Supplies,27,4,4,53,1623,65,0,Medium
+1858,Printer Cable,Safety,64,38,5,41,457,0,1,Medium
+1859,HDD,Computer Accessories,52,26,4,50,1182,5,1,Medium
+1860,Mouse,Computer Accessories,12,33,3,13,1433,8,0,Medium
+1861,USB Flash,Safety,29,38,8,22,516,6,1,Medium
+1862,Printer Cable,Computer Accessories,175,1,2,15,1923,13,0,Low
+1863,Notebook,Computer Accessories,4,54,13,74,533,3,1,High
+1864,Safety Gloves,Computer Accessories,24,59,12,69,1873,0,1,High
+1865,Switch,Storage Devices,19,41,13,30,1788,6,1,High
+1866,Toner,Mobile Accessories,5,60,11,45,850,1,1,High
+1867,Receipt Printer,Mobile Accessories,626,4,1,54,1302,13,1,Low
+1868,Safety Gloves,Mobile Accessories,31,4,4,45,2091,77,0,Medium
+1869,Printer Cable,Electronics,733,6,1,66,2316,11,0,Low
+1870,HDD,Printer Supplies,25,36,7,20,394,0,1,Medium
+1871,Notebook,Electronics,22,61,9,66,624,3,0,High
+1872,Pen Pack,Office Supplies,0,68,10,23,603,4,1,High
+1873,HDD,Mobile Accessories,396,4,4,79,2059,6,0,Low
+1874,USB Flash,Mobile Accessories,5,71,15,46,1993,0,1,High
+1875,Laptop Charger,Office Supplies,8,52,11,35,1231,6,0,High
+1876,USB Flash,Electronics,64,10,3,71,2278,22,0,Medium
+1877,Monitor Stand,Mobile Accessories,51,4,3,59,1908,76,1,Medium
+1878,Printer Cable,Mobile Accessories,31,37,10,64,1471,11,1,High
+1879,Receipt Printer,Safety,17,4,3,32,157,90,0,Medium
+1880,Mouse,Electronics,0,70,14,76,1822,11,1,High
+1881,Safety Gloves,Safety,348,1,3,31,1307,25,1,Low
+1882,Keyboard,Computer Accessories,54,4,5,56,544,115,1,Medium
+1883,Toner,Office Supplies,15,57,13,71,178,8,0,High
+1884,Ink Cartridge,Electronics,81,38,4,70,1416,11,0,Medium
+1885,Barcode Scanner,Computer Accessories,589,9,1,57,958,27,0,Low
+1886,Notebook,Safety,388,2,4,64,649,1,0,Low
+1887,Keyboard,Storage Devices,27,4,5,46,1676,77,0,Medium
+1888,Router,Storage Devices,229,0,2,30,1511,10,0,Low
+1889,Router,Printer Supplies,18,39,14,54,247,9,1,High
+1890,HDD,Mobile Accessories,27,29,3,22,2247,11,1,Medium
+1891,Toner,Safety,38,6,4,57,291,87,1,Medium
+1892,HDD,Electronics,3,43,11,58,2058,0,1,High
+1893,Switch,Storage Devices,17,57,14,26,1740,7,0,High
+1894,Monitor Stand,Mobile Accessories,46,4,5,51,1752,7,0,Medium
+1895,Switch,Printer Supplies,49,38,5,44,1389,0,0,Medium
+1896,Safety Gloves,Computer Accessories,531,6,3,51,1501,19,0,Low
+1897,Mouse,Electronics,0,68,14,70,1957,1,1,High
+1898,Safety Gloves,Safety,338,4,3,36,1308,23,0,Low
+1899,HDD,Mobile Accessories,233,0,2,60,819,21,0,Low
+1900,Laptop Charger,Office Supplies,13,29,11,37,1413,9,1,High
+1901,Switch,Safety,20,4,2,39,1182,84,0,Medium
+1902,Keyboard,Computer Accessories,28,4,5,50,191,108,0,Medium
+1903,Keyboard,Mobile Accessories,66,38,8,57,1962,4,1,Medium
+1904,Monitor Stand,Mobile Accessories,270,6,4,35,609,9,0,Low
+1905,Toner,Office Supplies,332,0,2,61,939,31,0,Low
+1906,HDD,Mobile Accessories,327,0,3,62,673,22,1,Low
+1907,Router,Mobile Accessories,35,4,5,56,97,65,0,Medium
+1908,Laptop Charger,Electronics,72,9,6,71,2042,10,0,Medium
+1909,Monitor Stand,Electronics,38,56,13,72,1202,5,1,High
+1910,Receipt Printer,Safety,87,8,1,22,2186,5,0,Low
+1911,Mouse,Printer Supplies,0,52,13,30,586,4,1,High
+1912,Receipt Printer,Storage Devices,254,7,2,28,1724,30,0,Low
+1913,Laptop Charger,Computer Accessories,25,6,7,29,306,15,1,Medium
+1914,Router,Mobile Accessories,50,4,5,63,155,59,0,Medium
+1915,Ink Cartridge,Mobile Accessories,185,3,2,19,944,20,0,Low
+1916,Toner,Printer Supplies,402,2,1,46,578,17,1,Low
+1917,Router,Mobile Accessories,28,4,5,62,165,68,0,Medium
+1918,Router,Storage Devices,249,1,2,35,1591,8,0,Low
+1919,Ink Cartridge,Printer Supplies,407,5,4,54,2302,21,0,Low
+1920,Mouse,Printer Supplies,53,38,5,48,316,0,0,Medium
+1921,Barcode Scanner,Electronics,41,70,15,57,130,8,1,High
+1922,Switch,Mobile Accessories,535,6,2,62,1729,32,0,Low
+1923,Switch,Safety,463,1,1,62,334,1,1,Low
+1924,Mouse,Mobile Accessories,92,36,6,65,2426,0,1,Medium
+1925,Keyboard,Office Supplies,6,35,13,24,677,4,1,High
+1926,USB Flash,Storage Devices,14,35,12,35,2386,5,1,High
+1927,USB Flash,Office Supplies,535,3,1,62,1178,24,0,Low
+1928,Notebook,Storage Devices,206,2,1,11,950,3,0,Low
+1929,Keyboard,Computer Accessories,34,4,5,50,347,120,0,Medium
+1930,Laptop Charger,Computer Accessories,27,4,7,27,324,6,0,Medium
+1931,Safety Gloves,Safety,16,4,5,36,1127,86,0,Medium
+1932,Safety Gloves,Mobile Accessories,0,55,14,18,2172,6,0,High
+1933,Toner,Safety,309,1,2,31,791,22,0,Low
+1934,Keyboard,Mobile Accessories,13,10,6,22,1909,24,0,Medium
+1935,Notebook,Safety,452,3,4,64,484,3,1,Low
+1936,Safety Gloves,Safety,10,36,11,32,2054,9,1,High
+1937,Safety Gloves,Printer Supplies,10,47,15,61,651,8,1,High
+1938,Receipt Printer,Computer Accessories,43,38,6,35,422,0,1,Medium
+1939,HDD,Office Supplies,362,3,2,41,454,16,0,Low
+1940,Laptop Charger,Office Supplies,101,5,1,12,537,16,0,Low
+1941,Printer Cable,Electronics,48,14,6,51,452,13,0,Medium
+1942,HDD,Printer Supplies,4,51,11,41,389,1,1,High
+1943,Keyboard,Computer Accessories,46,18,7,35,1361,24,1,Medium
+1944,Toner,Office Supplies,430,3,2,50,1369,5,0,Low
+1945,Pen Pack,Electronics,275,1,1,23,1156,20,0,Low
+1946,Safety Gloves,Safety,318,1,2,32,1321,27,0,Low
+1947,HDD,Mobile Accessories,11,4,5,19,254,86,0,Medium
+1948,Notebook,Printer Supplies,28,42,11,44,412,11,0,High
+1949,Safety Gloves,Electronics,20,39,14,52,1019,5,0,High
+1950,Keyboard,Office Supplies,424,0,2,49,2311,3,0,Low
+1951,USB Flash,Printer Supplies,31,44,15,54,1849,0,1,High
+1952,Safety Gloves,Mobile Accessories,30,4,4,46,2294,83,0,Medium
+1953,Monitor Stand,Mobile Accessories,41,4,4,59,2078,81,0,Medium
+1954,USB Flash,Computer Accessories,14,57,8,37,945,10,1,High
+1955,HDD,Printer Supplies,71,38,8,55,1968,0,0,Medium
+1956,USB Flash,Office Supplies,476,5,1,76,221,1,0,Low
+1957,Router,Computer Accessories,17,38,9,37,1163,9,0,High
+1958,Toner,Printer Supplies,7,54,13,51,1354,0,1,High
+1959,Safety Gloves,Printer Supplies,6,55,12,69,1734,10,0,High
+1960,Safety Gloves,Storage Devices,12,61,12,38,1204,9,1,High
+1961,Receipt Printer,Office Supplies,342,5,1,54,1298,26,0,Low
+1962,Laptop Charger,Safety,6,53,9,19,1036,3,1,High
+1963,Receipt Printer,Storage Devices,270,0,2,28,1555,27,0,Low
+1964,Receipt Printer,Mobile Accessories,14,36,13,60,868,12,1,High
+1965,Switch,Printer Supplies,51,38,5,48,1604,0,0,Medium
+1966,Printer Cable,Computer Accessories,570,2,3,52,99,6,0,Low
+1967,Toner,Computer Accessories,2,48,14,16,606,4,0,High
+1968,Router,Printer Supplies,9,33,14,58,442,0,0,High
+1969,USB Flash,Computer Accessories,11,61,7,52,860,4,1,High
+1970,Laptop Charger,Computer Accessories,31,11,7,32,270,8,0,Medium
+1971,Ink Cartridge,Mobile Accessories,647,0,4,61,2220,6,0,Low
+1972,Mouse,Computer Accessories,18,10,7,17,1813,19,1,Medium
+1973,Pen Pack,Electronics,0,68,9,24,184,7,1,High
+1974,Notebook,Electronics,21,65,13,72,681,11,0,High
+1975,USB Flash,Printer Supplies,39,29,15,50,1980,0,1,High
+1976,HDD,Computer Accessories,321,9,3,31,240,15,1,Low
+1977,USB Flash,Printer Supplies,36,31,15,53,1545,1,1,High
+1978,Router,Computer Accessories,51,13,5,52,390,5,0,Medium
+1979,Printer Cable,Electronics,243,1,3,27,147,25,1,Low
+1980,Barcode Scanner,Storage Devices,65,38,5,56,1700,0,0,Medium
+1981,Safety Gloves,Printer Supplies,8,51,12,71,1956,0,0,High
+1982,Receipt Printer,Printer Supplies,519,3,1,63,1157,20,0,Low
+1983,Laptop Charger,Computer Accessories,27,12,7,25,117,8,0,Medium
+1984,Barcode Scanner,Storage Devices,6,69,12,49,336,9,0,High
+1985,Monitor Stand,Safety,19,47,11,58,1350,4,1,High
+1986,Safety Gloves,Storage Devices,8,20,7,11,1173,11,0,Medium
+1987,Barcode Scanner,Office Supplies,425,1,2,51,1468,15,0,Low
+1988,Keyboard,Mobile Accessories,19,9,6,26,1784,29,0,Medium
+1989,Barcode Scanner,Electronics,160,2,1,24,85,26,0,Low
+1990,Keyboard,Safety,3,4,5,10,441,73,0,Medium
+1991,Barcode Scanner,Office Supplies,386,3,2,47,1746,16,0,Low
+1992,Pen Pack,Electronics,373,0,1,25,1103,20,1,Low
+1993,USB Flash,Office Supplies,338,2,3,37,1881,9,0,Low
+1994,Mouse,Computer Accessories,25,38,3,17,1796,11,1,Medium
+1995,HDD,Printer Supplies,23,35,7,16,604,12,1,Medium
+1996,Safety Gloves,Storage Devices,12,13,7,12,1195,6,0,Medium
+1997,Safety Gloves,Computer Accessories,138,1,1,27,2334,25,0,Low
+1998,Ink Cartridge,Storage Devices,530,5,3,45,1984,5,0,Low
+1999,Ink Cartridge,Printer Supplies,9,41,11,35,1376,2,0,High
+2000,USB Flash,Computer Accessories,5,22,12,40,881,8,0,High
+2001,Printer Cable,Safety,71,38,5,46,850,6,1,Medium
+2002,Pen Pack,Storage Devices,3,39,12,80,1015,5,0,High
+2003,Printer Cable,Mobile Accessories,20,39,10,68,1680,0,1,High
+2004,Barcode Scanner,Safety,20,43,11,78,973,0,1,High
+2005,Notebook,Electronics,214,2,1,74,1403,28,0,Low
+2006,Router,Printer Supplies,24,38,8,21,53,0,0,Medium
+2007,Router,Printer Supplies,14,38,8,11,35,1,0,Medium
+2008,Barcode Scanner,Printer Supplies,430,4,4,34,2441,16,0,Low
+2009,Notebook,Storage Devices,13,11,6,23,766,14,0,Medium
+2010,Toner,Safety,28,4,5,59,417,63,0,Medium
+2011,Router,Computer Accessories,15,45,15,39,1151,5,0,High
+2012,Notebook,Computer Accessories,28,61,13,70,757,3,1,High
+2013,Monitor Stand,Storage Devices,22,5,3,25,2500,100,1,Medium
+2014,HDD,Mobile Accessories,7,33,12,30,1435,4,1,High
+2015,Router,Mobile Accessories,43,4,5,61,35,69,1,Medium
+2016,Router,Safety,42,38,5,34,1240,18,1,Medium
+2017,Laptop Charger,Electronics,67,7,6,67,1919,1,1,Medium
+2018,Receipt Printer,Computer Accessories,43,38,6,29,293,7,1,Medium
+2019,Toner,Office Supplies,14,38,10,61,173,7,0,High
+2020,Mouse,Office Supplies,7,60,9,60,624,0,0,High
+2021,Receipt Printer,Mobile Accessories,8,53,11,65,912,6,0,High
+2022,Pen Pack,Storage Devices,315,4,1,50,174,6,0,Low
+2023,Router,Office Supplies,2,30,15,32,2038,0,1,High
+2024,Safety Gloves,Storage Devices,18,63,10,39,1220,1,1,High
+2025,Laptop Charger,Office Supplies,74,5,4,10,648,15,0,Low
+2026,Toner,Printer Supplies,28,66,15,60,1760,3,1,High
+2027,Mouse,Printer Supplies,46,38,5,44,446,0,0,Medium
+2028,Receipt Printer,Office Supplies,18,8,7,33,2252,14,0,Medium
+2029,Barcode Scanner,Office Supplies,726,1,4,64,1329,32,0,Low
+2030,Switch,Safety,19,4,2,39,1101,79,1,Medium
+2031,Safety Gloves,Computer Accessories,46,4,2,57,1408,85,1,Medium
+2032,Safety Gloves,Computer Accessories,512,2,4,52,1469,21,0,Low
+2033,Pen Pack,Electronics,370,0,1,21,1431,20,0,Low
+2034,Ink Cartridge,Mobile Accessories,4,66,12,46,1670,0,1,High
+2035,Barcode Scanner,Storage Devices,37,69,13,49,527,0,1,High
+2036,USB Flash,Computer Accessories,1,49,13,42,1255,9,1,High
+2037,Toner,Printer Supplies,440,0,1,44,339,19,1,Low
+2038,Notebook,Storage Devices,12,15,7,11,1901,22,0,Medium
+2039,Keyboard,Safety,21,51,12,62,1429,3,0,High
+2040,Keyboard,Safety,30,37,6,26,1194,5,0,Medium
+2041,USB Flash,Safety,130,6,1,25,993,21,1,Low
+2042,Barcode Scanner,Safety,280,2,3,45,974,27,0,Low
+2043,Safety Gloves,Electronics,10,38,11,18,1986,5,0,High
+2044,Switch,Computer Accessories,533,0,2,51,1756,9,0,Low
+2045,Safety Gloves,Printer Supplies,4,31,15,69,1592,5,0,High
+2046,Ink Cartridge,Printer Supplies,447,10,2,76,515,29,0,Low
+2047,HDD,Mobile Accessories,1,40,14,31,1214,4,1,High
+2048,Ink Cartridge,Mobile Accessories,627,7,1,62,2205,5,1,Low
+2049,Switch,Computer Accessories,202,0,1,37,1123,25,0,Low
+2050,Safety Gloves,Electronics,23,31,13,53,1182,5,1,High
+2051,USB Flash,Safety,189,4,1,18,1016,23,0,Low
+2052,Toner,Electronics,0,62,12,10,1878,2,0,High
+2053,Pen Pack,Printer Supplies,38,4,5,35,2391,66,1,Medium
+2054,Safety Gloves,Printer Supplies,193,0,3,53,1884,28,0,Low
+2055,Ink Cartridge,Electronics,2,67,15,39,2448,0,0,High
+2056,Safety Gloves,Safety,300,2,3,28,1533,25,0,Low
+2057,Safety Gloves,Printer Supplies,240,0,2,53,1801,29,1,Low
+2058,USB Flash,Safety,21,38,8,19,334,0,1,Medium
+2059,Ink Cartridge,Mobile Accessories,5,68,11,49,1834,6,1,High
+2060,Monitor Stand,Storage Devices,22,4,2,43,1922,96,0,Medium
+2061,Safety Gloves,Storage Devices,21,52,14,56,987,5,1,High
+2062,Pen Pack,Office Supplies,86,34,8,57,415,4,1,Medium
+2063,Switch,Printer Supplies,47,38,5,42,1566,4,1,Medium
+2064,Switch,Printer Supplies,727,0,3,69,640,24,1,Low
+2065,USB Flash,Storage Devices,56,4,2,61,963,79,1,Medium
+2066,Keyboard,Computer Accessories,57,4,5,59,315,104,1,Medium
+2067,Keyboard,Computer Accessories,358,0,2,47,444,5,0,Low
+2068,Toner,Safety,37,4,6,50,323,72,0,Medium
+2069,Router,Storage Devices,253,0,2,29,1232,12,1,Low
+2070,Receipt Printer,Printer Supplies,485,2,1,66,1377,16,0,Low
+2071,Monitor Stand,Computer Accessories,12,51,13,35,1293,0,1,High
+2072,Notebook,Printer Supplies,221,0,1,31,2438,18,0,Low
+2073,USB Flash,Computer Accessories,15,58,7,53,931,8,1,High
+2074,Laptop Charger,Office Supplies,11,32,12,32,1250,7,1,High
+2075,USB Flash,Printer Supplies,11,11,9,16,1673,55,0,Medium
+2076,Pen Pack,Office Supplies,4,63,13,26,717,11,1,High
+2077,Monitor Stand,Storage Devices,12,4,3,15,2437,110,1,Medium
+2078,Notebook,Storage Devices,12,10,7,12,2065,22,0,Medium
+2079,Barcode Scanner,Safety,6,4,3,10,2396,110,1,Medium
+2080,Barcode Scanner,Electronics,12,67,15,52,35,7,0,High
+2081,Keyboard,Storage Devices,49,14,7,36,338,0,1,Medium
+2082,HDD,Office Supplies,360,5,2,36,291,13,0,Low
+2083,Monitor Stand,Electronics,46,38,6,45,2154,0,0,Medium
+2084,Barcode Scanner,Storage Devices,2,67,13,57,2384,10,1,High
+2085,Switch,Printer Supplies,35,38,5,35,1697,1,0,Medium
+2086,Barcode Scanner,Safety,16,40,11,76,960,6,1,High
+2087,Ink Cartridge,Office Supplies,3,52,15,60,1274,1,1,High
+2088,HDD,Safety,52,38,7,46,215,14,0,Medium
+2089,Safety Gloves,Mobile Accessories,26,4,2,44,939,100,0,Medium
+2090,Monitor Stand,Mobile Accessories,336,1,2,39,857,10,0,Low
+2091,Switch,Safety,28,4,2,41,1144,86,1,Medium
+2092,Router,Printer Supplies,5,53,14,49,386,9,1,High
+2093,HDD,Printer Supplies,1,48,10,38,1680,10,0,High
+2094,Router,Storage Devices,25,4,3,49,2198,98,1,Medium
+2095,HDD,Printer Supplies,0,59,8,36,1769,11,0,High
+2096,Printer Cable,Electronics,267,4,3,22,99,27,0,Low
+2097,Laptop Charger,Printer Supplies,554,2,1,69,1900,3,0,Low
+2098,Barcode Scanner,Safety,15,42,15,74,693,4,1,High
+2099,HDD,Computer Accessories,299,1,3,25,507,13,1,Low
+2100,Receipt Printer,Office Supplies,38,18,7,27,2332,1,1,Medium
+2101,HDD,Office Supplies,65,38,5,56,1202,12,0,Medium
+2102,Safety Gloves,Computer Accessories,19,32,12,67,1753,1,0,High
+2103,Safety Gloves,Printer Supplies,11,61,15,73,1660,4,1,High
+2104,Keyboard,Mobile Accessories,57,38,8,55,1964,7,0,Medium
+2105,HDD,Safety,57,38,7,45,309,5,1,Medium
+2106,Router,Computer Accessories,54,15,5,44,67,14,1,Medium
+2107,USB Flash,Computer Accessories,7,61,7,51,968,9,1,High
+2108,Barcode Scanner,Mobile Accessories,0,59,13,17,1111,1,1,High
+2109,Barcode Scanner,Computer Accessories,138,3,1,19,268,17,0,Low
+2110,Pen Pack,Electronics,53,15,6,51,2500,29,1,Medium
+2111,Keyboard,Computer Accessories,364,8,2,46,594,5,0,Low
+2112,Barcode Scanner,Safety,15,40,11,67,843,5,1,High
+2113,Monitor Stand,Office Supplies,8,40,13,51,1822,10,0,High
+2114,Pen Pack,Electronics,48,4,2,72,661,93,1,Medium
+2115,Router,Mobile Accessories,9,26,7,10,1142,25,0,Medium
+2116,Switch,Storage Devices,2,37,10,12,1928,0,0,High
+2117,Notebook,Mobile Accessories,79,27,5,73,788,9,0,Medium
+2118,Safety Gloves,Safety,15,37,11,31,2326,0,1,High
+2119,Mouse,Office Supplies,10,63,11,57,496,0,1,High
+2120,Monitor Stand,Mobile Accessories,52,4,5,45,1728,4,1,Medium
+2121,Toner,Storage Devices,306,4,1,51,2100,23,0,Low
+2122,HDD,Storage Devices,39,38,5,26,858,1,1,Medium
+2123,Safety Gloves,Mobile Accessories,2,56,15,10,1925,8,1,High
+2124,Monitor Stand,Computer Accessories,4,37,15,28,1423,8,1,High
+2125,Router,Mobile Accessories,15,24,7,14,1357,7,0,Medium
+2126,USB Flash,Mobile Accessories,14,4,5,19,2157,82,1,Medium
+2127,Mouse,Electronics,298,7,2,57,1782,0,0,Low
+2128,Ink Cartridge,Printer Supplies,7,25,13,25,567,5,1,High
+2129,HDD,Safety,9,33,11,34,946,9,1,High
+2130,Toner,Printer Supplies,429,0,1,43,519,19,0,Low
+2131,Barcode Scanner,Mobile Accessories,546,3,2,80,2500,21,0,Low
+2132,USB Flash,Computer Accessories,7,65,12,25,1004,4,0,High
+2133,HDD,Mobile Accessories,506,5,4,73,1715,5,1,Low
+2134,Monitor Stand,Electronics,67,38,6,48,1877,1,1,Medium
+2135,Router,Printer Supplies,20,35,8,15,101,11,1,Medium
+2136,Router,Printer Supplies,28,38,8,17,132,16,1,Medium
+2137,Pen Pack,Storage Devices,381,3,1,53,110,6,0,Low
+2138,Ink Cartridge,Electronics,478,7,3,78,639,9,1,Low
+2139,Barcode Scanner,Safety,0,51,9,17,640,4,1,High
+2140,Safety Gloves,Printer Supplies,7,60,15,64,539,4,0,High
+2141,Laptop Charger,Electronics,321,8,1,39,2272,8,0,Low
+2142,USB Flash,Storage Devices,599,5,4,61,35,7,1,Low
+2143,Ink Cartridge,Mobile Accessories,452,2,1,39,1107,10,1,Low
+2144,Switch,Safety,497,1,1,58,35,6,0,Low
+2145,Pen Pack,Printer Supplies,124,0,2,40,1353,21,0,Low
+2146,Switch,Storage Devices,8,47,15,29,449,5,0,High
+2147,Laptop Charger,Safety,6,39,8,21,1194,3,1,High
+2148,Mouse,Printer Supplies,47,38,4,47,436,2,0,Medium
+2149,Barcode Scanner,Storage Devices,4,68,11,60,2500,11,1,High
+2150,Router,Mobile Accessories,67,4,5,61,314,57,1,Medium
+2151,HDD,Safety,2,54,9,20,1740,10,1,High
+2152,Laptop Charger,Printer Supplies,560,8,1,70,2111,1,0,Low
+2153,Barcode Scanner,Computer Accessories,550,8,1,56,1158,28,0,Low
+2154,Router,Mobile Accessories,9,26,7,10,1586,15,0,Medium
+2155,Switch,Office Supplies,224,0,3,29,1847,17,0,Low
+2156,Router,Office Supplies,3,31,12,34,2191,4,1,High
+2157,Safety Gloves,Safety,37,4,5,57,215,80,0,Medium
+2158,Barcode Scanner,Safety,438,7,2,67,2361,10,0,Low
+2159,Pen Pack,Storage Devices,376,4,1,45,201,8,1,Low
+2160,Ink Cartridge,Safety,29,4,5,46,2359,110,1,Medium
+2161,Printer Cable,Safety,688,1,3,72,225,4,0,Low
+2162,Ink Cartridge,Printer Supplies,433,5,3,49,2500,22,1,Low
+2163,Printer Cable,Mobile Accessories,31,38,8,20,35,14,1,Medium
+2164,Toner,Safety,344,1,1,29,784,22,1,Low
+2165,Receipt Printer,Printer Supplies,508,6,1,66,1057,21,0,Low
+2166,Mouse,Safety,15,11,6,18,1139,23,1,Medium
+2167,Pen Pack,Printer Supplies,247,0,2,49,1261,23,1,Low
+2168,Printer Cable,Computer Accessories,540,1,3,51,35,6,0,Low
+2169,Monitor Stand,Storage Devices,12,4,6,13,1123,18,1,Medium
+2170,Ink Cartridge,Mobile Accessories,110,8,1,26,938,21,1,Low
+2171,Monitor Stand,Office Supplies,6,38,11,50,1662,10,1,High
+2172,Laptop Charger,Electronics,88,9,6,69,1927,15,1,Medium
+2173,Laptop Charger,Printer Supplies,32,69,11,70,1381,2,1,High
+2174,Ink Cartridge,Computer Accessories,75,37,5,48,1058,0,1,Medium
+2175,Laptop Charger,Computer Accessories,28,12,7,26,35,15,0,Medium
+2176,Laptop Charger,Office Supplies,14,42,11,36,1300,10,1,High
+2177,Toner,Electronics,19,41,10,34,2266,2,0,High
+2178,Pen Pack,Office Supplies,3,62,11,24,668,7,1,High
+2179,Safety Gloves,Mobile Accessories,22,5,5,27,788,6,1,Medium
+2180,Mouse,Mobile Accessories,3,59,11,16,731,9,1,High
+2181,Keyboard,Safety,33,4,5,58,2182,61,1,Medium
+2182,Router,Safety,60,38,5,39,1522,10,1,Medium
+2183,HDD,Mobile Accessories,27,33,3,23,2222,0,0,Medium
+2184,Toner,Safety,48,4,5,53,521,72,1,Medium
+2185,Barcode Scanner,Office Supplies,697,2,1,67,1094,27,0,Low
+2186,Safety Gloves,Mobile Accessories,0,48,15,11,1844,6,1,High
+2187,Laptop Charger,Computer Accessories,37,5,7,29,195,7,1,Medium
+2188,Router,Storage Devices,505,6,1,80,114,4,0,Low
+2189,Switch,Storage Devices,16,40,15,34,1574,4,1,High
+2190,Safety Gloves,Safety,20,4,5,37,1267,71,1,Medium
+2191,USB Flash,Office Supplies,2,46,15,17,2218,6,1,High
+2192,Barcode Scanner,Safety,403,0,4,59,2151,8,0,Low
+2193,Mouse,Electronics,525,7,3,62,1708,1,0,Low
+2194,Pen Pack,Office Supplies,1,63,12,20,804,8,1,High
+2195,Barcode Scanner,Printer Supplies,2,40,8,24,1499,4,0,High
+2196,Ink Cartridge,Printer Supplies,12,43,11,37,1205,11,0,High
+2197,Safety Gloves,Storage Devices,730,0,1,67,1165,9,0,Low
+2198,Barcode Scanner,Office Supplies,767,1,4,63,1531,28,0,Low
+2199,Toner,Storage Devices,32,59,13,48,2500,2,0,High
+2200,HDD,Safety,51,38,7,46,135,7,1,Medium
+2201,Pen Pack,Electronics,1,65,9,23,233,6,0,High
+2202,Keyboard,Mobile Accessories,22,16,6,23,1889,33,0,Medium
+2203,Safety Gloves,Printer Supplies,10,43,12,70,2056,2,1,High
+2204,Ink Cartridge,Office Supplies,1,56,15,65,1254,6,1,High
+2205,Safety Gloves,Computer Accessories,18,26,13,66,1833,0,1,High
+2206,Notebook,Safety,410,2,2,66,432,3,0,Low
+2207,Router,Office Supplies,29,4,4,53,128,115,0,Medium
+2208,Barcode Scanner,Storage Devices,9,68,13,54,245,12,1,High
+2209,Notebook,Mobile Accessories,28,62,11,64,1246,9,1,High
+2210,Barcode Scanner,Storage Devices,2,71,10,63,2445,4,0,High
+2211,Laptop Charger,Electronics,82,8,6,74,1861,6,1,Medium
+2212,Receipt Printer,Office Supplies,304,6,3,64,1301,27,0,Low
+2213,Router,Safety,38,38,5,36,1043,18,0,Medium
+2214,Keyboard,Safety,80,38,8,76,1918,6,1,Medium
+2215,Receipt Printer,Safety,69,15,4,71,1508,27,0,Medium
+2216,Barcode Scanner,Safety,342,2,2,43,1048,27,0,Low
+2217,Laptop Charger,Electronics,76,14,6,74,1737,18,0,Medium
+2218,Router,Computer Accessories,14,51,9,31,1143,4,0,High
+2219,Laptop Charger,Electronics,400,7,1,42,2428,11,0,Low
+2220,Barcode Scanner,Safety,23,38,11,71,1023,6,0,High
+2221,Printer Cable,Electronics,260,5,3,25,35,24,1,Low
+2222,Notebook,Electronics,291,0,3,70,1390,26,0,Low
+2223,Barcode Scanner,Electronics,140,2,1,24,35,29,1,Low
+2224,Switch,Mobile Accessories,235,2,2,28,2500,20,1,Low
+2225,Switch,Safety,425,1,1,68,411,7,0,Low
+2226,Router,Storage Devices,268,0,1,34,1450,9,0,Low
+2227,Printer Cable,Electronics,325,7,3,32,394,31,0,Low
+2228,USB Flash,Office Supplies,9,46,15,19,2485,5,1,High
+2229,HDD,Mobile Accessories,10,4,4,18,374,74,1,Medium
+2230,Toner,Storage Devices,22,48,9,46,1337,5,1,High
+2231,Laptop Charger,Office Supplies,229,1,1,39,1491,20,0,Low
+2232,Notebook,Mobile Accessories,28,29,12,70,1271,1,0,High
+2233,Pen Pack,Electronics,32,4,2,68,726,98,0,Medium
+2234,Keyboard,Mobile Accessories,85,38,9,63,2082,0,0,Medium
+2235,Toner,Office Supplies,241,6,1,23,1623,29,0,Low
+2236,HDD,Mobile Accessories,280,0,2,65,806,20,0,Low
+2237,USB Flash,Electronics,236,2,1,18,1020,27,0,Low
+2238,Keyboard,Safety,80,38,7,76,1865,0,0,Medium
+2239,Switch,Printer Supplies,59,38,5,47,1408,0,0,Medium
+2240,Laptop Charger,Safety,4,46,11,23,927,3,1,High
+2241,Safety Gloves,Storage Devices,11,7,7,14,1321,1,0,Medium
+2242,Keyboard,Computer Accessories,32,14,9,28,1694,0,0,Medium
+2243,Toner,Safety,30,7,5,49,404,73,0,Medium
+2244,Pen Pack,Printer Supplies,21,7,4,44,426,120,0,Medium
+2245,Laptop Charger,Printer Supplies,478,4,1,70,1979,6,0,Low
+2246,Ink Cartridge,Electronics,75,38,5,72,1183,2,0,Medium
+2247,Receipt Printer,Mobile Accessories,16,55,7,67,1096,12,0,High
+2248,Receipt Printer,Mobile Accessories,644,4,4,64,1227,14,0,Low
+2249,Keyboard,Computer Accessories,50,9,5,51,224,119,1,Medium
+2250,Barcode Scanner,Safety,19,43,11,76,875,6,1,High
+2251,Toner,Computer Accessories,167,7,1,25,865,25,0,Low
+2252,Laptop Charger,Mobile Accessories,0,62,12,66,1840,0,0,High
+2253,HDD,Computer Accessories,226,9,3,31,310,13,0,Low
+2254,Notebook,Safety,413,0,4,58,401,0,0,Low
+2255,Notebook,Printer Supplies,225,3,1,25,2202,20,0,Low
+2256,Mouse,Computer Accessories,14,38,3,13,1579,7,0,Medium
+2257,USB Flash,Office Supplies,302,5,2,36,1914,10,0,Low
+2258,Safety Gloves,Safety,41,4,5,56,133,76,0,Medium
+2259,Switch,Printer Supplies,745,1,1,68,594,27,1,Low
+2260,Toner,Storage Devices,325,2,2,53,1878,22,0,Low
+2261,Switch,Safety,37,4,3,62,2099,96,0,Medium
+2262,Router,Printer Supplies,80,38,6,75,2492,12,0,Medium
+2263,Printer Cable,Mobile Accessories,31,39,6,65,1426,8,1,High
+2264,Router,Storage Devices,571,5,1,68,171,2,0,Low
+2265,Laptop Charger,Office Supplies,18,47,11,36,1520,4,1,High
+2266,Switch,Storage Devices,4,49,14,38,390,8,1,High
+2267,Receipt Printer,Printer Supplies,306,4,1,32,2429,8,0,Low
+2268,Keyboard,Safety,3,48,13,14,1733,0,1,High
+2269,Printer Cable,Electronics,334,8,4,31,353,29,1,Low
+2270,Safety Gloves,Safety,44,7,5,58,35,87,0,Medium
+2271,Notebook,Electronics,8,45,13,74,1225,8,1,High
+2272,Barcode Scanner,Computer Accessories,112,1,1,18,420,21,0,Low
+2273,USB Flash,Safety,19,38,7,14,469,15,1,Medium
+2274,Keyboard,Safety,6,46,13,10,1465,12,1,High
+2275,USB Flash,Mobile Accessories,8,70,14,56,1626,3,0,High
+2276,HDD,Mobile Accessories,476,4,1,76,1944,6,0,Low
+2277,Notebook,Safety,451,1,4,64,275,0,0,Low
+2278,Toner,Electronics,0,62,15,45,2500,3,0,High
+2279,Safety Gloves,Printer Supplies,9,31,9,71,1774,7,1,High
+2280,Ink Cartridge,Mobile Accessories,174,3,1,25,1053,21,0,Low
+2281,Safety Gloves,Electronics,387,8,3,54,2196,13,0,Low
+2282,Monitor Stand,Electronics,56,38,6,45,2479,2,1,Medium
+2283,Mouse,Electronics,8,46,13,67,213,1,1,High
+2284,Keyboard,Office Supplies,450,0,1,42,2467,1,0,Low
+2285,Safety Gloves,Storage Devices,523,3,2,79,744,7,0,Low
+2286,Monitor Stand,Storage Devices,12,4,3,20,2263,110,0,Medium
+2287,Laptop Charger,Mobile Accessories,0,70,11,57,1630,8,1,High
+2288,Laptop Charger,Safety,87,6,1,24,1959,5,0,Low
+2289,Safety Gloves,Mobile Accessories,43,4,5,36,753,11,1,Medium
+2290,Mouse,Printer Supplies,0,54,14,34,613,3,1,High
+2291,Switch,Safety,68,37,5,49,731,3,1,Medium
+2292,Monitor Stand,Computer Accessories,20,46,15,67,1801,9,0,High
+2293,Mouse,Mobile Accessories,8,59,14,18,775,6,1,High
+2294,Barcode Scanner,Office Supplies,404,2,2,44,1587,15,0,Low
+2295,Safety Gloves,Electronics,19,34,11,30,1853,2,0,High
+2296,Laptop Charger,Safety,189,4,1,25,2009,6,0,Low
+2297,Printer Cable,Safety,27,30,12,46,1619,5,0,High
+2298,Toner,Printer Supplies,0,41,14,27,368,1,1,High
+2299,Barcode Scanner,Safety,6,4,3,10,2494,101,0,Medium
+2300,Ink Cartridge,Mobile Accessories,653,8,4,64,2068,6,0,Low
+2301,USB Flash,Office Supplies,313,1,1,41,1781,12,0,Low
+2302,Ink Cartridge,Mobile Accessories,100,9,1,26,1150,23,0,Low
+2303,Barcode Scanner,Computer Accessories,3,53,10,18,140,6,1,High
+2304,Router,Computer Accessories,117,38,6,76,2254,0,1,Medium
+2305,Notebook,Printer Supplies,140,4,2,18,2460,19,0,Low
+2306,Barcode Scanner,Storage Devices,183,1,2,49,1838,7,0,Low
+2307,USB Flash,Mobile Accessories,4,74,15,58,1719,6,1,High
+2308,Switch,Computer Accessories,215,2,1,44,1079,22,0,Low
+2309,Pen Pack,Electronics,357,0,1,30,1162,17,1,Low
+2310,Barcode Scanner,Office Supplies,412,1,2,51,1757,14,0,Low
+2311,Safety Gloves,Electronics,18,44,11,22,2170,12,0,High
+2312,Safety Gloves,Mobile Accessories,33,8,4,50,2034,72,1,Medium
+2313,Pen Pack,Office Supplies,3,63,9,24,702,11,0,High
+2314,Barcode Scanner,Storage Devices,13,69,14,45,222,12,1,High
+2315,USB Flash,Computer Accessories,0,22,13,37,1135,4,1,High
+2316,Laptop Charger,Safety,4,38,12,20,1168,3,1,High
+2317,Switch,Storage Devices,12,47,15,31,413,8,1,High
+2318,Notebook,Mobile Accessories,496,1,2,45,2134,7,1,Low
+2319,Receipt Printer,Computer Accessories,39,38,6,27,399,3,1,Medium
+2320,Monitor Stand,Mobile Accessories,166,6,3,37,795,13,1,Low
+2321,Keyboard,Safety,1,46,14,10,1462,9,0,High
+2322,Mouse,Electronics,7,71,14,73,1916,3,1,High
+2323,Notebook,Mobile Accessories,32,33,12,63,856,9,0,High
+2324,Safety Gloves,Safety,26,4,5,55,282,72,0,Medium
+2325,Keyboard,Mobile Accessories,21,11,6,22,1798,29,1,Medium
+2326,Pen Pack,Storage Devices,133,0,1,21,141,8,1,Low
+2327,Keyboard,Printer Supplies,16,65,12,29,724,0,1,High
+2328,Monitor Stand,Mobile Accessories,41,4,5,52,1432,9,1,Medium
+2329,Ink Cartridge,Computer Accessories,64,38,5,57,1089,0,0,Medium
+2330,Router,Computer Accessories,87,38,5,80,2453,5,1,Medium
+2331,Notebook,Office Supplies,18,30,10,68,2261,3,0,High
+2332,Switch,Printer Supplies,786,6,3,64,449,22,0,Low
+2333,HDD,Computer Accessories,280,9,3,31,246,13,1,Low
+2334,Monitor Stand,Mobile Accessories,209,5,4,31,638,10,0,Low
+2335,USB Flash,Safety,162,4,1,25,1054,23,0,Low
+2336,Receipt Printer,Mobile Accessories,28,36,9,70,915,8,1,High
+2337,Safety Gloves,Computer Accessories,20,40,10,68,1779,1,1,High
+2338,Toner,Electronics,31,38,4,31,35,1,1,Medium
+2339,Keyboard,Safety,31,56,11,63,1290,4,1,High
+2340,Switch,Mobile Accessories,220,2,2,33,2187,25,0,Low
+2341,Monitor Stand,Electronics,53,35,6,47,2303,0,0,Medium
+2342,Switch,Electronics,489,4,2,73,910,22,0,Low
+2343,Switch,Mobile Accessories,382,5,2,57,1855,28,0,Low
+2344,Safety Gloves,Safety,16,43,11,29,2289,10,1,High
+2345,HDD,Mobile Accessories,8,40,13,24,1413,3,1,High
+2346,Router,Mobile Accessories,33,4,5,61,162,72,0,Medium
+2347,Keyboard,Computer Accessories,264,1,2,42,481,1,1,Low
+2348,Ink Cartridge,Office Supplies,2,53,10,63,1232,3,1,High
+2349,Toner,Computer Accessories,108,7,1,23,893,28,0,Low
+2350,HDD,Office Supplies,56,38,5,51,1250,12,0,Medium
+2351,Barcode Scanner,Computer Accessories,11,53,8,16,236,9,1,High
+2352,Router,Printer Supplies,17,34,14,59,466,8,0,High
+2353,Barcode Scanner,Safety,16,43,11,74,912,5,1,High
+2354,Mouse,Printer Supplies,0,51,13,35,624,4,1,High
+2355,Monitor Stand,Mobile Accessories,216,0,4,42,654,9,0,Low
+2356,Monitor Stand,Electronics,48,38,6,46,2383,0,0,Medium
+2357,Mouse,Mobile Accessories,81,38,6,67,2305,13,0,Medium
+2358,Receipt Printer,Mobile Accessories,687,4,4,60,1183,12,1,Low
+2359,Laptop Charger,Office Supplies,259,7,1,36,1410,21,0,Low
+2360,Printer Cable,Safety,49,38,5,40,857,0,0,Medium
+2361,Switch,Mobile Accessories,304,5,4,54,1556,30,0,Low
+2362,Receipt Printer,Safety,92,10,4,77,1508,18,1,Medium
+2363,USB Flash,Electronics,310,4,1,26,960,25,0,Low
+2364,Laptop Charger,Office Supplies,18,38,13,59,2499,9,1,High
+2365,Toner,Storage Devices,27,57,12,50,2500,3,0,High
+2366,Laptop Charger,Printer Supplies,76,38,3,70,2146,1,0,Medium
+2367,Router,Computer Accessories,50,15,5,52,49,14,1,Medium
+2368,Barcode Scanner,Computer Accessories,151,2,1,27,35,17,0,Low
+2369,Notebook,Mobile Accessories,501,1,2,52,2369,7,1,Low
+2370,Switch,Electronics,565,0,1,65,726,22,0,Low
+2371,Laptop Charger,Safety,190,6,1,23,1992,2,0,Low
+2372,Mouse,Electronics,32,30,13,65,70,1,1,High
+2373,Keyboard,Computer Accessories,37,4,5,55,459,103,0,Medium
+2374,HDD,Printer Supplies,25,38,7,22,530,4,0,Medium
+2375,Notebook,Storage Devices,7,11,7,10,1779,30,0,Medium
+2376,Receipt Printer,Mobile Accessories,693,1,2,62,1190,14,0,Low
+2377,USB Flash,Electronics,230,3,1,25,998,27,0,Low
+2378,Barcode Scanner,Safety,184,0,4,45,1105,25,0,Low
+2379,Switch,Computer Accessories,599,1,1,52,1727,5,1,Low
+2380,Switch,Safety,22,4,2,34,1389,87,1,Medium
+2381,Ink Cartridge,Safety,32,4,5,46,2184,97,1,Medium
+2382,Barcode Scanner,Office Supplies,410,2,2,43,1828,15,0,Low
+2383,Keyboard,Mobile Accessories,31,21,6,27,2018,29,1,Medium
+2384,Ink Cartridge,Safety,19,48,8,78,540,4,1,High
+2385,Router,Storage Devices,29,4,2,51,2118,115,0,Medium
+2386,Monitor Stand,Storage Devices,22,4,3,42,1991,105,0,Medium
+2387,Receipt Printer,Mobile Accessories,51,40,13,65,1044,8,1,High
+2388,Keyboard,Safety,25,38,5,33,1289,13,0,Medium
+2389,Mouse,Office Supplies,17,54,15,63,1431,0,0,High
+2390,Ink Cartridge,Electronics,76,38,4,71,1383,12,0,Medium
+2391,Laptop Charger,Computer Accessories,28,8,7,27,68,13,1,Medium
+2392,Ink Cartridge,Printer Supplies,44,38,6,41,1820,11,0,Medium
+2393,Barcode Scanner,Storage Devices,33,70,13,50,261,8,1,High
+2394,Printer Cable,Electronics,351,5,4,29,142,29,0,Low
+2395,Receipt Printer,Storage Devices,20,4,4,28,1657,76,0,Medium
+2396,Safety Gloves,Electronics,389,4,3,56,2249,11,1,Low
+2397,Laptop Charger,Safety,14,4,4,28,691,104,0,Medium
+2398,Monitor Stand,Electronics,42,56,12,76,1041,3,1,High
+2399,Switch,Storage Devices,6,49,12,18,2081,2,1,High
+2400,Toner,Printer Supplies,6,66,15,54,1777,3,1,High
+2401,USB Flash,Mobile Accessories,440,1,3,46,1358,19,1,Low
+2402,Receipt Printer,Safety,103,19,4,78,1471,20,1,Medium
+2403,USB Flash,Safety,173,4,4,23,723,21,0,Low
+2404,Laptop Charger,Computer Accessories,280,2,1,20,2184,18,0,Low
+2405,Safety Gloves,Storage Devices,630,0,4,65,1177,12,0,Low
+2406,HDD,Printer Supplies,92,38,8,67,923,4,1,Medium
+2407,HDD,Printer Supplies,72,38,8,63,690,10,0,Medium
+2408,Safety Gloves,Computer Accessories,119,2,1,19,2154,29,0,Low
+2409,Notebook,Printer Supplies,11,26,10,44,366,10,1,High
+2410,Laptop Charger,Office Supplies,8,44,10,25,1620,9,0,High
+2411,Notebook,Storage Devices,8,11,7,14,1981,27,0,Medium
+2412,Ink Cartridge,Computer Accessories,66,38,5,50,1228,16,1,Medium
+2413,HDD,Computer Accessories,53,29,4,49,1239,19,0,Medium
+2414,Toner,Office Supplies,461,0,2,57,1388,3,0,Low
+2415,Safety Gloves,Safety,60,7,3,19,790,4,1,Low
+2416,Switch,Computer Accessories,2,70,15,25,1336,2,1,High
+2417,Receipt Printer,Safety,24,4,3,37,35,79,0,Medium
+2418,Receipt Printer,Mobile Accessories,46,38,13,64,910,10,1,High
+2419,Toner,Office Supplies,19,41,9,67,183,2,1,High
+2420,Notebook,Electronics,61,38,9,80,1068,7,1,High
+2421,USB Flash,Mobile Accessories,452,1,1,52,1451,16,0,Low
+2422,Safety Gloves,Storage Devices,521,4,2,66,721,8,0,Low
+2423,USB Flash,Safety,185,0,4,20,1011,21,0,Low
+2424,HDD,Printer Supplies,1,35,15,37,1764,13,1,High
+2425,USB Flash,Electronics,240,4,1,25,983,26,0,Low
+2426,USB Flash,Mobile Accessories,486,1,1,51,1386,17,1,Low
+2427,Ink Cartridge,Safety,17,26,9,72,2371,10,0,High
+2428,Ink Cartridge,Printer Supplies,47,38,5,43,1823,15,1,Medium
+2429,Barcode Scanner,Safety,2,51,9,22,897,3,1,High
+2430,Switch,Office Supplies,26,4,4,51,1752,73,0,Medium
+2431,Notebook,Storage Devices,12,12,7,12,1574,35,1,Medium
+2432,Switch,Safety,53,4,2,59,1864,85,1,Medium
+2433,Safety Gloves,Computer Accessories,574,0,1,53,1459,17,0,Low
+2434,HDD,Computer Accessories,240,2,2,27,336,16,0,Low
+2435,Ink Cartridge,Electronics,96,38,4,68,1552,7,1,Medium
+2436,Ink Cartridge,Printer Supplies,437,7,1,44,2500,24,0,Low
+2437,Safety Gloves,Printer Supplies,16,35,15,64,736,2,1,High
+2438,Toner,Safety,38,4,5,52,304,79,0,Medium
+2439,Keyboard,Safety,32,38,6,25,1658,16,0,Medium
+2440,Keyboard,Storage Devices,28,4,5,49,1531,79,0,Medium
+2441,Monitor Stand,Computer Accessories,13,36,13,27,1356,9,1,High
+2442,Monitor Stand,Office Supplies,4,38,11,45,1772,10,0,High
+2443,Router,Printer Supplies,13,34,14,56,499,7,0,High
+2444,Switch,Safety,28,5,2,45,1049,95,0,Medium
+2445,Notebook,Storage Devices,14,14,7,13,1827,38,1,Medium
+2446,Keyboard,Safety,42,38,6,32,1268,0,0,Medium
+2447,Barcode Scanner,Printer Supplies,7,35,11,21,1632,4,1,High
+2448,Barcode Scanner,Printer Supplies,11,33,13,41,70,5,1,High
+2449,Toner,Safety,38,4,5,60,586,89,0,Medium
+2450,Safety Gloves,Safety,50,4,5,54,408,73,1,Medium
+2451,Keyboard,Computer Accessories,29,12,8,28,1237,14,0,Medium
+2452,Receipt Printer,Mobile Accessories,641,4,3,51,1168,14,0,Low
+2453,Keyboard,Office Supplies,409,0,2,50,2500,2,0,Low
+2454,Toner,Office Supplies,254,0,2,68,1120,31,0,Low
+2455,Safety Gloves,Storage Devices,556,4,2,68,622,7,0,Low
+2456,Ink Cartridge,Safety,14,44,11,74,726,4,1,High
+2457,Router,Computer Accessories,124,38,5,80,2358,8,1,Medium
+2458,Barcode Scanner,Storage Devices,7,69,13,60,2434,12,1,High
+2459,Toner,Storage Devices,17,57,14,57,2305,2,1,High
+2460,Monitor Stand,Storage Devices,30,4,3,38,1902,109,1,Medium
+2461,Router,Printer Supplies,27,35,8,17,177,0,1,Medium
+2462,HDD,Safety,3,61,10,18,1821,10,1,High
+2463,Laptop Charger,Electronics,83,17,6,69,1780,17,1,Medium
+2464,Laptop Charger,Safety,47,4,4,57,525,79,1,Medium
+2465,Notebook,Mobile Accessories,70,25,7,65,2286,9,1,Medium
+2466,Toner,Printer Supplies,31,62,15,60,1538,2,1,High
+2467,Laptop Charger,Safety,130,6,1,20,1829,3,0,Low
+2468,Switch,Safety,407,0,1,65,114,4,0,Low
+2469,Toner,Electronics,16,47,9,32,2113,2,1,High
+2470,Switch,Computer Accessories,552,0,2,52,1806,5,0,Low
+2471,Pen Pack,Printer Supplies,164,0,1,44,1472,23,0,Low
+2472,Mouse,Electronics,33,43,13,70,333,0,0,High
+2473,HDD,Computer Accessories,284,1,2,26,312,15,0,Low
+2474,Laptop Charger,Office Supplies,268,0,1,32,1659,20,0,Low
+2475,Ink Cartridge,Mobile Accessories,492,0,2,52,698,8,0,Low
+2476,Pen Pack,Electronics,3,70,6,11,221,5,1,High
+2477,Ink Cartridge,Printer Supplies,14,40,13,29,396,4,0,High
+2478,Barcode Scanner,Safety,6,55,11,71,854,3,1,High
+2479,Router,Computer Accessories,296,8,2,22,986,25,0,Low
+2480,HDD,Printer Supplies,91,38,8,60,864,2,1,Medium
+2481,Toner,Printer Supplies,2,35,14,20,376,1,1,High
+2482,Pen Pack,Printer Supplies,72,38,3,72,327,8,0,Medium
+2483,Ink Cartridge,Printer Supplies,153,4,3,51,1346,22,0,Low
+2484,Notebook,Computer Accessories,29,48,13,63,759,3,1,High
+2485,HDD,Printer Supplies,28,38,7,23,823,17,0,Medium
+2486,Router,Printer Supplies,28,38,8,23,35,0,1,Medium
+2487,Toner,Office Supplies,428,0,1,48,1435,7,0,Low
+2488,USB Flash,Storage Devices,12,43,14,43,2383,4,1,High
+2489,Mouse,Electronics,34,32,13,64,35,1,0,High
+2490,Keyboard,Safety,8,4,5,12,564,85,0,Medium
+2491,Ink Cartridge,Mobile Accessories,694,4,1,79,1265,8,0,Low
+2492,Barcode Scanner,Computer Accessories,11,54,12,31,35,5,0,High
+2493,USB Flash,Computer Accessories,9,59,7,52,1065,9,0,High
+2494,Barcode Scanner,Electronics,3,65,15,54,190,9,1,High
+2495,HDD,Storage Devices,456,5,4,78,2208,29,1,Low
+2496,Monitor Stand,Storage Devices,18,4,3,22,2338,110,1,Medium
+2497,Keyboard,Safety,32,38,6,29,1407,9,0,Medium
+2498,Barcode Scanner,Safety,7,50,11,18,745,3,0,High
+2499,Router,Computer Accessories,97,38,5,68,2306,8,1,Medium
+2500,Toner,Office Supplies,311,2,3,27,1777,31,0,Low
+2501,Pen Pack,Printer Supplies,406,1,2,50,1271,22,0,Low
+2502,Toner,Computer Accessories,106,4,1,15,1003,23,0,Low
+2503,Keyboard,Safety,34,4,6,55,2273,71,0,Medium
+2504,USB Flash,Printer Supplies,18,8,9,20,1487,55,0,Medium
+2505,USB Flash,Safety,164,4,1,17,744,20,0,Low
+2506,Printer Cable,Safety,619,1,4,73,2071,2,0,Low
+2507,Switch,Safety,510,2,1,71,1149,25,1,Low
+2508,Switch,Safety,432,0,1,64,287,4,0,Low
+2509,Monitor Stand,Mobile Accessories,26,4,4,53,2009,78,0,Medium
+2510,Notebook,Computer Accessories,28,27,12,66,483,3,1,High
+2511,Switch,Mobile Accessories,403,7,1,51,1817,29,0,Low
+2512,Notebook,Office Supplies,17,45,10,68,2214,4,1,High
+2513,Barcode Scanner,Electronics,171,2,1,20,35,25,1,Low
+2514,HDD,Mobile Accessories,11,4,5,13,522,85,1,Medium
+2515,Switch,Mobile Accessories,383,0,4,54,1763,31,0,Low
+2516,Pen Pack,Office Supplies,0,59,9,31,618,1,1,High
+2517,Switch,Computer Accessories,552,2,2,54,1722,6,0,Low
+2518,Printer Cable,Electronics,67,13,6,51,496,7,1,Medium
+2519,Monitor Stand,Electronics,67,38,6,43,2230,0,1,Medium
+2520,Monitor Stand,Mobile Accessories,33,4,4,60,1803,88,1,Medium
+2521,Printer Cable,Mobile Accessories,26,25,13,62,1714,3,1,High
+2522,Barcode Scanner,Printer Supplies,4,43,9,17,1765,4,1,High
+2523,HDD,Electronics,0,40,10,52,1895,10,0,High
+2524,Keyboard,Safety,6,4,5,10,547,71,1,Medium
+2525,Router,Computer Accessories,5,38,13,33,1189,11,0,High
+2526,Router,Computer Accessories,20,51,10,41,1215,10,1,High
+2527,Keyboard,Safety,40,38,6,31,1524,12,1,Medium
+2528,Ink Cartridge,Electronics,488,6,2,68,582,7,1,Low
+2529,Toner,Electronics,21,47,14,33,2077,2,1,High
+2530,Printer Cable,Safety,730,0,1,68,255,3,0,Low
+2531,Barcode Scanner,Mobile Accessories,695,0,2,80,2369,23,1,Low
+2532,Switch,Storage Devices,13,39,13,29,1703,2,1,High
+2533,Safety Gloves,Safety,36,4,4,62,190,83,0,Medium
+2534,Barcode Scanner,Electronics,204,2,1,24,96,24,0,Low
+2535,Toner,Printer Supplies,441,4,1,43,488,20,0,Low
+2536,USB Flash,Safety,33,38,8,24,399,3,1,Medium
+2537,Monitor Stand,Mobile Accessories,32,4,4,61,1576,89,1,Medium
+2538,Pen Pack,Storage Devices,2,42,7,80,748,4,1,High
+2539,Safety Gloves,Mobile Accessories,1,54,15,14,2060,5,0,High
+2540,Notebook,Mobile Accessories,88,34,5,74,577,0,1,Medium
+2541,Mouse,Safety,18,18,7,20,1237,13,0,Medium
+2542,Mouse,Printer Supplies,2,56,13,26,521,2,1,High
+2543,Mouse,Storage Devices,739,1,1,71,640,27,0,Low
+2544,Barcode Scanner,Printer Supplies,10,38,8,35,35,10,0,High
+2545,Keyboard,Mobile Accessories,76,38,8,56,2149,3,1,Medium
+2546,Printer Cable,Safety,74,11,4,61,471,22,1,Medium
+2547,Notebook,Printer Supplies,605,5,4,72,1024,5,0,Low
+2548,Laptop Charger,Office Supplies,6,32,11,38,1611,1,1,High
+2549,Pen Pack,Storage Devices,3,56,14,17,1381,0,0,High
+2550,Barcode Scanner,Storage Devices,4,66,11,59,2307,12,1,High
+2551,Safety Gloves,Storage Devices,16,53,14,59,712,8,1,High
+2552,Router,Mobile Accessories,16,24,7,15,1170,7,0,Medium
+2553,Pen Pack,Electronics,0,68,7,19,139,6,1,High
+2554,Router,Storage Devices,407,5,1,76,245,3,0,Low
+2555,Router,Mobile Accessories,38,4,5,54,179,50,0,Medium
+2556,USB Flash,Mobile Accessories,5,68,15,56,1887,5,1,High
+2557,Keyboard,Mobile Accessories,10,4,2,23,2373,93,0,Medium
+2558,Safety Gloves,Storage Devices,16,17,7,15,941,6,0,Medium
+2559,Notebook,Electronics,14,62,11,68,613,8,1,High
+2560,Notebook,Storage Devices,199,2,2,12,815,6,1,Low
+2561,Laptop Charger,Electronics,90,12,6,73,1649,6,1,Medium
+2562,Safety Gloves,Storage Devices,690,0,4,67,905,10,0,Low
+2563,Switch,Storage Devices,15,42,13,28,1647,6,1,High
+2564,HDD,Storage Devices,464,5,3,74,2470,31,0,Low
+2565,Keyboard,Mobile Accessories,12,4,2,17,2487,97,1,Medium
+2566,Switch,Computer Accessories,272,2,1,43,1045,21,1,Low
+2567,USB Flash,Mobile Accessories,19,4,5,26,2336,83,0,Medium
+2568,Barcode Scanner,Computer Accessories,558,5,1,63,820,27,0,Low
+2569,Receipt Printer,Printer Supplies,270,2,1,35,2246,10,0,Low
+2570,USB Flash,Office Supplies,473,3,2,80,57,0,0,Low
+2571,Router,Office Supplies,20,4,4,43,211,120,0,Medium
+2572,USB Flash,Printer Supplies,8,12,8,16,1656,38,0,Medium
+2573,Printer Cable,Safety,750,1,4,67,35,5,1,Low
+2574,HDD,Storage Devices,493,3,3,80,2373,28,0,Low
+2575,Notebook,Computer Accessories,4,31,13,68,682,3,1,High
+2576,Router,Mobile Accessories,13,28,7,11,1482,8,1,Medium
+2577,Monitor Stand,Storage Devices,18,5,6,19,790,12,0,Medium
+2578,Mouse,Printer Supplies,45,38,5,43,543,6,1,Medium
+2579,Printer Cable,Electronics,57,13,6,54,382,0,0,Medium
+2580,HDD,Printer Supplies,26,53,14,39,391,0,0,High
+2581,USB Flash,Electronics,248,4,1,12,975,28,0,Low
+2582,Keyboard,Computer Accessories,260,2,3,47,661,2,0,Low
+2583,Safety Gloves,Safety,8,44,11,28,2211,12,1,High
+2584,Notebook,Mobile Accessories,73,33,7,66,2060,2,0,Medium
+2585,USB Flash,Safety,29,38,8,23,415,15,0,Medium
+2586,Router,Printer Supplies,27,38,8,21,368,1,0,Medium
+2587,Receipt Printer,Safety,166,3,1,25,2363,3,0,Low
+2588,Printer Cable,Office Supplies,213,3,1,40,1105,4,0,Low
+2589,HDD,Computer Accessories,256,10,3,34,144,13,1,Low
+2590,Laptop Charger,Office Supplies,17,40,11,37,1481,8,1,High
+2591,Toner,Storage Devices,13,44,9,40,1155,9,0,High
+2592,USB Flash,Computer Accessories,2,44,13,44,869,1,0,High
+2593,Printer Cable,Safety,454,0,4,69,2046,1,1,Low
+2594,Pen Pack,Electronics,329,1,1,29,1042,20,1,Low
+2595,HDD,Computer Accessories,250,2,1,31,282,14,1,Low
+2596,Laptop Charger,Office Supplies,171,0,4,25,530,13,1,Low
+2597,USB Flash,Office Supplies,597,3,3,59,950,21,0,Low
+2598,Ink Cartridge,Mobile Accessories,152,1,4,16,1210,21,0,Low
+2599,Mouse,Electronics,65,6,2,17,748,24,1,Low
+2600,Router,Safety,45,36,5,43,1381,19,0,Medium
+2601,Keyboard,Safety,30,38,6,24,1465,8,0,Medium
+2602,Switch,Safety,382,2,3,80,1150,25,0,Low
+2603,Monitor Stand,Storage Devices,9,4,3,11,2500,117,1,Medium
+2604,USB Flash,Mobile Accessories,2,73,15,53,1835,5,1,High
+2605,Barcode Scanner,Printer Supplies,5,34,15,24,1633,4,1,High
+2606,Switch,Safety,75,38,5,55,610,6,1,Medium
+2607,Ink Cartridge,Mobile Accessories,783,3,1,74,1034,4,1,Low
+2608,Ink Cartridge,Printer Supplies,350,4,3,45,1422,19,1,Low
+2609,Mouse,Safety,19,19,7,20,1225,16,0,Medium
+2610,Keyboard,Electronics,19,47,12,55,1535,4,1,High
+2611,Laptop Charger,Printer Supplies,35,63,12,74,1401,3,0,High
+2612,Safety Gloves,Printer Supplies,7,47,15,56,712,4,0,High
+2613,Keyboard,Storage Devices,39,4,7,39,616,2,0,Medium
+2614,Toner,Safety,258,0,2,34,742,27,0,Low
+2615,Printer Cable,Office Supplies,269,2,2,38,1068,3,0,Low
+2616,Switch,Computer Accessories,281,2,1,43,1202,23,1,Low
+2617,Receipt Printer,Storage Devices,12,4,4,20,1436,74,1,Medium
+2618,Keyboard,Storage Devices,41,8,7,39,532,25,1,Medium
+2619,USB Flash,Safety,138,1,2,20,890,22,0,Low
+2620,Switch,Safety,21,4,2,42,1390,75,0,Medium
+2621,Mouse,Printer Supplies,51,38,5,46,684,0,1,Medium
+2622,Keyboard,Safety,28,52,13,57,1186,4,1,High
+2623,Mouse,Computer Accessories,14,17,7,13,1659,17,0,Medium
+2624,Router,Printer Supplies,734,3,1,65,1549,8,0,Low
+2625,USB Flash,Storage Devices,641,0,2,59,193,12,1,Low
+2626,Pen Pack,Electronics,0,68,13,20,131,0,0,High
+2627,HDD,Safety,0,61,9,15,1599,9,0,High
+2628,Notebook,Electronics,236,0,3,73,1382,27,0,Low
+2629,Switch,Printer Supplies,734,6,3,63,369,23,1,Low
+2630,Notebook,Storage Devices,191,2,2,10,815,6,0,Low
+2631,Switch,Computer Accessories,5,66,10,28,1411,8,1,High
+2632,Ink Cartridge,Printer Supplies,452,5,2,80,480,32,0,Low
+2633,Keyboard,Safety,17,58,12,62,1086,4,1,High
+2634,Pen Pack,Storage Devices,97,1,1,21,35,7,0,Low
+2635,Safety Gloves,Safety,25,4,5,36,1306,69,0,Medium
+2636,Keyboard,Safety,10,4,5,10,821,79,1,Medium
+2637,Barcode Scanner,Computer Accessories,539,1,1,71,936,26,1,Low
+2638,Keyboard,Storage Devices,36,4,5,47,1647,71,1,Medium
+2639,Laptop Charger,Mobile Accessories,2,68,10,64,1968,7,0,High
+2640,Barcode Scanner,Computer Accessories,550,0,1,62,818,29,0,Low
+2641,USB Flash,Safety,171,0,4,23,798,22,0,Low
+2642,Mouse,Printer Supplies,55,38,5,49,514,3,0,Medium
+2643,Keyboard,Printer Supplies,6,61,12,14,498,0,0,High
+2644,Mouse,Electronics,124,0,2,19,974,26,0,Low
+2645,Receipt Printer,Office Supplies,32,20,7,31,2087,19,0,Medium
+2646,Barcode Scanner,Office Supplies,704,1,4,55,1379,29,0,Low
+2647,Ink Cartridge,Printer Supplies,10,32,11,35,1256,3,1,High
+2648,Receipt Printer,Electronics,19,4,4,30,2222,82,0,Medium
+2649,Toner,Safety,259,0,2,35,721,25,0,Low
+2650,Toner,Mobile Accessories,1,52,7,48,923,0,1,High
+2651,Keyboard,Safety,99,38,7,75,1885,0,0,Medium
+2652,Notebook,Mobile Accessories,84,29,7,70,2415,11,0,Medium
+2653,Monitor Stand,Computer Accessories,13,47,13,24,1440,9,1,High
+2654,Switch,Printer Supplies,729,0,2,71,576,26,0,Low
+2655,Notebook,Electronics,58,33,14,80,1155,9,1,High
+2656,Toner,Printer Supplies,7,61,12,44,1481,1,1,High
+2657,Barcode Scanner,Computer Accessories,159,3,1,25,103,18,0,Low
+2658,Barcode Scanner,Printer Supplies,7,59,9,38,35,7,1,High
+2659,Barcode Scanner,Office Supplies,418,2,1,40,1727,14,1,Low
+2660,HDD,Printer Supplies,56,38,8,54,1794,5,0,Medium
+2661,Barcode Scanner,Computer Accessories,202,3,1,23,293,20,0,Low
+2662,USB Flash,Safety,200,4,1,20,1108,21,0,Low
+2663,Safety Gloves,Computer Accessories,508,8,2,59,1628,12,0,Low
+2664,Printer Cable,Electronics,696,4,1,69,2041,13,0,Low
+2665,HDD,Storage Devices,121,6,1,24,1348,13,0,Low
+2666,Toner,Storage Devices,15,51,9,46,1382,8,1,High
+2667,Barcode Scanner,Computer Accessories,1,43,8,24,203,0,1,High
+2668,Pen Pack,Electronics,72,11,6,56,2432,17,1,Medium
+2669,Notebook,Mobile Accessories,30,31,12,69,1322,9,1,High
+2670,HDD,Mobile Accessories,5,66,13,28,1040,4,0,High
+2671,USB Flash,Computer Accessories,0,55,14,37,1178,8,0,High
+2672,USB Flash,Storage Devices,30,4,2,59,901,81,1,Medium
+2673,Keyboard,Safety,29,56,12,64,1095,5,0,High
+2674,Mouse,Electronics,33,33,14,67,321,0,1,High
+2675,Router,Mobile Accessories,52,4,5,65,69,67,0,Medium
+2676,Safety Gloves,Printer Supplies,418,1,3,53,1601,29,0,Low
+2677,Mouse,Mobile Accessories,9,54,11,17,843,0,0,High
+2678,Router,Storage Devices,627,5,1,73,121,4,1,Low
+2679,Notebook,Mobile Accessories,472,1,2,52,2264,9,0,Low
+2680,Safety Gloves,Office Supplies,6,49,14,31,528,6,1,High
+2681,Printer Cable,Mobile Accessories,19,37,7,65,1511,7,0,High
+2682,Laptop Charger,Printer Supplies,75,38,3,73,2167,19,0,Medium
+2683,HDD,Printer Supplies,177,6,1,15,462,29,0,Low
+2684,Mouse,Electronics,0,68,14,66,2196,14,1,High
+2685,HDD,Storage Devices,537,0,2,80,2127,30,0,Low
+2686,HDD,Storage Devices,587,7,3,74,2306,28,0,Low
+2687,Keyboard,Electronics,34,26,12,69,1830,5,1,High
+2688,Safety Gloves,Computer Accessories,37,5,2,61,1402,85,0,Medium
+2689,Barcode Scanner,Electronics,16,71,15,55,400,6,1,High
+2690,Laptop Charger,Office Supplies,9,57,13,61,2278,9,1,High
+2691,Barcode Scanner,Storage Devices,11,71,11,54,2422,9,1,High
+2692,Keyboard,Safety,3,52,12,57,1338,0,1,High
+2693,HDD,Mobile Accessories,30,37,3,25,2102,0,0,Medium
+2694,Receipt Printer,Storage Devices,19,4,4,23,1394,80,1,Medium
+2695,Toner,Safety,319,0,2,34,631,27,0,Low
+2696,Receipt Printer,Safety,211,0,1,28,2139,1,0,Low
+2697,Barcode Scanner,Safety,6,53,11,24,704,3,1,High
+2698,Ink Cartridge,Mobile Accessories,582,9,1,60,2035,4,0,Low
+2699,Ink Cartridge,Printer Supplies,9,47,14,24,335,5,0,High
+2700,Mouse,Computer Accessories,18,18,6,18,1691,0,0,Medium
+2701,HDD,Mobile Accessories,10,4,5,14,349,80,0,Medium
+2702,Keyboard,Storage Devices,31,12,7,32,598,20,0,Medium
+2703,Keyboard,Safety,20,51,12,57,1171,0,1,High
+2704,Mouse,Computer Accessories,17,37,3,15,1766,6,0,Medium
+2705,Router,Printer Supplies,19,46,14,56,381,5,1,High
+2706,Keyboard,Computer Accessories,31,11,8,31,1349,14,0,Medium
+2707,USB Flash,Computer Accessories,4,59,9,30,1261,12,1,High
+2708,Pen Pack,Printer Supplies,32,4,4,53,474,120,1,Medium
+2709,Printer Cable,Computer Accessories,139,6,2,14,1828,10,1,Low
+2710,HDD,Computer Accessories,63,4,4,80,1355,108,1,Medium
+2711,HDD,Storage Devices,167,7,1,32,1380,12,0,Low
+2712,Notebook,Electronics,24,64,10,60,586,9,1,High
+2713,Notebook,Electronics,310,0,2,69,1560,32,0,Low
+2714,Router,Computer Accessories,92,38,5,80,2478,0,0,Medium
+2715,Monitor Stand,Office Supplies,17,4,2,27,914,88,0,Medium
+2716,Switch,Storage Devices,5,43,14,28,1648,9,1,High
+2717,Safety Gloves,Computer Accessories,499,6,3,48,1366,18,1,Low
+2718,Router,Office Supplies,3,40,12,23,1844,4,0,High
+2719,Toner,Printer Supplies,0,40,13,31,263,1,0,High
+2720,Printer Cable,Electronics,328,8,3,29,78,30,0,Low
+2721,HDD,Storage Devices,536,9,4,75,2328,28,0,Low
+2722,Safety Gloves,Mobile Accessories,27,5,2,44,950,115,1,Medium
+2723,Router,Safety,55,38,5,40,1348,17,1,Medium
+2724,Monitor Stand,Mobile Accessories,42,8,4,60,1841,77,1,Medium
+2725,Pen Pack,Storage Devices,98,1,2,14,572,11,1,Low
+2726,Barcode Scanner,Computer Accessories,83,2,1,25,256,19,0,Low
+2727,Mouse,Computer Accessories,23,38,3,22,1685,8,1,Medium
+2728,Safety Gloves,Printer Supplies,13,63,15,57,732,7,1,High
+2729,Safety Gloves,Storage Devices,13,60,10,43,1342,6,0,High
+2730,HDD,Storage Devices,551,0,3,73,2338,30,0,Low
+2731,Barcode Scanner,Storage Devices,86,38,5,58,1799,9,1,Medium
+2732,Monitor Stand,Safety,10,34,9,69,1341,5,0,High
+2733,Pen Pack,Printer Supplies,17,4,5,31,2467,69,0,Medium
+2734,Mouse,Mobile Accessories,10,57,12,15,947,4,1,High
+2735,Barcode Scanner,Office Supplies,8,43,13,24,2287,0,0,High
+2736,HDD,Office Supplies,381,2,2,45,559,15,1,Low
+2737,USB Flash,Mobile Accessories,1,71,15,50,1949,5,0,High
+2738,Ink Cartridge,Printer Supplies,57,38,6,43,1937,12,1,Medium
+2739,Keyboard,Safety,0,44,14,15,1479,11,0,High
+2740,Printer Cable,Computer Accessories,195,6,2,11,2008,12,1,Low
+2741,USB Flash,Computer Accessories,9,58,12,52,1183,9,1,High
+2742,Printer Cable,Electronics,352,0,3,32,408,28,0,Low
+2743,Router,Printer Supplies,17,35,14,61,410,8,0,High
+2744,HDD,Mobile Accessories,1,38,13,23,944,6,0,High
+2745,Mouse,Safety,19,16,7,20,1208,15,0,Medium
+2746,USB Flash,Office Supplies,456,0,2,75,90,1,0,Low
+2747,Router,Office Supplies,48,4,4,52,388,104,1,Medium
+2748,Mouse,Mobile Accessories,72,34,6,66,2394,13,1,Medium
+2749,Pen Pack,Storage Devices,0,66,10,73,831,7,1,High
+2750,HDD,Safety,57,38,7,45,380,10,0,Medium
+2751,Printer Cable,Safety,23,33,12,47,1404,7,1,High
+2752,Laptop Charger,Safety,41,4,4,63,743,87,0,Medium
+2753,Monitor Stand,Mobile Accessories,177,3,2,36,513,10,0,Low
+2754,Monitor Stand,Office Supplies,7,35,11,50,1513,11,1,High
+2755,Switch,Storage Devices,13,46,15,32,462,8,1,High
+2756,Switch,Computer Accessories,2,64,13,19,1652,7,1,High
+2757,Router,Mobile Accessories,13,28,7,13,1176,11,0,Medium
+2758,Ink Cartridge,Printer Supplies,489,9,2,75,486,29,1,Low
+2759,Printer Cable,Electronics,61,16,6,56,35,0,0,Medium
+2760,Receipt Printer,Office Supplies,35,15,8,31,2003,4,0,Medium
+2761,Router,Storage Devices,245,0,2,29,1214,8,1,Low
+2762,Monitor Stand,Electronics,48,38,6,43,2358,4,0,Medium
+2763,Router,Printer Supplies,37,38,9,23,273,3,1,Medium
+2764,Switch,Safety,29,4,2,45,1466,82,0,Medium
+2765,HDD,Safety,19,35,12,35,891,7,1,High
+2766,Safety Gloves,Electronics,6,51,14,23,1988,12,1,High
+2767,Switch,Office Supplies,266,0,3,30,1996,18,0,Low
+2768,HDD,Electronics,41,4,2,62,1573,73,0,Medium
+2769,Ink Cartridge,Office Supplies,2,53,14,66,1397,2,0,High
+2770,Switch,Electronics,451,5,2,67,787,23,0,Low
+2771,Safety Gloves,Storage Devices,20,15,7,19,1290,8,0,Medium
+2772,Laptop Charger,Electronics,369,8,1,47,2378,12,0,Low
+2773,Keyboard,Office Supplies,0,37,14,21,561,4,1,High
+2774,Switch,Storage Devices,7,4,2,11,67,67,1,Medium
+2775,Switch,Computer Accessories,568,0,1,61,1685,8,0,Low
+2776,Printer Cable,Safety,6,21,12,40,1522,7,0,High
+2777,HDD,Office Supplies,304,2,2,37,321,14,0,Low
+2778,Barcode Scanner,Computer Accessories,99,3,1,12,424,18,0,Low
+2779,Receipt Printer,Printer Supplies,511,7,1,67,1328,18,0,Low
+2780,Ink Cartridge,Mobile Accessories,512,1,2,45,956,10,0,Low
+2781,Laptop Charger,Safety,133,7,1,32,1710,6,0,Low
+2782,Ink Cartridge,Mobile Accessories,711,3,1,72,1037,3,0,Low
+2783,Toner,Printer Supplies,31,68,15,63,1589,2,0,High
+2784,Ink Cartridge,Safety,31,4,5,46,2446,91,0,Medium
+2785,Router,Computer Accessories,49,20,5,50,249,19,0,Medium
+2786,HDD,Storage Devices,30,38,5,24,858,14,1,Medium
+2787,Toner,Electronics,0,62,11,42,2500,3,1,High
+2788,Keyboard,Safety,26,38,6,25,1144,7,0,Medium
+2789,Ink Cartridge,Electronics,10,71,15,29,2272,0,1,High
+2790,USB Flash,Electronics,69,13,3,79,2292,16,0,Medium
+2791,Receipt Printer,Computer Accessories,32,38,6,27,298,0,1,Medium
+2792,Router,Office Supplies,1,37,13,31,1973,4,1,High
+2793,Toner,Safety,26,4,5,49,399,68,0,Medium
+2794,USB Flash,Office Supplies,537,0,3,60,1090,22,1,Low
+2795,Keyboard,Mobile Accessories,8,4,2,14,2500,106,0,Medium
+2796,Switch,Computer Accessories,3,60,10,22,1485,6,0,High
+2797,Receipt Printer,Office Supplies,385,6,3,56,1502,25,1,Low
+2798,Receipt Printer,Office Supplies,341,7,1,58,1249,28,0,Low
+2799,Monitor Stand,Printer Supplies,5,57,7,71,2393,9,1,High
+2800,Safety Gloves,Printer Supplies,526,0,1,59,1782,29,1,Low
+2801,Printer Cable,Safety,57,38,5,45,733,10,0,Medium
+2802,Safety Gloves,Electronics,60,38,5,39,619,1,1,Medium
+2803,Barcode Scanner,Mobile Accessories,4,48,14,15,764,2,1,High
+2804,Toner,Printer Supplies,2,36,13,21,269,1,0,High
+2805,Router,Printer Supplies,100,38,7,79,2167,0,1,Medium
+2806,USB Flash,Safety,25,38,7,24,186,3,0,Medium
+2807,Monitor Stand,Mobile Accessories,56,4,5,47,1876,1,1,Medium
+2808,Safety Gloves,Mobile Accessories,1,51,15,10,1906,4,1,High
+2809,Safety Gloves,Safety,20,4,5,40,1113,77,0,Medium
+2810,Switch,Safety,44,4,2,63,1924,85,1,Medium
+2811,Printer Cable,Safety,457,4,1,70,2123,3,1,Low
+2812,Notebook,Printer Supplies,130,6,1,19,2496,16,0,Low
+2813,Safety Gloves,Mobile Accessories,40,4,4,56,2240,82,0,Medium
+2814,Toner,Computer Accessories,123,2,1,22,889,23,0,Low
+2815,Safety Gloves,Storage Devices,549,3,2,70,858,6,0,Low
+2816,Notebook,Mobile Accessories,75,31,6,67,2301,5,0,Medium
+2817,Pen Pack,Electronics,40,16,6,54,2418,30,1,Medium
+2818,USB Flash,Office Supplies,537,3,3,55,773,21,0,Low
+2819,Receipt Printer,Computer Accessories,42,38,6,29,174,0,1,Medium
+2820,Safety Gloves,Safety,29,4,6,46,924,76,1,Medium
+2821,Pen Pack,Printer Supplies,160,2,2,34,1050,22,0,Low
+2822,Toner,Electronics,0,60,14,46,2421,0,1,High
+2823,Notebook,Electronics,5,67,10,70,680,5,0,High
+2824,Receipt Printer,Office Supplies,34,10,7,26,2388,4,1,Medium
+2825,Safety Gloves,Storage Devices,10,21,7,10,1254,7,0,Medium
+2826,Keyboard,Mobile Accessories,5,4,2,11,2248,90,1,Medium
+2827,Safety Gloves,Electronics,15,59,11,27,2003,12,1,High
+2828,Safety Gloves,Mobile Accessories,29,4,2,50,851,93,0,Medium
+2829,USB Flash,Computer Accessories,9,64,15,32,995,12,1,High
+2830,Notebook,Storage Devices,18,9,6,18,863,23,0,Medium
+2831,Safety Gloves,Storage Devices,15,17,7,13,1064,1,0,Medium
+2832,Router,Mobile Accessories,35,4,4,62,69,60,0,Medium
+2833,Toner,Storage Devices,38,60,13,54,2500,2,1,High
+2834,Switch,Storage Devices,0,63,11,10,2184,0,1,High
+2835,Keyboard,Mobile Accessories,18,18,6,16,2130,37,1,Medium
+2836,Switch,Storage Devices,21,4,2,21,140,65,1,Medium
+2837,Printer Cable,Computer Accessories,196,7,2,12,1757,10,0,Low
+2838,Monitor Stand,Safety,10,45,11,61,1316,5,1,High
+2839,Pen Pack,Printer Supplies,19,4,4,35,2297,65,1,Medium
+2840,Mouse,Printer Supplies,0,60,15,33,592,3,0,High
+2841,Safety Gloves,Storage Devices,14,60,9,37,1210,10,0,High
+2842,Monitor Stand,Electronics,25,56,12,74,1024,3,1,High
+2843,Safety Gloves,Mobile Accessories,22,7,5,26,753,14,0,Medium
+2844,HDD,Computer Accessories,59,29,4,52,1237,4,1,Medium
+2845,Receipt Printer,Office Supplies,28,8,7,28,2090,7,0,Medium
+2846,Barcode Scanner,Electronics,22,73,15,55,161,8,1,High
+2847,Router,Printer Supplies,19,38,8,17,64,0,0,Medium
+2848,Notebook,Printer Supplies,468,4,1,66,1221,2,0,Low
+2849,Keyboard,Mobile Accessories,15,4,2,17,2463,92,1,Medium
+2850,Safety Gloves,Printer Supplies,5,28,7,76,1799,4,1,High
+2851,Pen Pack,Electronics,3,69,9,21,49,0,1,High
+2852,Mouse,Mobile Accessories,5,64,11,10,784,11,0,High
+2853,Safety Gloves,Electronics,37,38,5,36,513,12,0,Medium
+2854,Receipt Printer,Safety,81,13,5,74,1550,15,1,Medium
+2855,Switch,Safety,390,2,1,60,193,5,1,Low
+2856,Mouse,Printer Supplies,48,38,5,44,542,13,0,Medium
+2857,Monitor Stand,Mobile Accessories,173,7,4,33,498,9,0,Low
+2858,Safety Gloves,Printer Supplies,14,19,15,71,1975,7,0,High
+2859,Safety Gloves,Computer Accessories,506,3,2,50,1718,18,0,Low
+2860,Toner,Safety,25,5,6,53,428,71,0,Medium
+2861,Safety Gloves,Safety,27,6,5,36,1216,73,0,Medium
+2862,Barcode Scanner,Storage Devices,61,38,6,58,1804,14,1,Medium
+2863,Laptop Charger,Computer Accessories,236,1,1,24,2083,20,1,Low
+2864,Switch,Computer Accessories,583,0,2,56,1639,8,1,Low
+2865,Notebook,Mobile Accessories,19,38,12,69,1135,0,0,High
+2866,Printer Cable,Electronics,212,1,3,25,313,23,0,Low
+2867,Barcode Scanner,Computer Accessories,605,7,1,60,822,27,0,Low
+2868,USB Flash,Storage Devices,3,30,12,40,2500,4,1,High
+2869,Toner,Printer Supplies,5,53,15,43,1289,1,1,High
+2870,Pen Pack,Electronics,60,16,6,49,2500,18,1,Medium
+2871,Toner,Mobile Accessories,3,60,8,48,1049,1,1,High
+2872,Receipt Printer,Safety,20,4,3,38,366,75,0,Medium
+2873,Router,Computer Accessories,16,36,11,41,1144,7,1,High
+2874,Printer Cable,Electronics,340,7,3,31,129,26,0,Low
+2875,Keyboard,Mobile Accessories,19,15,6,18,2015,32,1,Medium
+2876,Monitor Stand,Safety,5,43,15,60,1552,3,1,High
+2877,Router,Printer Supplies,87,38,7,80,2105,7,0,Medium
+2878,Safety Gloves,Safety,9,32,13,32,2423,6,0,High
+2879,Safety Gloves,Computer Accessories,21,52,11,64,1829,0,0,High
+2880,Pen Pack,Electronics,366,0,1,21,1054,21,0,Low
+2881,Router,Computer Accessories,59,13,5,55,262,9,1,Medium
+2882,Laptop Charger,Printer Supplies,15,68,11,69,1586,2,1,High
+2883,Receipt Printer,Storage Devices,261,3,2,39,1827,30,0,Low
+2884,Laptop Charger,Office Supplies,116,2,4,13,581,15,1,Low
+2885,Laptop Charger,Electronics,72,7,6,76,1773,16,1,Medium
+2886,Receipt Printer,Mobile Accessories,712,3,4,58,1276,17,0,Low
+2887,Monitor Stand,Safety,17,47,12,66,1372,0,1,High
+2888,Barcode Scanner,Safety,4,48,13,21,572,1,1,High
+2889,Notebook,Printer Supplies,5,47,8,44,409,9,0,High
+2890,Router,Mobile Accessories,40,4,5,58,166,59,1,Medium
+2891,Printer Cable,Electronics,231,8,3,25,42,25,0,Low
+2892,Safety Gloves,Storage Devices,15,61,12,42,1131,6,1,High
+2893,Notebook,Storage Devices,240,0,2,14,864,7,0,Low
+2894,Keyboard,Safety,39,38,5,29,1454,4,1,Medium
+2895,HDD,Office Supplies,296,4,2,36,208,16,0,Low
+2896,HDD,Mobile Accessories,5,26,12,27,1010,3,1,High
+2897,Ink Cartridge,Electronics,76,38,4,69,1251,15,0,Medium
+2898,USB Flash,Electronics,74,11,3,72,2125,32,1,Medium
+2899,Laptop Charger,Office Supplies,29,29,8,19,35,0,1,Medium
+2900,Toner,Storage Devices,26,57,15,52,2500,3,0,High
+2901,Toner,Storage Devices,27,45,14,39,1276,8,1,High
+2902,USB Flash,Storage Devices,39,4,2,64,844,86,0,Medium
+2903,Safety Gloves,Mobile Accessories,23,11,5,23,687,4,0,Medium
+2904,Notebook,Electronics,14,65,10,66,621,9,1,High
+2905,HDD,Safety,160,1,4,36,2059,13,0,Low
+2906,HDD,Mobile Accessories,2,35,11,29,1262,3,0,High
+2907,Monitor Stand,Electronics,47,38,5,47,2407,0,0,Medium
+2908,HDD,Safety,183,4,1,33,1949,9,0,Low
+2909,Receipt Printer,Printer Supplies,508,6,1,67,1216,20,0,Low
+2910,USB Flash,Office Supplies,6,45,15,16,2345,4,1,High
+2911,Switch,Computer Accessories,579,1,2,56,1608,6,0,Low
+2912,Mouse,Electronics,31,32,14,63,335,1,0,High
+2913,Receipt Printer,Storage Devices,258,0,1,27,1813,27,0,Low
+2914,Keyboard,Computer Accessories,26,4,5,50,487,86,1,Medium
+2915,HDD,Printer Supplies,150,5,1,20,572,26,0,Low
+2916,Safety Gloves,Electronics,471,0,3,53,2149,8,0,Low
+2917,Laptop Charger,Safety,0,55,11,20,1154,3,0,High
+2918,Monitor Stand,Computer Accessories,9,36,13,27,1476,3,1,High
+2919,Receipt Printer,Safety,34,4,3,36,422,89,1,Medium
+2920,Monitor Stand,Storage Devices,36,4,3,46,2025,108,1,Medium
+2921,Barcode Scanner,Printer Supplies,509,6,4,39,2155,16,0,Low
+2922,Notebook,Printer Supplies,71,4,1,24,2363,15,0,Low
+2923,HDD,Printer Supplies,3,29,10,41,1867,12,0,High
+2924,Keyboard,Office Supplies,445,1,2,45,2388,5,0,Low
+2925,Barcode Scanner,Storage Devices,63,38,5,55,1791,0,0,Medium
+2926,USB Flash,Storage Devices,650,0,1,61,264,7,0,Low
+2927,Ink Cartridge,Printer Supplies,462,4,2,55,2326,24,0,Low
+2928,Keyboard,Safety,53,38,6,35,1603,19,1,Medium
+2929,USB Flash,Computer Accessories,9,59,9,24,1000,8,0,High
+2930,Monitor Stand,Safety,19,48,13,66,1468,4,1,High
+2931,Router,Storage Devices,297,5,1,79,295,3,1,Low
+2932,Toner,Electronics,31,38,4,27,340,0,0,Medium
+2933,Monitor Stand,Storage Devices,19,8,3,28,2500,111,0,Medium
+2934,Notebook,Mobile Accessories,4,64,12,63,1181,0,1,High
+2935,Pen Pack,Printer Supplies,36,4,4,46,205,117,1,Medium
+2936,Monitor Stand,Electronics,62,38,6,47,2209,0,1,Medium
+2937,Printer Cable,Electronics,70,11,6,63,211,11,1,Medium
+2938,Mouse,Printer Supplies,0,54,12,24,490,1,0,High
+2939,Barcode Scanner,Office Supplies,756,1,4,71,1512,27,0,Low
+2940,Pen Pack,Storage Devices,90,0,2,10,225,8,1,Low
+2941,Laptop Charger,Mobile Accessories,1,63,12,51,1863,0,1,High
+2942,Notebook,Storage Devices,23,4,7,26,684,14,0,Medium
+2943,Barcode Scanner,Safety,12,4,3,22,2245,120,0,Medium
+2944,Ink Cartridge,Safety,18,51,9,73,2327,4,1,High
+2945,Monitor Stand,Office Supplies,19,5,3,28,941,85,0,Medium
+2946,Notebook,Electronics,17,67,10,75,515,7,0,High
+2947,Mouse,Office Supplies,56,37,15,73,1278,7,1,High
+2948,Toner,Mobile Accessories,5,61,13,47,1095,2,1,High
+2949,Ink Cartridge,Electronics,413,5,4,63,566,7,0,Low
+2950,Toner,Computer Accessories,0,47,14,13,576,1,1,High
+2951,Barcode Scanner,Storage Devices,15,73,13,57,357,11,1,High
+2952,USB Flash,Electronics,228,5,1,25,836,25,0,Low
+2953,Printer Cable,Safety,15,33,11,37,1592,6,1,High
+2954,Safety Gloves,Safety,29,4,6,52,257,69,1,Medium
+2955,Laptop Charger,Office Supplies,32,35,12,60,2325,4,1,High
+2956,Safety Gloves,Electronics,23,40,13,49,1030,5,1,High
+2957,Toner,Printer Supplies,6,50,12,45,1167,0,0,High
+2958,Pen Pack,Electronics,271,1,1,29,1230,20,0,Low
+2959,USB Flash,Electronics,61,12,3,70,2425,9,0,Medium
+2960,Barcode Scanner,Printer Supplies,3,48,13,36,189,8,1,High
+2961,Switch,Safety,25,4,2,42,1146,69,1,Medium
+2962,HDD,Mobile Accessories,7,4,4,15,328,97,0,Medium
+2963,Pen Pack,Electronics,303,1,1,26,1230,19,0,Low
+2964,Barcode Scanner,Safety,16,39,12,72,823,5,1,High
+2965,USB Flash,Mobile Accessories,547,0,3,48,1543,15,0,Low
+2966,Barcode Scanner,Safety,9,4,3,15,2500,103,0,Medium
+2967,Switch,Mobile Accessories,263,4,2,29,2338,22,0,Low
+2968,USB Flash,Computer Accessories,14,65,9,24,1205,11,1,High
+2969,Mouse,Mobile Accessories,5,59,11,13,536,9,0,High
+2970,HDD,Safety,24,64,14,39,1193,8,1,High
+2971,Ink Cartridge,Computer Accessories,50,38,5,48,1348,0,1,Medium
+2972,Router,Storage Devices,217,0,2,27,817,14,0,Low
+2973,Laptop Charger,Office Supplies,9,30,15,37,1242,4,1,High
+2974,Printer Cable,Safety,448,0,1,72,2115,4,0,Low
+2975,Mouse,Office Supplies,37,42,15,69,1443,8,0,High
+2976,Printer Cable,Computer Accessories,591,2,2,60,134,7,0,Low
+2977,Printer Cable,Electronics,699,3,3,72,2183,10,0,Low
+2978,Keyboard,Safety,10,4,5,14,597,76,1,Medium
+2979,Safety Gloves,Storage Devices,15,65,9,40,1285,9,0,High
+2980,Printer Cable,Safety,737,1,4,70,346,4,1,Low
+2981,Keyboard,Mobile Accessories,9,4,2,18,2459,90,1,Medium
+2982,Router,Office Supplies,0,50,13,35,2053,4,0,High
+2983,Barcode Scanner,Storage Devices,5,63,12,62,2327,11,1,High
+2984,Router,Safety,43,37,5,35,1014,11,0,Medium
+2985,Toner,Mobile Accessories,3,56,10,47,1136,1,0,High
+2986,Switch,Electronics,527,1,2,73,1065,18,0,Low
+2987,Notebook,Storage Devices,11,5,5,15,810,10,1,Medium
+2988,Switch,Mobile Accessories,335,2,3,52,1735,30,0,Low
+2989,Safety Gloves,Computer Accessories,21,46,11,73,1849,0,1,High
+2990,HDD,Safety,0,56,9,16,1589,12,1,High
+2991,Router,Safety,53,38,5,37,1154,14,1,Medium
+2992,Toner,Printer Supplies,440,4,1,38,555,20,0,Low
+2993,Mouse,Safety,17,20,7,19,966,18,0,Medium
+2994,Toner,Office Supplies,522,9,2,63,1012,30,0,Low
+2995,Toner,Printer Supplies,0,29,14,21,595,0,1,High
+2996,Switch,Mobile Accessories,15,4,3,21,2173,80,0,Medium
+2997,Keyboard,Mobile Accessories,77,38,8,58,1683,0,0,Medium
+2998,Receipt Printer,Safety,39,4,3,43,268,83,1,Medium
+2999,HDD,Printer Supplies,19,38,7,17,586,0,0,Medium
+3000,Keyboard,Office Supplies,371,0,2,38,2332,5,0,Low
